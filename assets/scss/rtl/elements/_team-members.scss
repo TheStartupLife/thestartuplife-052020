@@ -1,0 +1,14 @@
+.lqd-parallax-team-members {
+
+	.liquid-img-group-container {
+
+		&:first-child {
+			left: auto;
+			right: -90%;
+		}
+		&:last-child {
+			left: auto;
+			right: -90%;
+		}
+	}
+}

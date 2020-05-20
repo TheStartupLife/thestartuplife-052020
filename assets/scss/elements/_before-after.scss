@@ -1,0 +1,133 @@
+@-webkit-keyframes cd-bounce-in {
+	0% {
+		width: 0;
+	}
+	60% {
+		width: 55%;
+	}
+	100% {
+		width: 50%;
+	}
+}
+@keyframes cd-bounce-in {
+	0% {
+		width: 0;
+	}
+	60% {
+		width: 55%;
+	}
+	100% {
+		width: 50%;
+	}
+}
+
+.cd-image-container {
+	position: relative;
+	margin: 0 auto 30px;
+
+	&:hover {
+
+		.cd-image-label {
+			opacity: 0;
+			visibility: visible;
+			transition-delay: 0s;
+		}
+	}
+}
+.cd-image-container img {
+	display: block;
+	width: 100%;
+}
+
+.cd-image-label {
+	padding: 6px 14px;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	opacity: 0;
+	background-color: #fff;
+	font-size: 14px;
+	line-height: 1.5em;
+	border-radius: 2px;
+	font-weight: 500;
+	color: #000;
+	transform: translateY(20px);
+	transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+}
+.cd-image-label.is-hidden {
+	visibility: hidden;
+}
+.is-visible .cd-image-label {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.cd-resize-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	overflow: hidden;
+	border-right: 3px solid rgba(#fff, 0.75);
+	transform: translateZ(0);
+	backface-visibility: hidden;
+}
+.cd-resize-img img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	height: 100%;
+	width: auto;
+	max-width: none;
+}
+.cd-resize-img .cd-image-label {
+	right: auto;
+	left: 15px;
+}
+.is-visible .cd-resize-img {
+	width: 50%;
+	/* bounce in animation of the modified image */
+	animation: cd-bounce-in 0.7s;
+}
+.cd-handle {
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	left: 50%;
+	top: 50%;
+	margin-left: -20px;
+	margin-top: -20px;
+	border-radius: 50%;
+	background-color: #fff;
+	cursor: move;
+	opacity: 0;
+	color: #000;
+	box-shadow: 0 0 0 4px rgba(#000, 0.1);
+	transform: scale(0);
+	transition: all 0.3s ease;
+	
+	&:before{
+		content: '\f07e';
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		font: normal normal 17px/1 fontAwesome;
+		transition: all 0.3s ease;
+		transform: translate(-50%, -50%);
+	}
+}
+.is-visible .cd-handle {
+	opacity: 1;
+	transform: scale(1);
+	transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}
+.cd-handle.draggable {
+
+	&:before {
+		transform: translate(-50%, -50%) scale(1.15);
+	}
+}

@@ -1,0 +1,21 @@
+.woocommerce {
+
+	.product_meta {
+		margin-bottom: 2em;
+		font-size: 12px;
+		line-height: 1.5em;
+		letter-spacing: 0.08em;
+		font-weight: 700;
+		color: #040404;
+		
+		> span {
+			display: block;
+			padding: 1em 0;
+			border-bottom: 1px solid #eee;
+
+			span {
+				color: #BCBCBC;
+			}
+		}
+	}
+}

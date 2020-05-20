@@ -1,0 +1,943 @@
+/* Size Variables */
+$size-xxs: 20;
+$size-xs: 45;
+$size-sm: 60;
+$size-md: 90;
+$size-lg: 100;
+$size-xl: 125;
+
+/* Animations */
+@keyframes iconRipple {
+
+	0% {
+		border-width: 4px;
+		transform: scale(1);
+	}
+	80% {
+		border-width: 1px;
+		transform: scale(1.36);
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/* Icon Box */
+.iconbox {
+	display: flex;
+	margin-bottom: 2em;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	// flex: 1 auto; // growing if row settings is set to equal columns height and middle the content
+	text-align: center;
+	transition: box-shadow 0.3s ease, background 0.3s ease;
+	
+	.iconbox-icon-container,
+	.contents,
+	> h3 {
+		position: relative;
+		z-index: 2;
+	}
+	.iconbox-icon-container,
+	p,
+	h3 {
+		transition-property: color, background;
+		transition-duration: 0.3s;
+		transition-timing-function: ease;
+	}
+	h3 {
+		display: inline-block; // for gradient fill
+		margin: 0 0 0.7em;
+		font-size: 24px;
+		line-height: 1.5em;
+	}
+	.iconbox-icon-container {
+		display: flex;
+		margin-bottom: 0.5em;
+		border: 0 solid #F2F4F7;
+		align-items: center;
+		justify-content: center;
+		font-size: 40px;
+		line-height: 1em;
+		color: var(--color-primary);
+		transition: border 0.3s, box-shadow 0.3s;
+		
+		i,
+		img,
+		object,
+		> svg {
+			position: relative;
+			z-index: 2;
+		}
+		img[src$=".svg"],
+		object,
+		> svg {
+			display: inline-block;
+			width: 40px;
+			line-height: 0;
+			
+			stop {
+				transition: stop-color 0.3s ease;
+			}
+		}
+		
+		> svg {
+			
+			&,
+			path,
+			rect,
+			ellipse,
+			circle,
+			polygon,
+			polyline {
+				transition: fill 0.3s, stroke 0.3s;
+			}
+		}
+		
+		i {
+			display: inline-block;
+			font-size: 1em;
+		}
+		
+		&[data-plugin-animated-icon] {
+			font-size: 1em;
+			line-height: 1em !important;
+			
+			> svg,
+			object {
+				opacity: 0;
+			}
+		}
+	}
+	.contents {
+		max-width: 100%; // to fix IE11 overflow issue
+	}
+	.iconbox-fill-el,
+	.iconbox-icon-hover-bg {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: inherit;
+		transition: opacity 0.3s;
+		opacity: 0;
+		background-size: cover;
+	}
+	p {
+		margin-bottom: 0;
+	}
+
+	.btn {
+		margin-top: 1.5em;
+		margin-bottom: 0.5em;
+	}
+
+	&.text-left {
+		align-items: flex-start;
+	}
+	&.text-right {
+		align-items: flex-end;
+	}
+
+	&:hover {
+
+		.iconbox-fill-el,
+		.iconbox-icon-hover-bg {
+			opacity: 1;
+		}
+	}
+}
+
+[data-animate-icon=true] {
+
+	.iconbox-icon-container {
+
+		> svg,
+		> object {
+			opacity: 0;
+		}
+	}
+
+	&.iconbox-icon-animating {
+
+		.iconbox-icon-container {
+	
+			> svg,
+			> object {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.iconbox-square,
+.iconbox-circle,
+.iconbox-lozenge {
+	
+	.iconbox-icon-container {
+		
+		i,
+		img[src$=".svg"],
+		object,
+		> svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+	}
+	&[data-shape-border],
+	&.iconbox-icon-solid {
+
+		img {
+			max-width: 68%;
+		}
+	}
+}
+
+.iconbox-label {
+	display: inline-block;
+	padding: 8px 12px;
+	position: absolute;
+	top: 13px;
+	right: 13px;
+	border-radius: 2px;
+	background: #EFEFEF;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #000;
+}
+
+/* Icon Shape*/
+.iconbox-circle,
+.iconbox-lozenge,
+.iconbox-hexagon,	
+.iconbox-square {
+	
+	.iconbox-icon-container {
+		border-radius: 6px;
+		background: var(--color-primary);
+		font-size: 40px;
+		color: #fff;
+		
+		img[src$=".svg"],
+		object,
+		> svg {
+			width: 50px;
+		}
+	}
+}
+.iconbox-circle,
+.iconbox-lozenge,	
+.iconbox-square {
+
+	.iconbox-icon-container {
+		width: 80px;
+		height: 80px;
+	}
+}
+
+.iconbox-circle {
+	
+	.iconbox-icon-container {
+		border-radius: 50em;
+		
+		img[src$=".svg"],
+		object,
+		> svg {
+			width: 44px;
+		}
+	}
+}
+
+.iconbox-lozenge {
+	
+	.iconbox-icon-container {
+		// margin-bottom: 8%;
+		border-radius: 15px;
+		transform: rotate(45deg);
+		
+		i,
+		img[src$=".svg"],
+		object,
+		> svg {
+			transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+		}
+	}
+}
+
+.iconbox-hexagon {
+	
+	.iconbox-icon-container {
+		width: 80px;
+		height: 50px;
+		margin-top: ( 80px / 3 );
+		margin-bottom: ( 80px / 3 );
+		
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: inherit;
+			height: inherit;
+			background: inherit;
+			transform-origin: center center;
+			border-radius: inherit;
+			z-index: -1;
+		}
+		&:before {
+			transform: rotate(60deg);
+		}
+		&:after {
+			transform: rotate(-60deg);
+		}
+	}
+}
+
+.iconbox-wavebg {
+
+	.iconbox-icon-container {
+		margin-top: 0.6em;
+		margin-bottom: 1em;
+
+		.icon-wave-bg {
+			opacity: 0.22;
+
+			> img,
+			> svg {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 0;
+				transform: translateX(-50%) translateY(-50%);
+			}
+			> svg {
+				width: 3.1em;
+				height: auto;
+			}
+			> img {
+				max-width: none;
+			}
+
+			path {
+				fill: var(--color-primary);
+			}
+
+			&.default-opacity {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+/* Icon Style*/
+.iconbox-inline {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	text-align: left;
+
+	.iconbox-icon-container,
+	h3 {
+		margin-bottom: 0;
+	}
+	.iconbox-icon-wrap {
+		flex-basis: auto;
+	}
+	.iconbox-icon-container {
+		margin-right: 15px;
+	}
+	h3 {
+		// flex: 1 0; // causing issues on IE11
+		flex-grow: 1; // screw IE
+		flex-basis: 0;
+	}
+	.contents {
+		flex-basis: 100%;
+		margin-top: 15px;
+	}
+
+	&.text-right {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+
+		.iconbox-icon-container {
+			margin-right: 0;
+			margin-left: 15px;
+		}
+	}
+
+	&.iconbox-wavebg {
+
+		.iconbox-icon-container {
+			margin-right: 1.5em;
+		}
+		&.text-right {
+			margin-right: 0;
+			margin-left: 1.5em;
+		}
+	}
+}
+
+.iconbox-side {
+	flex-flow: row wrap;
+	align-items: stretch !important; // !important to not be overwritten by .text-right
+	justify-content: flex-start;
+	text-align: left;
+	
+	.iconbox-icon-wrap {
+		margin-right: 30px;
+	}
+	.iconbox-icon-container {
+		margin-bottom: 0;
+	}
+	.contents {
+		overflow: hidden;
+		flex: 1;
+	}
+
+	&.text-right {
+		flex-direction: row-reverse;
+		
+		.iconbox-icon-wrap {
+			margin-right: 0;
+			margin-left: 30px;
+		}
+	}
+
+	&.iconbox-wavebg {
+
+		.iconbox-icon-container {
+			margin-right: 1.5em;
+		}
+		&.text-right {
+			margin-right: 0;
+			margin-left: 1.5em;
+		}
+	}
+}
+
+/* Icon Borders */
+[data-shape-border="1"] {
+
+	.iconbox-icon-container {
+		border-width: 1px;
+	}
+}
+[data-shape-border="2"] {
+
+	.iconbox-icon-container {
+		border-width: 2px;
+	}
+}
+[data-shape-border="3"] {
+
+	.iconbox-icon-container {
+		border-width: 3px;
+	}
+}
+
+/* Filling Styles */
+.iconbox-shadow,
+.iconbox-shadow-hover,
+.iconbox-bordered,
+.iconbox-filled {
+	padding: 25px 10%;
+	background-color: #fff;
+
+	&.iconbox-inline,
+	&.iconbox-side {
+		padding: 45px 5%;
+	}
+}
+.iconbox-semiround {
+	border-radius: 5px;
+}
+.iconbox-round {
+	border-radius: 10px;
+}
+.iconbox-shadow {
+	box-shadow: 0 25px 70px rgba(#000, 0.07);
+}
+.iconbox-shadow-hover {
+	box-shadow: 0 0 0 rgba(#000, 0);
+
+	&:hover {
+		box-shadow: 0 25px 70px rgba(#000, 0.07);
+	}
+}
+.iconbox-bordered {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border: 1px solid #E1E1E1;
+}
+.iconbox-filled-hover {
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		@include position(absolute, 0 null null 0);
+		z-index: 0;
+		opacity: 0;
+		transition: all 0.3s ease;
+		border-radius: inherit;
+		background: var(--color-primary);
+		background-size: cover;
+		background-position: center;
+	}
+
+	&:hover {
+		color: #fff;
+
+		.iconbox-icon-container,
+		h3,
+		p,
+		p span,
+		a,
+		.btn[class*=text-] {
+			color: inherit !important;
+		}
+		.btn-underlined {
+
+			&:before,
+			&:after {
+				background: currentColor;
+			}
+		}
+		
+		&:before {
+			opacity: 1;
+		}
+		&.iconbox-icon-image {
+
+			.iconbox-icon-container {
+
+				svg {
+					
+					path {
+						fill: currentColor;
+						stroke: currentColor;
+						filter: none;
+					}
+				}
+			}
+		}
+	}
+
+	&.iconbox-has-fill-element {
+
+		&:before {
+			content: none;
+		}
+	}
+
+	&.iconbox-heading-gradient {
+
+		.backgroundcliptext & {
+
+			&:hover {
+
+				.iconbox-icon-container i,
+				h3 {
+					background: #fff;
+				}
+			}
+		}
+	}
+
+	&.iconbox-scale-bg {
+
+		&:before {
+			transition: transform 0.35s cubic-bezier(0.23, 1, 0.320, 1), opacity 0.35s 0.1s cubic-bezier(0.23, 1, 0.320, 1);
+		}
+		&:hover {
+			
+			&:before {
+				transform: scale(1.1);
+				transition: transform 0.35s cubic-bezier(0.23, 1, 0.320, 1), opacity 0.1s 0s cubic-bezier(0.23, 1, 0.320, 1);
+			}
+		}
+	}
+
+	&.iconbox-light-onhover {
+
+		&:before {
+			background-color: #fff;
+		}
+
+		&:hover {
+			color: rgba(30, 22, 102, 0.55);
+
+			.iconbox-icon-container {
+				color: var(--color-primary) !important;
+			}
+			h3 {
+				color: #1e1666 !important;
+			}
+		}
+	}
+
+}
+.iconbox-icon-shadow {
+
+	.iconbox-icon-container {
+		box-shadow: 0 17px 30px rgba(#000, 0.07);
+	}
+}
+.iconbox-icon-hover-shadow {
+
+	.iconbox-icon-container {
+		box-shadow: 0 0 0 rgba(#000, 0);
+	}
+	&:hover {
+
+		.iconbox-icon-container {
+			box-shadow: 0 17px 30px rgba(#000, 0.07);
+		}
+	}
+}
+.iconbox-icon-linked {
+
+	.iconbox-icon-wrap {
+		position: relative;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 1px;
+			height: 200%;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			background-color: #E9E9E9;
+		}
+	}
+
+	&:last-child {
+
+		.iconbox-icon-wrap {
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}
+.iconbox-contents-show-onhover {
+
+	&.hide-target {
+
+		.contents {
+
+			> * {
+				opacity: 0;
+			}
+		}
+	}
+}
+
+/* Heading sizes */
+.iconbox-heading-xs {
+	
+	h3 {
+		font-size: 18px;
+	}
+}
+.iconbox-heading-sm {
+	
+	h3 {
+		font-size: 20px;
+	}
+}
+.iconbox-heading-md {
+	
+	h3 {
+		font-size: 24px;
+	}
+}
+.iconbox-heading-lg {
+	
+	h3 {
+		font-size: 28px;
+	}
+}
+
+/* Heading Gradient */
+.iconbox-heading-gradient {
+
+	.backgroundcliptext & {
+
+		h3 {
+			background: -webkit-gradient(linear, left top, right top, from(#1DE1D1), to(#780BEE));
+			background: linear-gradient(to right, #1DE1D1 0%, #780BEE 100%);
+			background-clip: text !important;
+			-webkit-background-clip: text !important;
+			text-fill-color: transparent !important;
+			-webkit-text-fill-color: transparent !important;
+		}
+	}
+}
+/* Icon Gradient */
+.iconbox-icon-gradient {
+
+	.backgroundcliptext & {
+
+		.iconbox-icon-container i {
+			background: -webkit-gradient(linear, left top, right top, from(#1DE1D1), to(#780BEE));
+			background: linear-gradient(to right, #1DE1D1 0%, #780BEE 100%);
+			background-clip: text !important;
+			-webkit-background-clip: text !important;
+			text-fill-color: transparent !important;
+			-webkit-text-fill-color: transparent !important;
+		}
+	}
+}
+
+/* Sizes*/
+$sizes: ( iconbox-xxs: $size-xxs, iconbox-xs: $size-xs, iconbox-sm: $size-sm, iconbox-md: $size-md, iconbox-lg: $size-lg, iconbox-xl: $size-xl);
+
+@each $size, $iconBoxSize in $sizes {
+	
+	#{'.' + $size} {
+		
+		.iconbox-icon-container {
+
+			img {
+				width: $iconBoxSize + px;
+			}
+		}
+		&.iconbox-circle,
+		&.iconbox-square,
+		&.iconbox-lozenge {
+			
+			.iconbox-icon-container {
+				width: $iconBoxSize + px;
+				height: $iconBoxSize + px;
+			}
+		}
+		&.iconbox-hexagon {
+			
+			.iconbox-icon-container {
+				width: $iconBoxSize + px;
+				height: ( $iconBoxSize / 1.6 ) + px;
+			}
+			
+			&:not(.iconbox-inline) {
+				
+				.iconbox-icon-container {
+					margin-top: ( $iconBoxSize / 3 ) + px;
+					margin-bottom: ( $iconBoxSize / 3 ) + px;
+				}
+			}
+		}
+	}
+}
+
+.iconbox-xxs {
+	
+	.iconbox-icon-container {
+		font-size: 20px;
+		
+		img[src$=".svg"],
+		object,
+		> svg {
+			width: 20px;
+		}
+	}
+}
+.iconbox-xs {
+	
+	.iconbox-icon-container {
+		font-size: 20px;
+		
+		img[src$=".svg"],
+		object,
+		> svg {
+			width: 20px;
+		}
+	}
+}
+.iconbox-sm {
+	
+	.iconbox-icon-container {
+		font-size: 25px;
+		
+		img[src$=".svg"],
+		object,
+		> svg {
+			width: 25px;
+		}
+	}
+}
+.iconbox-md {
+	
+	.iconbox-icon-container {
+		font-size: 40px;
+		
+		img[src$=".svg"],
+		object,
+		> svg {
+			width: 40px;
+		}
+	}
+}
+.iconbox-lg {
+	
+	.iconbox-icon-container {
+		font-size: 45px;
+		
+		img[src$=".svg"],
+		object,
+		> svg {
+			width: 45px;
+		}
+	}
+}
+.iconbox-xl {
+	
+	.iconbox-icon-container {
+		font-size: 50px;
+		
+		img[src$=".svg"],
+		object,
+		> svg {
+			width: 50px;
+		}
+	}
+}
+
+.iconbox-icon-ripple {
+
+	.iconbox-icon-container {
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: inherit;
+			border: 1px solid var(--color-primary);
+			animation: iconRipple 2s cubic-bezier(0.23, 1, 0.320, 1) both infinite;
+		}
+	}
+}
+
+.iconbox-blue {
+	background-color: #dde1f8;
+	
+	.contents {
+		color: #3d59e8;
+	}
+}
+.iconbox-pink {
+	background-color: #fcd7e0;
+	
+	.contents {
+		color: #fe688b;
+	}
+}
+.iconbox-green {
+	background-color: #c7f7ea;
+
+	.contents {
+		color: #28d5a7;
+	}
+}
+
+.lqd-parallax-iconboxes {
+	padding: 35px 35px 15px;
+	box-shadow: 0px 2px 14px 0px rgba(#000, 0.082);	
+}
+
+.iconbox-color-pippin {
+
+	.iconbox-icon-container {
+		color: #fd623c;
+		background-color: #ffe4df;
+	}
+}
+.iconbox-color-apple {
+
+	.iconbox-icon-container {
+		color: #46d664;
+		background-color: #cdf2d6;
+	}
+}
+
+// Body
+.compose-mode {
+
+	[data-animate-icon=true] {
+
+		.iconbox-icon-container {
+
+			> svg,
+			> object {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.lqd-parallax-iconboxes {
+		margin-top: -110%;
+	}
+}
+@media screen and ( min-width: $grid-breakpoint-sm ) {
+
+	
+	.lqd-iconbox-stack {
+		position: relative;
+		text-align: center;
+
+		.iconbox {
+			padding-left: 10px;
+			padding-right: 10px;
+			width: 150px;
+		}
+		.iconbox-icon-container {
+			margin-bottom: 0;
+		}
+		.iconbox-blue,
+		.iconbox-green {
+			position: absolute;
+			top: 26%;
+			z-index: 2;
+		}
+		.iconbox-blue {
+			top: 30%;
+			left: 7%;
+		}
+		.iconbox-pink {
+			margin-top: 12vw;
+		}
+		.iconbox-green {
+			right: 7%;
+		}
+	}
+}
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	
+	.lqd-iconbox-stack {
+
+		.iconbox {
+			width: 100%;
+		}
+	}
+}

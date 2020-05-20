@@ -1,0 +1,13 @@
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.product {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+		&:before,
+		&:after {
+			content: none;
+		}
+	}
+}

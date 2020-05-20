@@ -1,0 +1,19 @@
+@media screen and ( max-width: $grid-breakpoint-md - 1 ) {
+
+	.woocommerce {
+
+		.ld-sp {
+
+			.ld-sp-add-to-cart,
+			.add_to_cart_button {
+				margin-top: 0 !important;
+				position: relative;
+				bottom: auto;
+				left: auto;
+				right: auto;
+				opacity: 1;
+				transform: none;
+			}
+		}
+	}
+}

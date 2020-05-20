@@ -1,0 +1,42 @@
+/*
+	All css styles for hover, etc will be applied to the figure inside .liquid-of-image
+*/
+.ld-pf-image {
+	position: relative;
+	overflow: hidden;
+	
+	figure {
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		transition: transform 0.3s linear, filter 0.3s linear;
+	}
+	.liquid-parallax-figure {
+		transition: filter 0.3s linear;
+	}
+	img {
+		width: 100%;
+ 	}
+	.liquid-parallax-bg {
+
+		> .ld-lazyload {
+			opacity: 0;
+		}
+	}
+	.ld-pf-bg {
+		z-index: 2;
+		opacity: 0;
+		transition: opacity 0.3s;	
+	}
+
+	.pf-details-inside & {
+
+		img {
+			visibility: hidden;
+		}
+	}
+
+	&.shadowed {
+		box-shadow: 0 12px 60px rgba(0, 0, 0, 0.12);
+	}
+}

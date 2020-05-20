@@ -1,0 +1,261 @@
+.bg-primary {
+	background: var(--color-primary) !important;
+}
+.bg-secondary {
+	background: var(--color-secondary) !important;
+}
+.bg-transparent {
+	background: transparent !important;
+}
+.bg-white {
+	background: #fff !important;
+}
+.bg-black {
+	background: #000 !important;
+}
+.bg-gray {
+	background: #f4f5f8 !important;
+}
+.bg-gray-2 {
+	background: #fafafa !important;
+}
+.bg-gray-3 {
+	background: #f1f1f1 !important;
+}
+.bg-light {
+	background: #f7f8fb !important;
+}
+.bg-dark {
+	background: #212121 !important;
+}
+.bg-mirage {
+	background: #181b31 !important;
+}
+.bg-vulcan {
+	background: #141622 !important;
+}
+.bg-charade {
+	background: #2D323D !important;
+}
+.bg-tundora {
+	background: #40383C !important;
+}
+.bg-shark {
+	background: #27282a !important;
+}
+.bg-gigas {
+	background: #4439a9 !important;
+}
+.bg-athens-gray {
+	background: #F8F9FA !important;
+}
+.bg-ebony-clay {
+	background: #252c42 !important;
+}
+.bg-link-water {
+	background: #DCE9F6 !important;
+}
+.bg-swans-down {
+	background: #dbf1f1 !important;
+}
+.bg-old-lace {
+	background: #fcece1 !important;
+}
+.bg-woodsmoke {
+	background: #0e0f14 !important;
+}
+.bg-cape-cod {
+	background: #343535 !important;
+}
+.bg-zircon {
+	background: #f8faff !important;
+}
+.bg-yellow {
+	background: #FFDE59 !important;
+}
+
+$count: 0.05;
+
+@while $count < 0.9 {
+
+	.bg-fade-dark-#{str-replace(unquote("#{$count}"), '.', '')} {
+		background-color: rgba(#000, $count) !important;
+	}
+	.bg-fade-white-#{str-replace(unquote("#{$count}"), '.', '')} {
+		background-color: rgba(#fff, $count) !important;
+	}
+
+	$count: $count + 0.05;
+
+}
+
+
+.bg-hover-secondary:hover {
+	background-color: var(--color-secondary) !important;
+}
+.bg-hover-secondary:hover {
+	background-color: var(--color-secondary) !important;
+}
+.bg-hover-white:hover {
+	background-color: #fff !important;
+}
+.bg-hover-light:hover {
+	background-color: #f7f8fb !important;
+}
+.bg-hover-dark:hover {
+	background-color: #212121 !important;
+}
+.bg-hover-charade:hover {
+	background-color: #2D323D !important;
+}
+.bg-hover-tundora:hover {
+	background-color: #40383C !important;
+}
+
+.bg-gradient-primary-lr {
+	background: linear-gradient(to right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-rl {
+	background: linear-gradient(to left, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-tb {
+	background: linear-gradient(to bottom, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-bt {
+	background: linear-gradient(to top, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-tl {
+	background: linear-gradient(to top left, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-tr {
+	background: linear-gradient(to top right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-br {
+	background: linear-gradient(to bottom right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-bl {
+	background: linear-gradient(to bottom left, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+
+.bg-gradient-secondary-lr {
+	background: linear-gradient(to right, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-rl {
+	background: linear-gradient(to left, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-tb {
+	background: linear-gradient(to bottom, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-bt {
+	background: linear-gradient(to top, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-tl {
+	background: linear-gradient(to top left, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-tr {
+	background: linear-gradient(to top right, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-br {
+	background: linear-gradient(to bottom right, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-bl {
+	background: linear-gradient(to bottom left, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+
+.bg-gradient-tertiary-lr {
+	background: linear-gradient(to right, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-rl {
+	background: linear-gradient(to left, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-tb {
+	background: linear-gradient(to bottom, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-bt {
+	background: linear-gradient(to top, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-tl {
+	background: linear-gradient(to top left, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-tr {
+	background: linear-gradient(to top right, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-br {
+	background: linear-gradient(to bottom right, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-bl {
+	background: linear-gradient(to bottom left, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+
+.bg-gradient-black-transparent-tb {
+	background: linear-gradient(to bottom, rgba(#000, 0.7) 0%, transparent 100%) !important;
+}
+.bg-gradient-black-transparent-bt {
+	background: linear-gradient(to top, rgba(#000, 0.7) 0%, transparent 100%) !important;
+}
+.bg-gradient-black-transparent-lr {
+	background: linear-gradient(to right, rgba(#000, 0.7) 0%, transparent 100%) !important;
+}
+.bg-gradient-black-transparent-rl {
+	background: linear-gradient(to left, rgba(#000, 0.7) 0%, transparent 100%) !important;
+}
+
+.bg-gradient-cream {
+	background: linear-gradient(180deg, #fff8f5 0%, #ffffff 50%);
+}
+
+.bg-gradient-primary-35p {
+	background: linear-gradient(to right, var(--color-primary) 0%, var(--color-primary) 35%, transparent 35%);
+}
+
+.bg-fixed {
+	background-attachment: fixed;
+}
+
+.bg-cover {
+	background-size: cover !important;
+}
+.bg-contain {
+	background-size: contain !important;
+}
+.bg-no-repeat {
+	background-repeat: no-repeat !important;
+}
+
+.bg-center {
+	background-position: center !important;
+}
+.bg-left-center {
+	background-position: left center !important;
+}
+.bg-left-top {
+	background-position: left top !important;
+}
+.bg-left-bottom {
+	background-position: left bottom !important;
+}
+.bg-right-center {
+	background-position: right center !important;
+}
+.bg-right-top {
+	background-position: right top !important;
+}
+.bg-right-bottom {
+	background-position: right bottom !important;
+}
+.bg-center-bottom {
+	background-position: center bottom !important;
+}
+.bg-center-top {
+	background-position: center top !important;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-down($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .bg#{$infix}-none {
+      background-image: none !important;
+    }
+  }
+}

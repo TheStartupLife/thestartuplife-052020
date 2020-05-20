@@ -1,0 +1,188 @@
+.ld-module-cart {
+
+	.ld-module-dropdown {
+		overflow-x: hidden;
+		overflow-y: auto;
+		max-height: 85vh;
+	}
+}
+.ld-cart-contents {
+	width: 400px;
+	height: 100%;
+	padding: 25px 0 0;
+	border: 1px solid rgba(#000, 0.1);
+	color: #000;
+	
+	.empty {
+		
+		h3 {
+			font-size: 22px;
+		}
+	}
+}
+.ld-cart-contents .empty,
+.ld-cart-foot,
+.ld-cart-head,
+.ld-cart-product {
+	padding-left: 35px;
+	padding-right: 35px;
+}
+.ld-cart-foot,
+.ld-cart-head {
+	font-size: 12px;
+}
+.ld-cart-head {
+	margin-bottom: 20px;
+}
+
+a.remove.ld-cart-product-remove {
+	display: inline-flex;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #dedede;
+	border-radius: 50em;
+	position: absolute;
+	top: -10px;
+	left: 25px;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	color: #000 !important;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 150%;
+		height: 150%;
+		position: absolute;
+		top: -25%;
+		left: -25%;
+	}
+	&:hover {
+		border-color: red;
+		background-color: red;
+		color: #fff !important;
+	}
+}
+
+.ld-cart-product {
+	display: flex;
+	position: relative;
+	padding-bottom: 17px;
+	margin-bottom: 17px;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid rgba(#000, 0.1);
+	font-size: 14px;
+	line-height: 1.571em;
+	
+	img {
+		width: 65px;
+		border-radius: 3px;
+	}
+
+	&:hover {
+		
+		.ld-cart-product-remove {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+.ld-cart-product-info {
+	display: flex;
+	align-items: center;
+	flex: 1 auto;
+
+	a {
+		display: inherit;
+		align-items: inherit;
+		flex: 1 auto;
+		color: inherit;
+	}
+}
+.ld-cart-product-details {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+
+	figure + & {
+		margin-left: 15px;
+	}
+	dl.variation {
+		display: flex;
+		flex-direction: row;
+		margin-top: 3px;
+
+		dd {
+			margin: 0 0 0 5px;
+
+			+ dt {
+				margin-left: 8px;
+			}
+		}
+	}
+}
+.ld-cart-product-price {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.ld-cart-foot {
+	margin-top: 5px;
+	margin-bottom: 20px;
+
+	.btn {
+		font-weight: 700;
+
+		&,
+		> span {
+			width: 100%;
+		}
+		> span {
+			justify-content: center;
+		}
+	}
+	.btn-solid {
+		background-color: #2A2A2A;
+		border: none;
+
+		&:hover {
+			background-color: var(--color-primary);
+		}
+
+		+ .btn {
+			margin-left: 0;
+			margin-top: 2em;
+		}
+	}
+	.btn-naked {
+		color: #2A2A2A;
+	}
+}
+.ld-cart-total {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.ld-cart-total-price {
+	font-size: 20px;
+	font-weight: 600;
+}
+.ld-cart-message {
+	padding: 1em;
+	background-color: var(--color-primary);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.5em;
+	letter-spacing: 0.024em;
+	color: #fff;
+	text-align: center;
+}

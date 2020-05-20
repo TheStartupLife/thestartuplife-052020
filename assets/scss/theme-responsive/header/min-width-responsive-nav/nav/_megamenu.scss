@@ -1,0 +1,80 @@
+.megamenu {
+	position: static !important;
+	
+	.main-nav:not(.main-nav-side) & {
+
+		&:not(.position-applied) {
+
+			.nav-item-children {
+				display: block !important;
+				visibility: hidden;
+			}
+		}
+	}
+	.megamenu-container {
+
+		&.container {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.container {
+			width: 100%;
+		}
+	}
+	.nav-item-children {
+		border-radius: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+		background: none;
+		box-shadow: none;
+	}
+	.megamenu-inner-row {
+		background-color: #fff; // to get the right color for getting megamenu's luminance
+		box-shadow: 0 16px 50px rgba(#000, 0.07);
+
+		&.vc_row {
+			flex-flow: row wrap;
+			
+			&:after {
+				content: none;
+			}
+		}
+		&.vc_row-has-bg {
+
+			&:before {
+				background-color: inherit;
+			}
+		}
+	}
+
+	&.megamenu-content-stretch {
+
+		.nav-item-children {
+			left: 0 !important;
+			right: 0 !important;
+		}
+	}
+
+	&.megamenu-fullwidth {
+		
+		.nav-item-children {
+			width: 100vw;
+			max-width: none;
+			left: 50% !important;
+			right: 50% !important;
+			margin-left: -50vw !important;
+			margin-right: -50vw !important;
+		}
+		.megamenu-container {
+			width: 100vw !important;
+			max-width: none;
+		}
+	}
+
+	&.position-applied {
+
+		.megamenu-column {
+			flex: 1 auto;
+		}
+	}
+}

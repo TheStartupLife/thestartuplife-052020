@@ -1,0 +1,94 @@
+.pf-related-posts {
+	padding-top: 2em;
+}
+.pf-related {
+	margin-bottom: 2em;
+	position: relative;
+}
+.pf-related-title {
+	margin-bottom: 0.5em;
+	position: relative;
+
+	a {
+		color: inherit;
+	}
+	.split-inner {
+		display: inline-block;
+		position: relative;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	.title-shad {
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: var(--color-primary);
+	}
+}
+.pf-related-cat {
+	font-size: 12px;
+	
+	li {
+		position: relative;
+		z-index: 2;
+	}
+}
+.pf-related-alt {
+	padding-bottom: 69.5%;
+	color: #fff;
+
+	h2,
+	a {
+		color: inherit
+	}
+	h2 {
+		line-height: 1em;
+	}
+	figure,
+	header {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	> figure {
+		background-size: cover;
+		background-position: center;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #000;
+			opacity: 0.7;
+			transition: opacity 0.3s;
+		}
+	}
+	img {
+		visibility: hidden;
+	}
+	header {
+		display: flex;
+		padding: 2em 25%;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		text-align: center;
+	}
+
+	&:hover {
+
+		> figure {
+
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
+}

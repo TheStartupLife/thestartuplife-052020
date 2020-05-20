@@ -1,0 +1,6 @@
+.ld-sp-img-hover {
+	opacity: 0;
+	transform: scale(1.05);
+	transition: opacity 0.85s, transform 0.85s;
+	transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}

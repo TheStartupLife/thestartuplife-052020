@@ -1,0 +1,44 @@
+.filter-list {
+
+	.liquid-filter-items-label + & {
+		margin-left: 0;
+		margin-right: 3.5em;
+	}
+}
+
+.filter-list-style-1 {
+	
+	li {
+		
+		&:before {
+			left: auto;
+			right: 0;
+			transform: translateX(5px);
+		}
+		
+		&.active,
+		&:hover {
+			
+			&:before {
+				transform: translateX(0);
+			}
+			span {
+				transform: translateX(-15px);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+
+	.filter-list-inline {
+		
+		li {
+		
+			+ li {
+				margin-left: 0;
+				margin-right: 1.45em;
+			}
+		}
+	}
+}

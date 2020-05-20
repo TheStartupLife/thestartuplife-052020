@@ -1,0 +1,40 @@
+.select_box_colorpicker {
+	
+	.select_option {
+		border: none;
+		margin-right: 11px;
+		
+		span {
+			width: 24px;
+			height: 24px;
+			border: none;
+			border-radius: 50em;
+			position: relative;
+
+			&:before {
+				content: '\f3ff';
+				display: inline-flex;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				align-items: center;
+				justify-content: center;
+				font-family: liquid-icon;
+				font-size: 24px;
+				color: #fff;
+				opacity: 0;
+			}
+		}
+		&.selected {
+
+			span {
+
+				&:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}

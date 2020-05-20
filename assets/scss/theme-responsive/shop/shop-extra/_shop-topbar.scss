@@ -1,0 +1,18 @@
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.ld-shop-topbar {
+	
+		.contents-container & {
+
+			> .container > .row > div {
+
+				&:first-child {
+					width: 33.33333333%;
+				}
+				&:last-child {
+					width: 66.66666667%;
+				}
+			}
+		}
+	}
+}

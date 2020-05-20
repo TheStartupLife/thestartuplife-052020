@@ -1,0 +1,19 @@
+.woocommerce {
+	
+	.woocommerce-product-details__short-description {
+		margin-bottom: 15px;
+
+		p {
+			margin-bottom: 0.75em;
+			
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style-position: inside;
+		}
+	}
+}

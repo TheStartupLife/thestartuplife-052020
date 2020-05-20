@@ -1,0 +1,6 @@
+@for $i from 1 to 41 {
+
+	.w-#{($i*5)} {
+		width: unquote($i*5 + "%") !important;
+	}
+}

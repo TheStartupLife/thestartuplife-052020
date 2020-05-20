@@ -1,0 +1,32 @@
+.ld-sf {
+
+	.submit-text {
+
+		+ .submit-icon {
+			margin-left: 0;
+			margin-right: 0.65em;
+		}
+	}
+}
+
+.ld-sf--button-inside {
+
+	[type=submit] {
+		right: auto;
+		left: 0;
+	}
+	&.ld-sf--button-naked {
+
+		[type=submit] {
+			padding-right: 0;
+			padding-left: 1em;
+		}
+	}
+	&.button-shrinked {
+
+		[type=submit] {
+			right: auto;
+			left: 12px;
+		}
+	}
+}

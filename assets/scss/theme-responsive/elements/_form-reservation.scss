@@ -1,0 +1,25 @@
+@media screen and ( min-width: $grid-breakpoint-md ) and ( max-width: $grid-breakpoint-lg - 1 ) {
+
+	.liquid-form-reservation {
+
+		.input-container {
+			flex-basis: 50%;
+
+			&:nth-last-child(2) {
+				padding-left: 0;
+				border: none;
+			}
+		}
+	}		
+}
+@media screen and ( max-width: $grid-breakpoint-md - 1 ) {
+
+	.liquid-form-reservation {
+
+		.input-container {
+			flex-basis: 100%;
+			padding: 0;
+			border: none;
+		}
+	}		
+}

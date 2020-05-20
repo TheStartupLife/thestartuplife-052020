@@ -1,0 +1,119 @@
+// Header with react to megamenu color activated
+.main-header[data-react-to-megamenu=true] {
+
+  .mainbar-wrap {
+
+    .megamenu-hover-bg {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity 0.3s cubic-bezier(.02, .01, .47, 1);
+    }
+  }
+
+  &.megamenu-item-active {
+  
+    .megamenu-hover-bg {
+      opacity: 1;
+    }
+  }
+
+  &.megamenu-scheme-light {
+
+    .mainbar-wrap:not(.is-stuck) {
+      
+      .social-icon a {
+        color: rgba(#000, 0.7) !important;
+
+        &:hover {
+          color: #000 !important;
+        }
+      }
+      .header-module .ld-module-trigger,
+      .main-nav > li > a {
+        color: rgba(#000, 0.7);
+
+        &:hover {
+          color: #000;
+        }
+      }
+      .ld-module-search-visible-form .ld-search-form input {  
+        border-color: rgba(#000, 0.2);
+        color: #000;
+      }
+      .navbar-brand {
+        
+        // added important to overwrite visible logo on stack pages
+        .logo-dark {
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+        .logo-light {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+  &.megamenu-scheme-dark {
+    
+    .mainbar-wrap:not(.is-stuck) {
+      
+      .social-icon a {
+        color: rgba(#fff, 0.7) !important;
+
+        &:hover {
+          color: #fff !important;
+        }
+      }
+      .header-module .ld-module-trigger,
+      .main-nav > li > a {
+        color: rgba(#fff, 0.7);
+
+        &:hover {
+          color: #fff;
+        }
+      }
+      .ld-module-search-visible-form .ld-search-form input {  
+        border-color: rgba(#fff, 0.2);
+        color: #fff;
+      }
+      .ld-module-search-visible-form .input-icon {
+        color: rgba(#fff, 0.7);
+      }
+      .navbar-brand {
+        
+        // added important to overwrite visible logo on stack pages
+        .logo-light {
+          opacity: 1 !important;
+          visibility: visible !important;
+        }
+        .logo-dark {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+
+.mainbar-row {
+
+  > [class^=col] {
+    flex-flow: row nowrap;
+
+    &.text-right {
+      justify-content: flex-end;
+    }
+    &.text-center {
+      justify-content: center;
+    }
+    &.text-left {
+      justify-content: flex-start;
+    }
+  }
+}

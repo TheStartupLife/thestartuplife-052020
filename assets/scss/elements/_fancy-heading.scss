@@ -1,0 +1,140 @@
+.ld-fancy-heading {
+	
+	p, h1, h2, h3, h4, h5, h6, > div {
+		display: inline-block; // for bg and gradient
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
+
+	.ld-fh-txt {
+		position: relative;
+		display: inline-block;
+
+		i {
+			vertical-align: middle;
+		}
+	}
+
+	&.carousel-nav-appended {
+		display: flex;
+		height: auto; // to be removed!
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&.has-mask-image {
+
+		> * {
+			background-position: center;
+			background-clip: text !important;
+			-webkit-background-clip: text !important;
+			transform: translateZ(0); // fixing bg issue on firefox
+			color: transparent;
+		}
+		.ld-fh-txt {
+			position: static;
+			display: inline;
+		}
+	}
+}
+.mask-text {
+	
+	.split-unit {
+		overflow: hidden;
+	}
+}
+.ld-gradient-heading {
+  
+  .no-backgroundcliptext & {
+		background: none !important;
+	}
+	.backgroundcliptext & {
+		
+		.ld-fh-txt {
+			-webkit-background-clip: text !important;
+			background-clip: text !important;
+			-webkit-text-fill-color: transparent !important;
+			text-fill-color: transparent !important;
+		}
+		.txt-rotate-keywords,
+		.txt-rotate-keywords .keyword,
+		.split-unit,
+		.split-inner {
+			background: inherit;
+		}
+		.split-inner {
+			line-height: 1.5em;
+			margin-top: -0.75em;
+			margin-bottom: -0.75em;
+		}
+	}
+
+}
+.ld-fh-underline {
+	display: inline-block;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translateX(-50%);
+}
+
+.txt-rotate-keywords {
+	display: inline-block;
+	position: relative;
+	// transform-style: preserve-3d;
+	// perspective: 1200px;
+	backface-visibility: hidden;
+	transform: translateZ(0);
+	white-space: nowrap; // added due to safari issue jumping words after loop
+
+	.keyword {
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: auto;
+		opacity: 0;
+		transform: translate3d(0, 0, 0);
+		backface-visibility: hidden;
+
+		&:first-child {
+			position: relative;
+			top: auto;
+			left: auto;
+			opacity: 1;
+		}
+	}
+
+	.text-slide-activated & {
+
+		.keyword {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+
+			&.active {
+				position: relative;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media screen and ( min-width: $grid-breakpoint-xs ) {
+
+	.ld-fancy-heading {
+	
+		.lqd-lines {
+			white-space: nowrap;
+		}
+
+		.window-resizing & {
+
+			.lqd-lines {
+				white-space: normal;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.woocommerce-form-login {
+
+	input[type=text],
+	input[type=password] {
+		border: 1px solid #ededed;
+		height: 45px;
+		padding: 5px 1em;
+	}
+	.woocommerce-form__label-for-checkbox {
+		margin-left: 0.5em;
+	}
+}

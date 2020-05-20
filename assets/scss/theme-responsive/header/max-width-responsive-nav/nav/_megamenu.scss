@@ -1,0 +1,42 @@
+.megamenu {
+
+	.nav-item-children {
+		left: auto !important;
+	}
+	.megamenu-container {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.megamenu-column {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.ld-container,
+	.vc_column-inner {
+		padding-left: 15px !important;
+		padding-right: 15px !important;
+	}
+	.ld-row {
+		display: block;
+		margin-left: -15px !important;
+		margin-right: -15px !important;
+	}
+	.vc_row,
+	.wpb_wrapper {
+		background: none !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	.vc_row {
+		border: none !important;
+	}
+	.wpb_single_image {
+
+		&.invisible {
+			visibility: visible;
+		}
+	}
+}
+.megamenu-container {
+	width: auto !important;
+}

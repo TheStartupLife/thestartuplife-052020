@@ -1,0 +1,37 @@
+.main-header {
+  position: relative;
+  z-index: 10;
+
+  .wpb_single_image {
+		margin-bottom: 0;
+	}
+  P:empty {
+    display: none;
+  }
+}
+.main-header-overlay {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lqd-main-header-default {
+
+  .mainbar {
+    border-bottom: 1px solid rgba(#000, 0.1);
+  }
+  .main-nav {
+
+    > li {
+
+      > a {
+        color: #5a5b63;
+      }
+    }
+  }
+
+  + .content {
+    padding-top: 70px;
+  }
+}

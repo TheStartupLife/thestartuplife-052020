@@ -1,0 +1,71 @@
+.woocommerce {
+
+	.woocommerce-info {
+		background: none;
+		border: 0;
+		font-size: 13px;
+		margin-bottom: 1em !important;
+
+		a {
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&:before {
+			color: var(--color-primary);
+		}
+	}
+
+	.woocommerce-error,
+	.woocommerce-info,
+	.woocommerce-message {
+		display: flex;
+		padding: 0.6em 0 0.6em 45px;
+		border: 1px dotted #D4D4D4;
+		position: relative;
+		flex-flow: row wrap;
+		align-items: center;
+		background-color: transparent;
+		font-size: 15px;
+		font-weight: 700;
+	
+		&:before {
+			display: inline-block;
+			position: absolute;
+			top: 50%;
+			left: 15px;
+			transform: translateY(-50%);
+		}
+	
+		a {
+			color: var(--color-primary);
+		}
+		.button {
+			margin-left: auto;
+			color: #fff;
+			order: 2;
+	
+			&:hover {
+				border-color: #000;
+				background-color: #000;
+				color: #fff;
+			}
+		}
+	}
+
+	.woocommerce-form-coupon-toggle {
+
+		.woocommerce-info {
+
+			&:before {
+				content: '\f02b';
+				font-family: fontAwesome;
+			}
+
+			a {
+				margin-left: 0.5em;
+			}
+		}
+	}
+}

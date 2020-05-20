@@ -1,0 +1,30 @@
+// .woocommerce {
+
+// 	&.single {
+
+// 		.content {
+// 			padding-top: 80px;
+// 			padding-bottom: 80px;
+// 		}
+// 	}
+// }
+
+@import 'summary';
+@import 'product-images';
+@import 'short-description';
+@import 'head';
+@import 'variations-form';
+@import 'single-variation';
+@import 'grouped-form';
+@import 'quantity-input';
+@import 'select-box-colorpicker';
+@import 'select-box-labels';
+@import 'badges';
+@import 'summary-foot';
+@import 'yith-wishlist';
+@import 'product-meta';
+@import 'tabs';
+@import 'shop-attributes';
+@import 'reviews';
+@import 'review-form';
+@import 'related-products';

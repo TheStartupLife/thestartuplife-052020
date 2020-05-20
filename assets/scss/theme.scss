@@ -1,0 +1,321 @@
+@import 'mixins/mixins';
+@import 'variables';
+/*
+ * Name:        Ave - Main styles
+ * Written by: 	LiquidThemes
+ * Version:			1.6
+*/
+
+
+/*----------------------------------------
+ [ TABLE OF CONTENTS ]
+
+ 1. BASE
+		|- 1.1. Base
+		|- 1.2. Header
+		|- 1.3. Footer
+		|- 1.4. Titlebar
+
+	2. PAGE LAYOUTS
+		|- 2.1. Header Side
+		|- 2.2. Sidebar
+		|- 2.3. Stack
+
+	3. LIQUID SHORTCODES
+		|- 3.1. Buttons
+		|- 3.2. Social Icons
+		|- 3.3. Accordions
+		|- 3.4. Icon Boxes
+		|- 3.5. Tabs
+		|- 3.6. Subscribe Forms
+		|- 3.7. Contact Forms
+		|- 3.8. Fancy Titles
+		|- 3.9. Pricing Tables
+		|- 3.10. Testimonials
+		|- 3.11. Carousel
+		|- 3.12. Carousel Vertical 3d
+		|- 3.13. Latest Posts
+		|- 3.14. Filter Lists
+		|- 3.15. Fancy Boxes
+		|- 3.16. Counter
+		|- 3.17. Liquid Forms
+		|- 3.18. jQuery UI
+		|- 3.19. Reservation Form
+		|- 3.20. Tour Form
+		|- 3.21. Progressbar
+		|- 3.22. Milestone
+		|- 3.24. Instagram Feed
+		|- 3.25. Twitter Feed
+		|- 3.26. Banner
+		|- 3.27. Image Groups
+		|- 3.28. Pagination
+		|- 3.29. Blog Grid
+		|- 3.31. Masonry
+		|- 3.32. Parallax
+		|- 3.33. Team Members
+		|- 3.34. Portfolios
+		|- 3.35. Blog
+		|- 3.36. Particles
+		|- 3.37. Carousel Laptop
+		|- 3.38. Liquid Fancy Heading
+		|- 3.39. Row Overlay
+		|- 3.40. Maps
+		|- 3.41. Custom Animations
+		|- 3.42. Masked Image
+		|- 3.43. Slideshow BG
+		|- 3.44. Custom Menu
+		|- 3.45. Shop Banner
+		|- 3.46. Carousel Phone
+		|- 3.47. Media
+		|- 3.48. Modal
+		|- 3.49. Before After
+		|- 3.50. Process Box
+		|- 3.52. Message
+		|- 3.53. Flipbox
+		|- 3.54. Iconbox Circle
+		|- 3.55. Row Separator
+		|- 3.56. Roadmap
+		|- 3.57. Countdown
+		|- 3.58. breadcrumbs
+		|- 3.59. Bullet List
+		|- 3.60. Video BG
+		|- 3.61. Frickin Image
+		|- 3.62. Promo
+		|- 3.63. Back to Top
+		|- 3.64. Separator
+		|- 3.65. Restaurant Menu
+
+	4. VC SHORTCODES
+		|- 4.1. Single image
+		|- 4.2. Columns
+		|- 4.3. Rows
+		|- 4.4. Text Block
+
+	6. PARTIALS
+		|- 6.1. Search Results 
+		|- 6.2. 404 Not Found
+		|- 6.3. Sidebar
+		|- 6.4. Page Frame
+
+	7. RESPONSIVE
+		|- 7.1. Header
+		|- 7.2. Elements
+
+ ----------------------------------------
+
+ [ TYPOGRAPHY ]
+
+ $font-primary:		'Glacial Indifferenc', 'Open Sans', sans-serif;
+ $font-size: 			16px;
+ $line-height: 		30px;
+ $font-color: 		#808291;
+
+ [ COLORS ]
+ $color-primary: #3ed2a7;
+ $color-secondary: #ffb09f;
+
+-----------------------------------------*/
+
+/*
+  1. BASE
+*/
+
+/* 1.1. Base */
+@import 'theme-vars';
+@import 'base/base';
+@import 'base/general-elements';
+@import 'base/typography';
+@import 'base/lazyload';
+@import 'base/sticky-elements';
+@import 'base/section-borders';
+@import 'base/pin-elements';
+
+/* 1.2. Header */
+@import 'header/header';
+
+/* 1.3. Footer */
+@import 'footer/footer';
+
+/* 1.4. Titlebar */
+@import 'titlebar/titlebar';
+
+/*
+  2. PAGE LAYOUTS
+*/
+
+/* 2.1. Header Side */
+@import 'layouts/header-side';
+/* 2.2. Sidebar */
+@import 'layouts/sidebar';
+/* 2.3. Stack */
+@import 'layouts/stack';
+/* 2.4. Boxed */
+@import 'layouts/boxed';
+
+/*
+  3. LIQUID SHORTCODES
+*/
+
+/* 3.1. Buttons */
+@import 'elements/buttons';
+/* 3.2. Social Icons */
+@import 'elements/social-icons';
+/* 3.3. Accordions */
+@import 'elements/accordions';
+/* 3.4. Iconboxes */
+@import 'elements/iconboxes';
+/* 3.5. Tabs */
+@import 'elements/tabs';
+/* 3.6. Subscribe Forms */
+@import 'elements/subscribe-forms';
+/* 3.7. Contact Forms */
+@import 'elements/contact-forms';
+/* 3.8. Fancy Titles */
+@import 'elements/fancy-titles';
+/* 3.9. Pricing Tables */
+@import 'elements/pricing-tables';
+/* 3.10. Testimonials */
+@import 'elements/testimonials';
+/* 3.11. Carousel */
+@import 'elements/carousel';
+/* 3.12. Carousel Vertical 3D */
+@import 'elements/carousel-v-3d';
+/* 3.13. Latest Posts */
+@import 'elements/latest-posts';
+@import 'elements/latest-posts-post-formats';
+/* 3.14. Filter Lists */
+@import 'elements/filter-lists';
+/* 3.15. Fancy Boxes */
+@import 'elements/fancy-boxes';
+/* 3.16. Counnter */
+@import 'elements/counter';
+/* 3.17. Liquid Forms */
+@import 'elements/Liquid-forms';
+/* 3.18. jQuery UI */
+@import 'elements/jquery-ui';
+/* 3.19. Reservation Form */
+@import 'elements/form-reservation';
+/* 3.20. Tour Form */
+@import 'elements/form-tour';
+/* 3.21. Progressbar */
+@import 'elements/progressbars';
+/* 3.22. Milestone */
+@import 'elements/milestone';
+/* 3.24. Instagram Feed */
+@import 'elements/instagram-feed';
+/* 3.25. Twitter Feed */
+@import 'elements/twitter-feed';
+/* 3.26. Banner */
+@import 'elements/banner';
+/* 3.27. Image Groups */
+@import 'elements/image-groups';
+/* 3.28. Pagination */
+@import 'elements/pagination';
+/* 3.29. Blog Grid */
+@import 'elements/blog-grid';
+/* 3.31. Masonry */
+@import 'elements/masonry';
+/* 3.32. Parallax */
+@import 'elements/parallax';
+/* 3.33. Team Members */
+@import 'elements/team-members';
+/* 3.34. Portfolios */
+@import 'portfolio/portfolios';
+/* 3.35. Blog */
+@import 'blog/blog';
+/* 3.36. Particles */
+@import 'elements/particles';
+/* 3.37. Carousel Laptop */
+@import 'elements/carousel-laptop';
+/* 3.38. Liquid Fancy Heading */
+@import 'elements/fancy-heading';
+/* 3.39. Row Overlay */
+@import 'elements/row-overlay';
+/* 3.40. Maps */
+@import 'elements/maps';
+/* 3.41. Custom Animations */
+@import 'elements/custom-animations';
+/* 3.42. Masked Image */
+@import 'elements/masked-image';
+/* 3.43. Slideshow BG */
+@import 'elements/slideshow-bg';
+/* 3.44. Custom Menu */
+@import 'elements/custom-menu';
+/* 3.45. Shop Banner */
+@import 'elements/shop-banner';
+/* 3.46. Carousel Phone */
+@import 'elements/carousel-phone';
+/* 3.47. Media */
+@import 'elements/media';
+/* 3.48. Modal */
+@import 'elements/modal';
+/* 3.49. Before After */
+@import 'elements/before-after';
+/* 3.50. Process Box */
+@import 'elements/process-box';
+/* 3.52. Message */
+@import 'elements/message';
+/* 3.53. Flipbox */
+@import 'elements/flipbox';
+/* 3.54. Iconbox Circle */
+@import 'elements/iconbox-circle';
+/* 3.55. Row Separator */
+@import 'elements/row-sep';
+/* 3.56. Roadmap */
+@import 'elements/roadmap';
+/* 3.57. Countdown */
+@import 'elements/countdown';
+/* 3.58. breadcrumbs */
+@import 'elements/breadcrumbs';
+/* 3.59. Bullet List */
+@import 'elements/bullet-list';
+/* 3.60. Video BG */
+@import 'elements/video-bg';
+/* 3.61. Frickin Image */
+@import 'elements/frickin-image';
+/* 3.62. Promo */
+@import 'elements/promo';
+/* 3.63. Back to Top */
+@import 'elements/back-to-top';
+/* 3.64. Separator */
+@import 'elements/separator';
+/* 3.65. Restaurant Menu */
+@import 'elements/restaurant-menu';
+
+/*
+  4. VC SHORTCODES
+*/
+
+/* 4.1. Single image */
+@import 'elements/vc/single-image';
+/* 4.2. Columns */
+@import 'elements/vc/column';
+/* 4.3. Rows */
+@import 'elements/vc/row';
+/* 4.4. Text Block */
+@import 'elements/vc/text-block';
+
+/*
+  6. PARTIALS
+*/
+
+/* 6.1. Search Results */
+@import 'partials/search-results';
+/* 6.2. 404 Not Found */
+@import 'partials/not-found';
+/* 6.3. Sidebar */
+@import 'partials/sidebar';
+/* 6.4. Page Frame */
+@import 'partials/page-frame';
+
+
+/*
+  7. RESPONSIVE
+*/
+
+/* 7.1. Header */
+@import './theme-responsive-nav';
+/* 7.2. Elements */
+@import 'utils/utils';
+@import './theme-responsive';
+

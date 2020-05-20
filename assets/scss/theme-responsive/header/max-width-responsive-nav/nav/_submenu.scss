@@ -1,0 +1,87 @@
+.main-nav .children,
+.nav-item-children {
+  display: none;
+  min-width: 0;
+  padding: 15px 0;
+  border-radius: 0;
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
+  visibility: visible;
+  text-align: inherit;
+  box-shadow: none;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+
+  > li {
+
+    > a {
+      padding: 8px 35px;
+      color: inherit;
+    }
+    &:hover {
+
+      > a {
+        background: none;
+      }
+    }
+
+  }
+  .nav-item-children {
+    padding: 8px 0 8px 15px;
+  }
+}
+
+// Nav color schemes
+[data-mobile-nav-scheme=dark] {
+
+  .nav-item-children {
+    background-color: lighten(#191D18, 1%);
+
+    > li {
+
+      > a {
+        opacity: 0.75;
+
+      }
+      &:hover > a,
+      &.active > a,
+      &.current-menu-item > a {
+        color: inherit;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+// Mobile nav Alignment
+[data-mobile-nav-align=center] {
+
+  .nav-item-children {
+    text-align: center;
+
+    .nav-item-children {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+// Mobile nav styles
+[data-mobile-nav-style=minimal] {
+
+  .nav-item-children {
+    font-size: 14px;
+  }
+}
+[data-mobile-nav-style=modern] {
+
+  .main-nav .children,
+  .nav-item-children {
+    background: transparent;
+  }
+}

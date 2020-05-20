@@ -1,0 +1,38 @@
+.tabs-nav-side {
+
+	.tabs-nav {
+
+		li {
+			text-align: right;
+		}
+		a {
+
+			&:after {
+				right: auto;
+				left: 0;
+			}
+		}
+	}
+}
+
+.tabs-nav-icon {
+	margin-right: 0;
+	margin-left: 0.65em;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+
+	.tabs-nav-items-bordered {
+	
+		.tabs-nav {
+
+			li {
+
+				&:last-child {
+					border-left-width: 1px;
+				}
+			}
+		}
+		
+	}
+}

@@ -1,0 +1,11 @@
+.secondarybar-wrap {
+  display: none;
+
+  [data-mobile-secondary-bar=true] & {
+    display: block;
+
+    .header-module {
+      display: inline-flex;
+    }
+  }
+}

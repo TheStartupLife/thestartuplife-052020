@@ -1,0 +1,33 @@
+@media ( max-width: $grid-breakpoint-md - 1 ) {
+		
+	.ld-sf {
+		
+		&--button-inline {
+			
+			form {
+				flex-direction: column;
+				
+				p {
+					padding-right: 0 !important;
+				}
+			}
+		}
+	}
+}
+@media ( max-width: $grid-breakpoint-sm - 1 ) {
+	
+	.ld-sf {
+		
+		&--button-inside {
+			
+			&.ld-sf--button-bordered,
+			&.ld-sf--button-solid {
+				
+				[type=text],
+				[type=email] {
+					padding-right: 2.5em !important;
+				}
+			}
+		}
+	}
+}

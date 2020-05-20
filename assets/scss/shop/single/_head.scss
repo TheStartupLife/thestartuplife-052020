@@ -1,0 +1,91 @@
+.woocommerce {
+
+	div.product {
+
+		p.price,
+		span.price,
+		.product_title,
+		.woocommerce-product-rating {
+			line-height: 1.5em;
+			color: #000;
+		}
+		p.price,
+		span.price,
+		.woocommerce-product-rating {
+			font-size: 30px;
+			margin-bottom: em(20, 30);
+		}
+		.product_title {
+			margin-bottom: em(10, 27);
+			font-size: 27px;
+			font-weight: 700;
+		}
+		span.price,
+		p.price {
+			display: inline-block;
+			font-weight: 600;
+			letter-spacing: 0.05em;
+
+			ins {
+				text-decoration: none;
+			}
+			del {
+				opacity: 0.5;
+			}
+		}
+		.woocommerce-product-rating {
+			display: inline-flex;
+			margin-left: 20px;
+			align-items: center;
+			vertical-align: bottom;
+		}
+		.star-rating {
+			height: 1em;
+			position: relative;
+			display: inline-block;
+			font-size: 15px;
+			width: 5.65em;
+			margin: 0;
+			
+			span {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: inline-block;
+				height: 1em;
+				padding-top: 1.1em;
+				overflow: hidden;
+			}
+			&:before,
+			span::before {
+				content: "\f005\f005\f005\f005\f005";
+				width: 100%;
+				height: 1em;
+				@include position(absolute, 0 null null 0);
+				font-family: "FontAwesome";
+				font-size: 1em;
+				line-height: 1.1em;
+				color: #d2d2d2;
+				letter-spacing: 0.25em;
+			}
+			span::before {
+				color: var(--color-primary);
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.woocommerce-review-link {
+		font-size: 12px;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		color: #090909;
+		margin-left: 10px;
+		
+		&:hover {
+			color: #000;
+		}
+	}
+}

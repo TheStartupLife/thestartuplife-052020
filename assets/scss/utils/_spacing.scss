@@ -1,0 +1,43 @@
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.ml-auto {
+  margin-left: auto !important;
+}
+.mr-auto {
+  margin-right: auto !important;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+
+$spacing: 10;
+
+@while $spacing < 290 {
+
+  .pt-#{$spacing} {
+    padding-top: $spacing + px !important;
+  }
+  .pb-#{$spacing} {
+    padding-bottom: $spacing + px !important;
+  }
+  .mt-#{$spacing} {
+    margin-top: $spacing + px !important;
+  }
+  .mb-#{$spacing} {
+    margin-bottom: $spacing + px !important;
+  }
+
+  $spacing: $spacing + 5;
+
+}

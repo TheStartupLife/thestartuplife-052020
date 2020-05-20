@@ -1,0 +1,23 @@
+$count: 0.1;
+
+@while $count < 1 {
+
+	.opacity-#{str-replace(unquote("#{$count}"), '.', '')} {
+		opacity: #{$count};
+		
+		.ld-pf-item:hover & {
+			opacity: #{$count} !important;
+		}
+	}
+
+	$count: $count + 0.1;
+
+}
+
+.reset-opacity-onhover {
+	transition: opacity 0.3s;
+
+	&:hover {
+		opacity: 1;
+	}
+}

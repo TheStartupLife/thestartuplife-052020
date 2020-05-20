@@ -1,0 +1,49 @@
+.widget_nav_menu,
+.widget_archive,
+.widget_categories,
+.widget_pages,
+.widget_meta,
+.widget_recent_comments,
+.widget_recent_entries {
+
+	ul {
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+
+		li {
+			margin-bottom: 1em;
+		}
+		a {
+			position: relative;
+			
+			&:before {
+				content: '';
+				display: inline-block;
+				width: 100%;
+				height: 1px;
+				position: absolute;
+				bottom: -0.35em;
+				left: 0;
+				background-color: currentColor;
+				transition: transform 0.3s;
+				transform-origin: right center;
+				transform: scaleX(0);
+			}
+	
+			&:hover {
+				
+				&:before {
+					transform: scale(1);
+					transform-origin: left center;
+				}
+			}
+		}
+	}
+}
+.widget_menu {
+
+	li {
+		margin-bottom: 0.75em;
+	}
+}

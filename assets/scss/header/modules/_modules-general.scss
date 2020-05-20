@@ -1,0 +1,36 @@
+.header-module {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  // flex: 1 auto; // adding extra spacing between modules if there are more than 1
+
+  & ~ .header-module {
+    margin-left: 25px;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+  .btn + p {
+    width: 100%;
+    margin-top: 0.25em;
+    text-align: center;
+  }
+
+  .text-right & {
+    align-items: flex-end;
+  }
+  .text-left & {
+    align-items: flex-start;
+  }
+  .text-center & {
+    align-items: center;
+  }
+}
+
+.module-title {
+  font-size: 16px;
+  margin: 1.5em 0;
+}

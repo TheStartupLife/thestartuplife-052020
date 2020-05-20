@@ -1,0 +1,137 @@
+:root {
+	--color-primary: #55BF55;
+	--color-secondary: #038875;
+	--color-gradient-start: #55BF55;
+	--color-gradient-stop: #55BF55;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;	
+	font-size: 14px;
+	line-height: 1.85em;
+	color: #7f7f7f;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	line-height: 1.3em;
+	color: #23313C;
+}
+
+.h1,
+h1 {
+	font-size: 54px;
+	font-weight: 700;
+}
+
+.h2,
+h2 {
+	font-size: 33px;
+}
+
+.h3,
+h3 {
+	font-size: 28px;
+}
+
+.h4,
+h4 {
+	font-size: 26px;
+}
+
+.h5,
+h5 {
+	font-size: 17px;
+}
+
+.h6,
+h6 {
+	font-size: 16px;
+}
+
+.mainbar-wrap {
+	background-color: #2D3252;
+}
+.main-nav {
+	font-family: 'Montserrat', sans-serif;
+
+	> li {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	
+		> a {
+			font-size: 15px;
+			line-height: 1.5em;
+			font-weight: 700;
+			letter-spacing: 0.02em;
+			color: #fff;
+		}
+		&.is-active > a,
+		&.current-menu-item > a,
+		&:hover > a,
+		> a:hover {
+			color: rgba(#fff, 0.85);
+		}
+	}
+}
+
+.main-footer {
+	padding-top: 70px;
+	background-color: #383B4C;
+	color: rgba(#fff, 0.85);
+
+	a:not(.btn) {
+		color: rgba(#fff, 0.6);
+
+		&:hover {
+			color: #fff;
+		}
+	}
+}
+
+@media ( min-width: 1200px ) {
+
+	.main-header .is-stuck {
+		background:#fff !important;
+	}
+
+	.mainbar-wrap .btn {
+		border-color: rgba(#fff, 0.6);
+		color: #fff;
+	}
+
+	.mainbar-wrap.is-stuck .social-icon a,
+	.mainbar-wrap.is-stuck .header-module .ld-module-trigger,
+	.mainbar-wrap.is-stuck .main-nav > li > a,
+	.mainbar-wrap.is-stuck .ld-module-search-visible-form .ld-search-form input {
+		color: #424242 !important;
+	}
+
+	.mainbar-wrap.is-stuck .ld-module-search-visible-form .ld-search-form input {
+		border-color: #424242 !important;
+	}
+
+	.is-stuck .btn {
+		color: var(--color-primary);
+		border-color: var(--color-primary);
+	}
+
+	.is-stuck .btn.btn-solid {
+		background-color: var(--color-primary);
+	}
+
+	.is-stuck .btn:hover {
+		border-color: var(--color-primary);
+		color: #fff;
+	}
+
+	.is-stuck .btn:hover {
+		background-color: var(--color-primary);
+	}
+}

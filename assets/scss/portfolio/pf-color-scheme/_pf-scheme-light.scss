@@ -1,0 +1,60 @@
+.ld-pf-item {
+
+	&.ld-pf-light {
+		color: rgba(#fff, 0.7);
+
+		h1, h2, h3, h4, h5, h6 {
+			color: #fff;
+		}
+		a,
+		.ld-pf-details,
+		.ld-pf-details-inner {
+			color: inherit;
+		}
+		a {
+
+			&:hover {
+				color: #fff;
+			}
+		}
+		.ld-pf-bg {
+			background-color: rgba(#000, 0.8);
+		}
+		.pf-extra-arrow {
+
+			svg {
+				fill: #fff;
+			}
+		}
+		.ld-pf-category-lined {
+
+			&:before {
+				background-color: #fff;
+			}
+		}
+		.ld-pf-btn {
+			color: #fff;
+		}
+		.ld-pf-btn-brd {
+			border-color: rgba(#fff, 0.5);
+
+			&:hover {
+				border-color: #fff;
+				background-color: #fff;
+				color: #000;
+			}
+		}
+		.ld-pf-btn-solid {
+			background-color: rgba(#fff, 0.5);
+			color: #000;
+
+			&:hover {
+				background-color: #fff;
+			}
+		}
+	}
+
+	&.ld-pf-light-alt {
+		color: #fff;
+	}
+}

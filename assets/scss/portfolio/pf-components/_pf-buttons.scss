@@ -1,0 +1,44 @@
+.ld-pf-btns {
+	position: relative;
+	z-index: 3;
+
+	.pf-btns-mid & {
+		margin-top: auto !important;
+		margin-bottom: auto !important;
+	}
+}
+.ld-pf-btn {
+	display: inline-flex;
+	width: 46px;
+	height: 46px;
+	font-size: 18px;
+	align-items: center;
+	justify-content: center;
+	transition-property: background, color, border;
+	will-change: transform, opacity;
+}
+
+/* Button Fills */
+.ld-pf-btn-brd {
+	border: 1px solid rgba(#000, 0.5);
+	color: #000;
+	
+	&:hover {
+		border-color: #000;
+		background-color: #000;
+		color: #fff;
+	}
+}
+.ld-pf-btn-solid {
+	background-color: rgba(#000, 0.5);
+	color: #fff;
+	
+	&:hover {
+		background-color: #000;
+	}
+}
+
+/* Border Widths */
+.ld-pf-btn-brd-thick {
+	border-width: 1.6px;
+}

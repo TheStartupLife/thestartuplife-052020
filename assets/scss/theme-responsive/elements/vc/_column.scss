@@ -1,0 +1,32 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+		
+    .col#{$infix}-1\/5 {
+      width: 20%;
+		}
+  }
+}
+
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+	
+	.stretch-to-right {
+		margin-right: -22vw !important;
+	}
+	.stretch-to-left {
+		margin-left: -22vw !important;
+	}
+}
+
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.lqd-column {
+
+		.d-flex > & {
+
+			&:not([class*=col-xs-]) {
+				width: 100%;
+			}
+		}
+	}
+}

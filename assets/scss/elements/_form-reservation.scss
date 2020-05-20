@@ -1,0 +1,75 @@
+.liquid-form-reservation {
+	display: flex;
+	align-items: stretch;
+	flex-flow: row wrap;
+
+	.input-container {
+		display: flex;
+		min-width: 285px;
+		padding: 0 15px;
+		margin-bottom: 15px;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: stretch;
+		border-left: 1px solid #d8dbe2;
+
+		&:last-child,
+		&:first-child {
+			border: none;
+		}
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+	.liquid-input-icon-right {
+		right: 30px;
+	}
+	.liquid-input-icon-left {
+		left: 30px;
+		color: var(--color-primary);
+	}
+	input,
+	select,
+	button,
+	.ui-selectmenu-button {
+		flex: 1 auto;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	input,
+	select,
+	.ui-selectmenu-button {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 30px 0 60px;
+		background: none;
+		border: none;
+		font-size: em(12);
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #3f4147;
+
+		@include placeholder{
+			color: #3f4147;
+		};
+	}
+	button {
+		text-align: center;
+
+		> span {
+			flex: 1 auto;
+			justify-content: center;
+		}
+	}
+	.ui-selectmenu-icon {
+		order: 1;
+		display: none;
+	}
+	.ui-selectmenu-button {
+		width: 100%;
+	}
+}

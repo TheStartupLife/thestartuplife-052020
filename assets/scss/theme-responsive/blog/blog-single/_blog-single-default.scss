@@ -1,0 +1,18 @@
+@media screen and ( max-width: $grid-breakpoint-lg - 1 ) {
+	
+	.blog-single-default {
+
+		.blog-single-cover {
+			margin-bottom: 2.5em;
+		}
+		.blog-single-media {
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.blog-single-details {
+			padding: 10em 0;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.contact-form {
+
+	i {
+		left: auto;
+		right: calc(1em + 15px);
+	}
+	label {
+		margin-right: 0;
+		margin-left: 5px;
+	}
+}
+
+.contact-form-inputs-underlined {
+
+	i {
+		right: 15px;
+	}
+	.liquid-cl {
+		left: auto;
+		right: 15px;
+	}
+}
+
+.liquid-cl {
+	right: calc(15px + 2em);
+
+	&:after {
+		left: auto;
+		right: 0;
+	}
+}

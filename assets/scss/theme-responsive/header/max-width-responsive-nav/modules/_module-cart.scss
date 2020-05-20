@@ -1,0 +1,84 @@
+.ld-module-cart {
+
+	.ld-module-trigger-icon {
+		display: inline-block;
+		position: relative;
+
+		&:before,
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 1.5px;
+			height: 21px;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			margin-top: -10px;
+			background-color: currentColor;
+			transform-origin: bottom center;
+			transition: transform 0.3s, opacity 0.3s 0.05s;
+		}
+		&:before {
+			transform: rotate(45deg) translate(-4px, -2.5px);
+		}
+		&:after {
+			transform: rotate(-45deg) translate(2px, -4px);
+			left: auto;
+			right: 0;
+		}
+		i {
+			display: inline-block;
+			font-family: 'liquid-icon' !important;
+			opacity: 0;
+			transform: scale(0.85);
+			transition: transform 0.3s, opacity 0.3s;
+
+			&:before {
+				content: "\e929";
+			}
+		}
+	}
+	.ld-module-trigger-count {
+		transform: translateX(3px);
+		opacity: 0;
+		transition: transform 0.3s, opacity 0.3s;
+	}
+
+	.ld-module-trigger {
+
+		&.collapsed {
+			
+			.ld-module-trigger-icon {
+				display: inline-block;
+				position: relative;
+	
+				&:before,
+				&:after {
+					opacity: 0;
+					transform: rotate(0) scaleY(0.75);
+				}
+				i {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			.ld-module-trigger-count {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+	}
+}
+a.remove {
+
+	&.ld-cart-product-remove {
+		width: 28px;
+		height: 28px;
+		margin-right: 8px;
+		position: relative;
+		top: auto;
+		left: auto;
+		opacity: 1;
+		visibility: visible;
+	}
+}

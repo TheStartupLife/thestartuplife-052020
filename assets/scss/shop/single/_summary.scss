@@ -1,0 +1,53 @@
+.woocommerce {
+	
+	div.product {
+		@include clearfix;
+
+		form.cart {
+			margin-bottom: 10px;
+		}
+		.ld-product-summary {
+			margin-bottom: 0;
+			
+			.product-rating {
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				margin-bottom: 1.5em;
+			}
+			.review-link {
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 1em;
+				font-size: em(11,15);
+				line-height: em(13,11);
+				margin-left: 2em;
+				text-transform: uppercase;
+				letter-spacing: 0.12em;
+			}
+			
+			.product-meta {
+				font-size: 13px;
+				
+				> span {
+					display: block;
+					padding-bottom: 0.75em;
+					margin-bottom: 0.75em;
+					text-transform: uppercase;
+					letter-spacing: 0.05em;
+					color: #000;
+					
+					span {
+						color: #BCBCBC;
+					}
+				}
+			}
+
+			+ .product-meta {
+				float: right;
+				width: 48%;
+				clear: none;
+			}
+		} // .ld-product-summary
+	}
+}

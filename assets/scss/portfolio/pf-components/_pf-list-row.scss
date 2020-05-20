@@ -1,0 +1,13 @@
+.liquid-portfolio-list-row {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+
+	&:before,
+	&:after {
+		content: none;
+	}
+}
+// .grid-sizer {
+// 	height: 514px;
+// }

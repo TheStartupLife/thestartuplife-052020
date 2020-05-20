@@ -1,0 +1,49 @@
+// stylelint-disable declaration-no-important
+
+// Flex variation
+//
+// Custom styles for additional flex alignment options.
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    
+    .d#{$infix}-flex {
+      display: flex !important;
+      
+      &:before,
+      &:after {
+        content: none;
+      }
+    }
+    .d#{$infix}-inline-flex {
+      display: inline-flex !important;
+      
+      &:before,
+      &:after {
+        content: none;
+      }
+    }
+    
+    .flex#{$infix}-column { flex-direction: column !important; }
+    .flex#{$infix}-column-reverse { flex-direction: column-reverse !important; }
+    .flex#{$infix}-row { flex-direction: row !important; }
+    .flex#{$infix}-row-reverse { flex-direction: row-reverse !important; }
+
+    .flex#{$infix}-wrap { flex-wrap: wrap; }
+    .flex#{$infix}-nowrap { flex-wrap: nowrap; }
+
+    .justify-content#{$infix}-start   { justify-content: flex-start !important; }
+    .justify-content#{$infix}-end     { justify-content: flex-end !important; }
+    .justify-content#{$infix}-center  { justify-content: center !important; }
+    .justify-content#{$infix}-between { justify-content: space-between !important; }
+    .justify-content#{$infix}-around  { justify-content: space-around !important; }
+
+    .align-items#{$infix}-start    { align-items: flex-start !important; }
+    .align-items#{$infix}-end      { align-items: flex-end !important; }
+    .align-items#{$infix}-center   { align-items: center !important; }
+    .align-items#{$infix}-baseline { align-items: baseline !important; }
+    .align-items#{$infix}-stretch  { align-items: stretch !important; }
+
+  }
+}

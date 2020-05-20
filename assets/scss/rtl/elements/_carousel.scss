@@ -1,0 +1,19 @@
+.flickity-prev-next-button {
+
+	&.previous {
+		margin-left: 5px;
+		margin-right: 0;
+	}
+	&.next {
+		margin-left: 0;
+		margin-right: 5px;
+	}
+}
+
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+
+	.fancy-title .carousel-nav {
+		right: auto;
+		left: 0;
+	}
+}

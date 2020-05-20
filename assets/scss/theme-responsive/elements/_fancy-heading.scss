@@ -1,0 +1,13 @@
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+
+	.ld-fancy-heading {
+	
+		[data-split-text] {
+			visibility: hidden;
+	
+			&.split-text-applied {
+				visibility: visible;
+			}
+		}
+	}
+}

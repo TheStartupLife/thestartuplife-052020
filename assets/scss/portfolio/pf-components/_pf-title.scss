@@ -1,0 +1,30 @@
+.ld-pf-title {
+
+	.title-size-48 & {
+		font-size: 48px;
+		line-height: em(40, 48);
+		margin-bottom: em(17, 48);
+	}
+	.title-size-42 & {
+		font-size: 42px;
+	}
+	.title-size-36 & {
+		font-size: 36px;
+	}
+	.title-size-32 & {
+		font-size: 32px;
+	}
+	.title-size-30 & {
+		font-size: 30px;
+		letter-spacing: -0.01em;
+	}
+	.title-size-26 & {
+		font-size: 26px;
+	}
+	.title-size-24 & {
+		font-size: 24px;
+	}
+	.title-size-18 & {
+		font-size: 18px;
+	}
+}

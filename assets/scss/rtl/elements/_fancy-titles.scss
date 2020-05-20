@@ -1,0 +1,24 @@
+.fancy-title {
+
+	i {
+		margin-right: 0;
+		margin-left: 0.27em;
+	}
+	.line-alt {
+		margin-right: 0;
+		margin-left: 2em;
+		
+		&:last-child {
+			margin-left: 0;
+			margin-right: 2em;
+		}
+	}
+}
+
+.fancy-title-underlined {
+
+	&:after {
+		left: auto;
+		right: 0;
+	}
+}

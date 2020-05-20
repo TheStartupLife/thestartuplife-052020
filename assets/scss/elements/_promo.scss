@@ -1,0 +1,155 @@
+.lqd-promo-cat {
+	display: flex;
+	margin-right: 15px;
+	flex-flow: row wrap;
+	justify-content: center;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-style: italic;
+	writing-mode: vertical-rl;
+	width: 30px;
+
+	ul {
+		transform: rotate(-180deg);
+	}
+}
+.lqd-promo-dynamic-shape {
+	display: block;
+	width: 124%;
+	height: 124%;
+	position: absolute;
+	top: -15%;
+	left: -25%;
+	z-index: 0;
+
+	svg {
+		overflow: visible;
+	}
+}
+.lqd-promo-img {
+	display: flex;
+	width: calc(58.75% - 30px);
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 0;
+	flex-shrink: 0;
+	
+	img {
+		width: 100%;
+	}
+}
+.lqd-promo-img-inner {
+	box-shadow: 0 50px 100px rgba(#000, 0.3);
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 0.3s;
+
+	&.block-revealer {
+		opacity: 1;
+	}
+	.block-revealer__element {
+		will-change: transform;
+	}
+	
+	&.revealing-ended {
+
+		.block-revealer__element {
+			will-change: auto;
+		}
+	}
+}
+.lqd-promo-content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 60px 0 60px 15px;
+	width: 39.25%;
+	flex: 0 auto;
+
+	> * {
+		flex-grow: 0;
+	}
+	h2 {
+		margin: 0 -1em 0 -1em;
+		font-size: 120px;
+		font-weight: 700;
+		line-height: 1em;
+	}
+	.lqd-words,
+	.lqd-lines {
+		white-space: nowrap;
+	}
+	.split-inner {
+		display: inline-block;
+	}
+	.btn {
+		margin-top: auto;
+	}
+}
+.lqd-promo-inner {
+	display: flex;
+	position: relative;
+}
+.lqd-promo-wrap {
+	position: relative;
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+// Promo Styles
+.lqd-promo-alt {
+	margin-top: 0;
+	margin-bottom: 0;
+	color: #181b31;
+
+	.lqd-promo-inner {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		align-items: center;
+	}
+	.lqd-promo-cat {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		margin: 0;
+		width: auto;
+		flex: 1 0;
+		writing-mode: inherit;
+		font-style: normal;
+		font-size: 11px;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 2em;
+			height: 1px;
+			margin-right: 1em;
+			background-color: #000;
+		}
+		ul {
+			transform: none;
+			margin: 0;
+		}
+		li {
+
+			&:not(:last-child) {
+
+				&:after {
+					content: '|';
+					margin-left: 0.75em;
+				}
+			}
+		}
+	}
+	.lqd-promo-content {
+
+		h2 {
+			margin-top: 0.75em;
+			margin-bottom: 0.75em;
+		}
+	}
+	.lqd-promo-img-inner {
+		box-shadow: none;
+	}
+}

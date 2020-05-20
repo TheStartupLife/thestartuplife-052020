@@ -1,0 +1,23 @@
+.woocommerce {
+
+	div.product {
+
+		.single_variation_wrap {
+			margin-bottom: 30px;
+			flex: 1 auto;
+
+			&:only-child {
+				margin-bottom: 0;
+			}
+			.woocommerce-variation-availability {
+				margin-bottom: 1em;
+			}
+			.ld-product-summary-foot {
+
+				.single_add_to_cart_button:only-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}

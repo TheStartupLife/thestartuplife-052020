@@ -1,0 +1,45 @@
+@media screen and ( max-width: $grid-breakpoint-md - 1 ) {
+
+	.liquid-ig-feed {
+
+		.liquid-ig-feed-list {
+
+			> li {
+				flex-basis: 33.3333333333%;
+			}
+		}
+	}
+	[data-list-columns="1"],
+	[data-list-columns="2"] {
+		
+		.liquid-ig-feed-list {
+
+			> li {
+				flex-basis: 100%;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.liquid-ig-feed {
+
+		.liquid-ig-feed-list {
+
+			> li {
+				flex-basis: 50%;
+			}
+		}
+	}
+	[data-list-columns="1"],
+	[data-list-columns="2"] {
+		
+		.liquid-ig-feed-list {
+
+			> li {
+				flex-basis: 100%;
+			}
+		}
+	}
+}

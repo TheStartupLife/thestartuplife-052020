@@ -1,0 +1,50 @@
+.lqd-sticky-bg-spacer,
+.lqd-sticky-bg-wrap,
+.lqd-sticky-bg {
+	width: 100%;
+	height: 100vh;
+	max-height: 100vh;
+	background-size: inherit;
+	background-position: inherit;
+	background-attachment: inherit;
+	background-repeat: inherit;
+}
+.lqd-sticky-bg-wrap {
+	overflow: hidden;
+
+	[data-shrink-borders=true] & {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+	}
+}
+
+.lqd-css-sticky {
+	top: 0;
+	
+	&:not(.vc_row) {
+		position: sticky !important;
+	}
+	&.vc_row {
+		
+		.lqd-css-sticky-wrap & {
+			position: sticky !important;
+			
+			&[data-parallax] {
+				transform: translateZ(0);
+			}
+		}
+	}
+}
+
+.lqd-css-sticky-wrap,
+.lqd-css-sticky-wrap-inner {
+	width: 100%;
+}
+.lqd-css-sticky-wrap-inner {
+	height: 200%;
+	top: 0;
+	left: 0;
+}

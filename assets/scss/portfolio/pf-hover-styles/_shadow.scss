@@ -1,0 +1,31 @@
+.pf-hover-shadow {
+	
+	.ld-pf-image {
+		box-shadow: 0 0 0 rgba(#000, 0);
+		transition: box-shadow 0.3s;
+	}
+	&:hover {
+
+		.ld-pf-image {
+			box-shadow: 0 28px 45px rgba(#000, 0.15);
+		}
+	}
+}
+.pf-hover-shadow-alt {
+	
+	&:hover {
+
+		.ld-pf-image {
+			box-shadow: 0 8px 15px rgba(#000, 0.1);
+		}
+	}
+}
+.pf-hover-shadow-alt-2 {
+	
+	&:hover {
+
+		.ld-pf-image {
+			box-shadow: 0 15px 30px rgba(#000, 0.1);
+		}
+	}
+}

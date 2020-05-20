@@ -1,0 +1,14 @@
+@for $i from 0 to 26 {
+	.border-radius-#{$i} {
+		border-radius: $i + px !important;
+	}
+}
+.semi-round {
+	border-radius: 2px;
+}
+.round {
+	border-radius: 4px;
+}
+.circle {
+	border-radius: 50em;
+}

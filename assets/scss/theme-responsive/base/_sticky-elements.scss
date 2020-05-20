@@ -1,0 +1,12 @@
+@media screen and ( max-width: $grid-breakpoint-lg - 1 ) {
+
+	.lqd-sticky-bg-wrap,
+	.lqd-sticky-bg {
+		height: 100%;
+		min-height: 0;
+		max-height: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}

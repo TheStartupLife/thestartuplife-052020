@@ -1,0 +1,15 @@
+.pf-single-title {
+	font-size: 48px;
+	line-height: 1em;
+
+	&.size-xl {
+		font-size: 100px;
+	}
+	&.size-lg {
+		font-size: 60px;
+	}
+
+	&:last-child {
+		margin-bottom: -0.2em !important;
+	}
+}

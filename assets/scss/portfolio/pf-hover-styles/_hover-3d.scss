@@ -1,0 +1,19 @@
+.ld-pf-item {
+
+	&.hover-3d {
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		perspective: 1200px;
+		overflow: visible;
+		
+		.liquid-overlay-link {
+			transform: translateZ(60px) scale(0.85);
+		}
+		.ld-pf-bg {
+			transform: translateZ(1px);
+		}
+		&:hover {
+			z-index: 2;
+		}
+	}
+}

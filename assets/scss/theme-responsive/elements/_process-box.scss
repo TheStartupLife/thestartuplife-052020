@@ -1,0 +1,24 @@
+@media screen and ( max-width: $grid-breakpoint-md - 1 ) {
+
+	.ld-pb-top {
+
+		&:after {
+
+			[class*=vc_col-md] & {
+				content: none;
+			}
+		}
+	}
+}
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.ld-pb-top {
+
+		&:after {
+
+			[class*=vc_col-sm] & {
+				content: none;
+			}
+		}
+	}
+}

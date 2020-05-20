@@ -1,0 +1,12 @@
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.titlebar-inner h1 {
+		font-size: 48px !important;
+	}
+}
+@media screen and ( max-width: $grid-breakpoint-xs - 1 ) {
+
+	.titlebar-inner h1 {
+		font-size: 38px !important;
+	}
+}

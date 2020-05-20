@@ -1,0 +1,30 @@
+.blog-single-cover-bordered {
+
+	.related-posts {
+
+		> .container {
+			width: auto;
+		}
+	}
+	.comments-area > .container,
+	.comment-respond > .container {
+		width: auto;
+		padding-left: 0;
+		padding-right: 0;
+
+		> .row > .col-md-8 {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
+
+.blog-single-cover-bordered {
+
+	&.blog-single-post-has-thumbnail {
+
+		.lqd-main-header-default + .content {
+			padding-top: 0;
+		}
+	}
+}

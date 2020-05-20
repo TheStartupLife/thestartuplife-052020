@@ -1,0 +1,16 @@
+.titlebar {
+
+	&.scheme-light {
+		background-color: #10131D;
+		color: #fff;
+
+		.titlebar-inner {
+
+			&,
+			h1,
+			p {
+				color: inherit;
+			}
+		}
+	}
+}

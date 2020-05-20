@@ -1,0 +1,17 @@
+@media screen and ( max-width: $grid-breakpoint-sm - 1 )  {
+
+	.one-bullet-list {
+
+		.inline-nav {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+
+			li {
+				margin-left: 0 !important;
+				align-items: center;
+				width: 50%;
+			}
+		}
+	}
+}

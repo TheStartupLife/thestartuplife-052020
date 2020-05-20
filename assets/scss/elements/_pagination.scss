@@ -1,0 +1,55 @@
+.page-nav {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	
+	&.bordered-top {
+		margin-top: 2em;
+		padding-top: 45px;
+		border-top: 3px solid #181b31;
+	}
+}
+.page-links,
+ul.pagination {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	clear: both;
+}
+ul.pagination {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+
+	.page-numbers,
+	li {
+		display: inline-block;
+	}
+	li {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	.page-numbers {
+	
+		&.current {
+			color: #16171e;
+		}
+	}
+}
+.page-links {
+	float: left;
+	margin-top: 1.5em;
+
+	> span,
+	a span {
+		display: inline-block;
+	}
+	> a,
+	> span {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.page-links-title {
+		padding: 0;
+	}
+}

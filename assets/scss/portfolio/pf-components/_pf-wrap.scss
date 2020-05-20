@@ -1,0 +1,9 @@
+.ld-pf-wrap {
+	
+	&[data-hover3d=true] {
+		transform-style: preserve-3d;
+		backface-visibility: hidden;
+		perspective: 1200px;
+		overflow: visible;
+	}
+}

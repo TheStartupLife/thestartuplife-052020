@@ -1,0 +1,43 @@
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+	
+	.header-style-side {
+		
+		#wrap {
+			padding-left: 375px;
+		}
+	}
+}
+
+@media screen and ( min-width: $grid-breakpoint-lg ) and ( max-width: 1440px ) {
+
+	.header-style-side {
+
+		#wrap {
+			padding-left: 250px;
+		}
+	}
+}
+
+@media screen and ( min-width: $grid-breakpoint-lg ) and ( max-width: 1580px ) {
+
+	.header-style-side {
+
+		.vc_row {
+
+			> .container {
+				width: 100%;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		&.lqd-stack-initiated {
+
+			.vc_row {
+
+				.lqd-stack-section-inner > .container {
+					width: 970px;
+				}
+			}
+		}
+	}
+}

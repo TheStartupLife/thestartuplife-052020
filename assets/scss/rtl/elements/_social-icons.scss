@@ -1,0 +1,23 @@
+.social-icon {
+
+	li {
+		margin-right: 0;
+
+		&:not(:last-child) {
+			margin-left: 1.2em;
+		}
+	}
+	&.round,
+	&.semi-round,
+	&.square,
+	&.circle {
+
+		&.social-icon-sm {
+
+			li {
+				margin-right: 0;
+				margin-left: 0.3em;
+			}
+		}
+	}
+}

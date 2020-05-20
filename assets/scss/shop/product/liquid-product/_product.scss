@@ -1,0 +1,26 @@
+.ld-sp {
+	margin-bottom: 30px;
+	font-size: 16px;
+	line-height: 1.6875em;
+
+	figure {
+		position: relative;
+		margin-bottom: 20px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			margin: 0 !important;
+		}
+	}
+
+	&:hover {
+
+		.ld-sp-img-hover,
+		.ld-sp-add-to-cart,
+		.add_to_cart_button {
+			transform: translateY(0) scale(1);
+			opacity: 1;
+		}
+	}
+}

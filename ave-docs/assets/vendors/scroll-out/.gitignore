@@ -1,0 +1,10 @@
+.alm
+.vscode
+.idea
+.vs
+/node_modules
+/lib
+/cypress/screenshots
+/cypress/videos
+npm-debug.log*
+.rpt2_cache

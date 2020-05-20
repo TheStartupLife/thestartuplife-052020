@@ -1,0 +1,32 @@
+.megamenu-heading {
+	margin: 0 0 em(20, 16);
+	font-size: 16px;
+	letter-spacing: 0.01em;
+}
+.megamenu-inner-row {
+	padding: 35px;
+	border-top: 1px solid rgba(#000, 0.07);
+}
+
+.megamenu {
+
+	.lqd-custom-menu {
+		
+		li {
+			margin-bottom: 13px;
+			font-size: 15px;
+		}
+	}
+}
+[data-megamenu-bg-scheme=dark] {
+
+	.megamenu-inner-row {
+		border-top-color: rgba(#fff, 0.07);
+	}
+	.lqd-custom-menu {
+
+		a {
+			color: #d0d1d6;
+		}
+	}
+}

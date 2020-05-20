@@ -1,0 +1,31 @@
+.pf-info {
+	position: relative;
+	flex-flow: row wrap;
+	font-size: 16px;
+	line-height: 1.2em;
+
+	> span {
+		display: inline-block;
+		position: relative;
+		flex-grow: 1;
+		flex-basis: 47%;
+
+		&:nth-child(3n + 1) {
+			margin-left: 0;
+		}
+	}
+	small {
+		display: block;
+	}
+	h5 {
+		font-size: 1em;
+	}
+	hr {
+		width: 50px;
+		position: absolute;
+		top: - em(35, 16);
+		left: 0;
+		margin: 0;
+		border-color: #181b31;
+	}
+}

@@ -1,0 +1,27 @@
+.hero-banner-section {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 20vmax;
+	position: relative;
+	overflow: hidden;
+	
+	h1 {
+		font-size: 5.5vmin;
+	}
+}
+.hero-banner-section-bg {
+	--scale: calc( 1 + ( 0.4 * var(--viewport-y) ) );
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url(../img/bg/hero-banner-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	opacity: calc( var(--visible-y) - 0.1 );
+	transform: scale( var(--scale) );
+	transform-origin: center bottom;
+}

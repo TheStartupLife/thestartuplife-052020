@@ -1,0 +1,41 @@
+/*
+	Typography
+*/
+p {
+	margin-bottom: 1.3em;
+}
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+	font-family: 'Roboto', sans-serif;
+	margin: 1.25em 0 0.75em;
+	font-weight: 500;
+	line-height: 1.2;
+	color: #181b31;
+}
+h1, .h1 {
+	margin-top: 0;
+	font-size: 52px;
+}
+h2, .h2 {
+	font-size: 40px;
+}
+h3, .h3 {
+	font-size: 32px;
+}
+h4, .h4 {
+	font-size: 25px;
+}
+h5, .h5 {
+	font-size: 21px;
+}
+h6, .h6 {
+	font-size: 18px;
+}
+small,
+.font_small {
+	font-size: 0.667em;
+}

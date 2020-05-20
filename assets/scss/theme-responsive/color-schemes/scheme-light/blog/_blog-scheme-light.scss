@@ -1,0 +1,12 @@
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+
+	.page-scheme-light {
+
+		.blog-single-content {
+
+			&.pull-up {
+				background-color: #12131a;
+			}
+		}
+	}
+}

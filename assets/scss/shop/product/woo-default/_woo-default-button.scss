@@ -1,0 +1,75 @@
+.ld-sp {
+
+	a.button,
+	input.button,
+	button.button,
+	#respond input#submit {
+		display: inline-flex;
+		align-items: center;
+		padding: 1.15em 2.1em;
+		position: relative;
+		border-radius: 0;
+		background-color: var(--color-primary);
+		font-size: 13px;
+		line-height: 1.5em;
+		color: #fff;
+		transition: all .3s ease;
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0.05),
+		0 0 0 rgba(0, 0, 0, 0.05),
+		0 0 0 rgba(0, 0, 0, 0.05),
+		0 0 0 rgba(0, 0, 0, 0.05),
+		0 0 0 rgba(0, 0, 0, 0.05);
+
+		> i {
+			margin-right: 0.75em;
+		}
+
+		> span {
+
+			& + i {
+				margin-right: 0;
+				margin-left: 0.75em;
+			}
+		}
+
+		&.loading {
+			padding-right: 2.1em;
+
+			&:after {
+				position: relative;
+				top: auto;
+				right: auto;
+				margin-left: 0.75em;
+			}
+		}
+
+		&.added {
+
+			&:after {
+				margin-left: 0.75em;
+			}
+		}
+
+		&.disabled,
+		&:disabled,
+		&:disabled[disabled] {
+			padding: 1.15em 2.1em;
+		}
+
+		&:hover,
+		&:focus {
+			background-color: #000;
+			color: #fff;
+			transform: translateY(-1px);
+			box-shadow: 0px 1px 1px rgba(#000, 0.05),
+				0px 2px 2px rgba(#000, 0.05),
+				0px 4px 4px rgba(#000, 0.05),
+				0px 8px 8px rgba(#000, 0.05),
+				0px 16px 16px rgba(#000, 0.05);
+		}
+	} // Buttons
+
+	a.added_to_cart {
+		display: block;
+	}
+}

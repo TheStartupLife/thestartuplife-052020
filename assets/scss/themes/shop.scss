@@ -1,0 +1,147 @@
+@font-face {
+	font-family: 'Cerebri Sans';
+	src: url('../../fonts/cerebri-sans.woff2') format('woff2'),
+		url('../../fonts/cerebri-sans.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+:root {
+	--color-primary: #bd9e6b;
+	--color-secondary: #ff6363;
+	--color-gradient-start: #bd9e6b;
+	--color-gradient-stop: #bd9e6b;
+	--color-link: #4f4130;
+}
+
+body {
+	font-family: 'Barlow', sans-serif;
+	font-size: 16px;
+	line-height: 1.8em;
+	color: #4f4f4f;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6 .h6 {
+	font-family: 'neuzeit-grotesk', 'sans-serif';
+	font-weight: 400;
+	color: #000;
+}
+
+.h1,
+h1 {
+	font-size: 50px;
+	line-height: 1.11em;
+}
+
+.h2,
+h2 {
+	font-size: 45px;
+	line-height: 1.4em;
+}
+
+.h3,
+h3 {
+	font-size: 35px;
+	line-height: 1.7em;
+}
+
+.h4,
+h4 {
+	font-size: 25px;
+	line-height: 1.7em;
+}
+
+.h5,
+h5 {
+	font-size: 22px;
+	line-height: 1.7em;
+}
+
+.h6,
+h6 {
+	font-size: 17px;
+	line-height: 1.7em;
+}
+
+.main-header {
+	background-color: #fff;
+}
+
+.secondarybar-row,
+.mainbar-row {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.secondarybar {
+	border-bottom: 1px solid #ededed;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+}
+
+.navbar-brand {
+	padding-top: 18px;
+	padding-bottom: 18px;
+}
+
+.main-nav {
+	
+	> li {
+		
+		> a {
+			font-size: 16px;
+			font-weight: 700;
+			letter-spacing: 0.02em;
+			color: #000;
+		}
+		
+		&.is-active > a,
+		&.current-menu-item > a,
+		&:hover > a,
+		> a:hover {
+			color: #bd9e6b;
+		}
+	}
+}
+
+.header-module {
+
+	.btn-naked {
+		color: #000;
+	}
+}
+
+.btn {
+	font-size: 13px;
+}
+
+.main-footer {
+	color: #5e5e5e;
+
+	a:not(.btn) {
+		color: #5e5e5e;
+
+		&:hover {
+			color: #000;
+		}
+	}
+	.widget-title {
+		margin: 0 0 1.5em;
+		font-size: 14px;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		color: #000;
+	}
+	.ld-sf button,
+	.ld-sf input[type="submit"],
+	.ld-sf input[type="email"] {
+		color: #000;
+		border-color: #000;
+	}
+}

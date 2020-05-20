@@ -1,0 +1,61 @@
+.mainbar-wrap {
+
+  .row {
+    flex-wrap: nowrap;
+
+    > div {
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+
+  .megamenu-hover-bg {
+    display: none;
+  }
+
+}
+
+.mainbar-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  
+  &:before,
+  &:after {
+    content: none;
+  }
+  // in case if there's a .container inslide .container-fluid
+  .container {
+    flex: 1 1;
+    padding: 0;
+  }
+}
+
+.mainbar-row {
+  align-items: stretch;
+  flex: 1 auto;
+
+  &:before,
+  &:after {
+    content: none;
+  }
+  > [class^=col] {
+    display: flex;
+    align-items: stretch;
+    position: static;
+  }
+}
+
+.mainbar {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1 auto;
+
+  .navbar-header,
+  .main-nav-trigger {
+    position: relative;
+    z-index: 10;
+  }
+}

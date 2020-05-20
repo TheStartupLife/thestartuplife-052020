@@ -1,0 +1,35 @@
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.woocommerce {
+
+		#review_form {
+
+			#respond {
+
+				.comment-form {
+	
+					.comment-form-author,
+					.comment-form-email {
+						width: calc(50% - 20px);
+					}
+					.comment-form-email {
+						margin-left: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.woocommerce {
+
+		#review_form {
+
+			#respond {
+				padding: 30px 20px;
+			}
+		}
+	}
+}

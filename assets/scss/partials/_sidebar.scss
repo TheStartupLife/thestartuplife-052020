@@ -1,0 +1,20 @@
+.has-sidebar {
+
+	.contents-container {
+
+		> .container {
+			width: 100%;
+		}
+	}
+}
+
+
+/* Sidebar Widgets */
+@import '../widgets/widgets-general';
+@import '../widgets/menus';
+@import '../widgets/search';
+@import '../widgets/calendar';
+@import '../widgets/latest-posts';
+@import '../widgets/popular-posts';
+@import '../widgets/social-icons';
+@import '../widgets/tag-cloud';

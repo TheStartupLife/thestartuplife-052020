@@ -1,0 +1,38 @@
+.widget_calendar {
+
+	#wp-calendar {
+		width: 100%;
+		border: 1px solid #ededed;
+	}
+	caption,
+	tfoot td {
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.075em;
+		padding: 10px 15px;
+		color: #000;
+	}
+	caption {
+		border: 1px solid #ededed;
+		border-bottom: none;
+	}
+	tfoot {
+		border-top: 1px solid #ededed;
+	}
+	thead,
+	tbody {
+
+		td,
+		th {
+			text-align: center;
+			padding: 5px;
+		}
+	}
+	thead {
+
+		th {
+			color: #000;
+			font-weight: 600;
+		}
+	}
+}

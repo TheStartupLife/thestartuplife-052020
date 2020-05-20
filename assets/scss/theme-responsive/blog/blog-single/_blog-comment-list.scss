@@ -1,0 +1,13 @@
+@media screen and ( max-width: $grid-breakpoint-xs - 1 ) {
+
+	.pingback {
+
+		.comment-meta {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		time {
+			margin: 0 0 1em;
+		}
+	}
+}

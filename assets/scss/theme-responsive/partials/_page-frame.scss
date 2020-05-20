@@ -1,0 +1,70 @@
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+	
+	$frame-width: 20px;
+
+	.lqd-page-frame {
+		position: absolute;
+		z-index: 3;
+		background-color: var(--color-primary);
+	
+		&[data-orientation=h] {
+			left: 0;
+			width: 100%;
+			height: $frame-width;
+		}
+		&[data-orientation=v] {
+			top: 0;
+			width: $frame-width;
+			height: 100%;
+		}
+	}
+	.lqd-page-frame-top {
+		top: 0;
+		transform-origin: center top;
+	}
+	.lqd-page-frame-right {
+		right: 0;
+		transform-origin: right center;
+	}
+	.lqd-page-frame-bottom {
+		bottom: 0;
+		transform-origin: center bottom;
+	}
+	.lqd-page-frame-left {
+		left: 0;
+		transform-origin: left center;
+	}
+
+	// Body
+	.page-has-frame {
+
+		#wrap {
+			padding: $frame-width;
+		}
+
+		// Sticky Header
+		.is-stuck {
+			left: $frame-width;
+			right: $frame-width;
+		}
+
+		// Megamenu
+		.megamenu {
+
+			&.megamenu-fullwidth {
+
+				.nav-item-children {
+					width: calc( 100vw - 40px );
+					left: calc(50% + 10px) !important;
+					right: calc(50% + 10px) !important;
+					margin-left: calc(-50vw + 10px) !important;
+					margin-right: calc(-50vw + 10px) !important;
+				}
+				.megamenu-container {
+					width: calc( 100vw - 40px ) !important;
+				}
+			}
+		}
+
+	}
+}

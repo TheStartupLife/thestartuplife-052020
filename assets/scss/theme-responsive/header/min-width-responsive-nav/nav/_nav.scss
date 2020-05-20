@@ -1,0 +1,52 @@
+.navbar-header {
+	// flex-basis: 0; // causing 0px width issue on IE11 e.g. http://3suissesverhuur.nl/
+	flex-basis: auto;
+
+	.mobile-logo-default,
+	.header-module {
+		display: none;
+	}
+}
+.navbar-collapse {
+	display: inline-flex !important;
+	flex-direction: column;
+	align-items: stretch;
+	height: auto !important;
+	flex-basis: 0;
+
+	> .nav-trigger {
+		display: none !important;
+	}
+}
+.navbar-collapse-clone {
+	display: none !important;
+}
+// for nav with centered logo. e.g. hotel demo
+// .navbar-header {
+// 	justify-content: center;
+// }
+.main-nav {
+	display: flex;
+	align-items: stretch;
+	justify-content: flex-end;
+	
+	> li {
+		
+		&,
+		> a {
+			align-items: center;
+		}
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding-right: 0;
+		}
+		&.nav-item-cloned {
+			display: none;
+		}
+	}
+	.submenu-expander {
+		display: none !important;
+	}
+}

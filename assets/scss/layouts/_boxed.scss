@@ -1,0 +1,22 @@
+.site-boxed-layout {
+	background-color: #eee;
+
+	&.site-boxed-layout-shadow-1 {
+
+		#wrap {
+			box-shadow: 0 0 13px rgba(#000, 0.1);
+		}
+	}
+	&.site-boxed-layout-shadow-2 {
+
+		#wrap {
+			box-shadow: 0 0 25px rgba(#000, 0.15);
+		}
+	}
+	&.site-boxed-layout-shadow-3 {
+
+		#wrap {
+			box-shadow: 0 0 50px rgba(#000, 0.2);
+		}
+	}
+}

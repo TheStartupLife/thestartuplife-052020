@@ -1,0 +1,53 @@
+.wpb_widgetised_column,
+.main-sidebar {
+
+	.widget {
+		margin-bottom: 45px;
+	}
+	.widget-title {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.5em;
+		letter-spacing: 0;
+		text-transform: none;
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		ul,
+		ol {
+			margin-left: 10px;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+	}
+	a {
+		color: #000;
+
+		&:hover {
+			color: var(--color-primary);
+		}
+	}
+	.ui-selectmenu-button,
+	select {
+		display: flex;
+		width: 100%;
+		height: 50px;
+		padding: 10px 15px;
+		background: none;
+		border: 1px solid #d8dbe2;
+		border-radius: 0;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.ui-selectmenu-button {
+
+		.ui-selectmenu-icon {
+			order: 1;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+.ld-sp-soldout,
+.ld-sp-sale {
+	padding: 5px 12px;
+	margin: 0;
+	position: absolute;
+	top: 18px;
+	left: 18px;
+	right: auto;
+	border-radius: 2px;
+	background-color: #fff;
+	font-size: 12px;
+	line-height: 1.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.185em;
+	font-weight: 700;
+	color: #000;
+
+	&:only-child {
+		position: relative;
+		top: auto;
+		left: auto;
+		margin-bottom: 1px;
+		background-color: #000;
+		color: #fff;
+	}
+}
+.ld-sp-soldout {
+	background-color: #E82D2D;
+	color: #fff;
+}

@@ -1,0 +1,13 @@
+.ld-module-dropdown {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	z-index: 20;
+	background-color: #fff;
+	text-align: left; // prevent inheritting from parent column text align
+
+	&.left {
+		right: auto;
+		left: 0;
+	}
+}

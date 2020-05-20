@@ -1,0 +1,18 @@
+@media screen and ( max-width: 782px ) {
+	
+	.is-stuck {
+		
+		.admin-bar & {
+			top: 46px;
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+
+	.is-stuck {
+
+		.admin-bar & {
+			top: 0;
+		}
+	}
+}

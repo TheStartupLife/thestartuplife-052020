@@ -1,0 +1,10 @@
+.lqd-h-sep {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+.lqd-h-sep-inner {
+	flex: 1 0;
+	height: 1px;
+	background-color: var(--color-primary);
+}

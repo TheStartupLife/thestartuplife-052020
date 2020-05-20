@@ -1,0 +1,47 @@
+.lqd-stack-has-prevnext-buttons {
+		
+	.lqd-stack-prevnext-wrap {
+		display: flex;
+		flex-direction: row !important;
+		position: absolute;
+		top: auto !important;
+		left: auto !important;
+		right: 20px !important;
+		bottom: 40px !important;
+		transform: none !important;	
+		
+		button {
+			margin: 0 5px !important;
+		}
+	}
+	.lqd-stack-button-labbel,
+	.lqd-stack-prevnext-button {
+		transform: none !important;
+	}
+	.lqd-stack-prevnext-button {
+		position: relative;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		right: auto;
+	}
+	.lqd-back-to-top {
+		display: none;
+	}
+
+	&.lqd-stack-buttons-style-1 {
+
+		.lqd-stack-prevnext-wrap {
+			bottom: 50px !important;
+			left: 20px !important;
+			justify-content: space-between;
+		}
+	}
+}
+#pp-nav {
+	display: none;
+	right: 20px;
+}
+.lqd-stack-extra {
+	display: none;
+}

@@ -1,0 +1,9 @@
+@media screen and ( max-width: $grid-breakpoint-lg ) {
+
+	.pf-info {
+
+		hr {
+			display: none;
+		}
+	}
+}

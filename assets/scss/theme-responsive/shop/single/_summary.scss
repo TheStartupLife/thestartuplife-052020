@@ -1,0 +1,30 @@
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.woocommerce {
+
+		div.product {
+
+			div.summary {
+				width: 48%;
+				margin-left: auto;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: $grid-breakpoint-md - 1 ) {
+
+	.woocommerce {
+
+		div.product {
+
+			div.summary {
+				width: 100%;
+
+				+ .product-meta {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

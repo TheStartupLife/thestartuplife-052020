@@ -1,0 +1,5 @@
+@for $i from 1 through 5 {
+	.z-index-#{$i} {
+		z-index: $i;
+	}
+}

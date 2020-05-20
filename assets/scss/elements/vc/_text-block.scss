@@ -1,0 +1,13 @@
+.wpb_text_column {
+
+	// prevend resetting inner ul elemenets spacing
+	> .wpb_wrapper {
+
+		> ul {
+			padding-left: 0;
+		}
+	}
+	ul {
+		list-style-position: inside;
+	}
+}

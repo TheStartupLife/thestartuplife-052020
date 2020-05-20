@@ -1,0 +1,248 @@
+.liquid-counter {
+	display: inline-block;
+	position: relative;
+	z-index: 1; // to bring it forward incase if there's an element beneath it with negative margin
+	margin-bottom: 30px;
+
+	&:hover {
+		
+		.liquid-counter-element-hover {
+			opacity: 1;
+		}
+	}
+}
+.liquid-counter-element {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 700;
+	line-height: 1em;
+
+	> span {
+		display: flex;
+	}
+	.text-left & {
+		justify-content: flex-start;
+	}
+	.text-right & {
+		justify-content: flex-end;
+	}
+	.text-center & {
+		justify-content: center;
+	}
+}
+.liquid-counter-text {
+	line-height: 1.5em;
+}
+.liquid-counter-element-static,
+.liquid-counter-element-hover {
+	display: none;
+	// display: flex;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+	
+	span {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.counter-animated & {
+		display: flex;
+	}
+}
+.liquid-counter-element-static {
+	
+	> span {
+		background: inherit;
+	}
+	.counter-animated & {
+
+		~ span {
+			display: none;
+		}
+	}
+}
+.liquid-counter-element-hover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 0.3s;
+
+	.backgroundcliptext & {
+		background: -webkit-gradient(linear, left top, right top, from(var(--color-gradient-start)), to(var(--color-gradient-stop)));
+		background: linear-gradient(to right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%);
+		background-clip: text !important;
+		-webkit-background-clip: text !important;
+		text-fill-color: transparent !important;
+		-webkit-text-fill-color: transparent !important;
+		
+		span {
+			background: inherit;
+		}
+	}
+
+}
+
+// Counter weights
+.liquid-counter-regular {
+
+	.liquid-counter-element {
+		font-weight: 400;
+	}
+}
+.liquid-counter-medium {
+
+	.liquid-counter-element {
+		font-weight: 500;
+	}
+}
+.liquid-counter-semibold {
+
+	.liquid-counter-element {
+		font-weight: 600;
+	}
+}
+.liquid-counter-bold {
+
+	.liquid-counter-element {
+		font-weight: 700;
+	}
+}
+
+.liquid-counter-sm {
+	
+	.liquid-counter-element {
+		font-size: 36px;
+	}
+}
+.liquid-counter-md {
+	
+	.liquid-counter-element {
+		font-size: 47px;
+	}
+}
+.liquid-counter-lg {
+	
+	.liquid-counter-element {
+		font-size: 60px;
+	}
+}
+.liquid-counter-lg2 {
+	
+	.liquid-counter-element {
+		font-size: 200px;
+	}
+}
+.liquid-counter-xl {
+	
+	.liquid-counter-element {
+		font-size: 300px;
+	}
+}
+
+.liquid-counter-animator {
+	display: inline-block;
+	position:relative;
+	overflow:hidden;
+	vertical-align: middle;
+	background: inherit;
+}
+.liquid-animator-value {
+	display: inline-block;;
+	visibility:hidden;
+}
+.liquid-animator-numbers {
+	width: 100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background: inherit;
+	overflow:hidden;
+	visibility:visible;
+	
+	ul {
+		display: inline-block;
+		width: 100%;
+		margin:0;
+		padding:0;
+		position:relative;
+		list-style:none;
+		background: inherit;
+	}
+	li {
+		margin: 0;
+		background: inherit;
+	}
+}
+
+.liquid-counter-huge {
+
+	.liquid-counter-element {
+		line-height: 0.8em;
+	}
+	.liquid-text-top {
+		display: block;
+		margin-bottom: 2em;
+		position: relative;
+		top: 2em;
+		font-size: em(14);
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+	.liquid-text-bottom {
+		position: absolute;
+		bottom: 0;
+		left: 100%;
+		font-size: em(18);
+		line-height: em(27, 18);
+		font-style: italic;
+	}
+}
+
+.liquid-counter-bordered {
+	width: 100%;
+	padding: 30px 5%;
+	border: 1px solid #d8dbe2;
+	text-align: center;
+
+	.liquid-counter-element {
+		justify-content: center;
+	}
+	.liquid-counter-text {
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #a7a9b8;
+	}
+	// .liquid-counter-element {
+
+	// 	.backgroundcliptext & > span {
+	// 		background: -webkit-gradient(linear, left top, right top, from(#f5634b), to(#fe9418));
+	// 		background: linear-gradient(to right, #f5634b 0%, #fe9418 100%);
+	// 		background-clip: text !important;
+	// 		-webkit-background-clip: text !important;
+	// 		text-fill-color: transparent !important;
+	// 		-webkit-text-fill-color: transparent !important;
+	// 	}
+	// }
+}
+
+.liquid-counter-has-gradient {
+
+	.backgroundcliptext & {
+
+		.liquid-counter-element-static,
+		.liquid-counter-element > span {
+				background-clip: text !important;
+				-webkit-background-clip: text !important;
+				text-fill-color: transparent !important;
+				-webkit-text-fill-color: transparent !important;
+		}
+	}
+}

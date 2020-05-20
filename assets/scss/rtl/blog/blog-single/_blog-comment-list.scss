@@ -1,0 +1,32 @@
+.comment-author {
+
+	.avatar {
+		margin-right: 0;
+		margin-left: 18px;
+	}
+}
+
+.comment .comment-extras,
+.comment-content {
+	padding-left: 0;
+	padding-right: 93px;
+}
+
+.comment-content {
+	margin-top: 0;
+}
+
+.comment-list {
+
+	ol.children {
+		
+		.comment .comment-extras,
+		.comment-content {
+			padding-left: 0;
+			padding-right: 68px;
+		}
+		.comment-content {
+			margin-top: 15px;
+		}
+	}
+}

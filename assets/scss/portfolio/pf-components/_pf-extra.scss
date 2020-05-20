@@ -1,0 +1,15 @@
+.pf-extra-arrow {
+	position: relative;
+	height: 0;
+	transition: height 0.3s cubic-bezier(0.86, 0, 0.07, 1), margin 0.3s;
+
+	line,
+	polyline {
+		transition: stroke-dasharray 0.25s cubic-bezier(0.23, 1, 0.320, 1), stroke-dashoffset 0.25s cubic-bezier(0.23, 1, 0.320, 1);
+	}
+	line,
+	polyline {
+		stroke-dasharray: 30;
+		stroke-dashoffset: 30;
+	}
+}

@@ -1,0 +1,110 @@
+.woocommerce {
+
+	div.product {
+
+		form.cart {
+
+			table.variations {
+
+				tr {
+					display: block;
+					margin-bottom: 10px;
+					border: none;
+				}
+				td {
+					display: inline-block;
+				}
+				td.label {
+					width: 100%;
+					font-size: 12px;
+					line-height: 1.5em;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: 0.1em;
+					color: #000;
+				}
+				td.value {
+					min-width: 50%;
+					position: relative;
+				}
+				.lqd-select-wrap {
+					display: block;
+					position: relative;
+
+					.lqd-select-ext {
+						display: inline-block;
+						position: absolute;
+						top: 50%;
+						right: 20px;
+						transform: translateY(-50%);
+
+						&:after {
+
+							content: '\f107';
+							display: inline-flex;
+							align-items: center;
+							justify-content: center;
+							font-family: fontAwesome;
+							font-size: 18px;
+							text-indent: 0;
+						}
+					}
+
+				}
+				#pa_color ~ .lqd-select-ext,
+				#pa_size  ~ .lqd-select-ext {
+					display: none;
+				}
+				select {
+					height: 50px;
+					width: 100%;
+					padding: 0 25px;
+					appearance: none;
+					background-color: #fff;
+					border-color: #EBEBEB;
+					border-radius: 0;
+					cursor: pointer;
+					position: relative;
+					
+					&:focus {
+						outline: none;
+					}
+				}
+				// .ui-selectmenu-icon {
+				// 	background: none;
+				// 	position: relative;
+			
+				// 	&:before {
+				// 		content: '\f107';
+				// 		display: inline-flex;
+				// 		width: 100%;
+				// 		height: 100%;
+				// 		position: absolute;
+				// 		top: 0;
+				// 		left: 0;
+				// 		align-items: center;
+				// 		justify-content: center;
+				// 		font-family: fontAwesome;
+				// 		font-size: 18px;
+				// 		text-indent: 0;
+				// 	}
+				// }
+			}
+			.reset_variations {
+				display: block;
+				margin-top: 1em;
+				font-size: 12px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.1em;
+			}
+
+			&.variations_form {
+
+				+ .yith-wcwl-add-to-wishlist {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+}

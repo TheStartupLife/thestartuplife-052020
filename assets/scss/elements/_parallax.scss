@@ -1,0 +1,50 @@
+.ld-parallax-wrap {
+	// perspective: 1200px; causing positioning issues
+
+	&.overflow-hidden {
+		@include clearfix;
+	}
+}
+.liquid-parallax-bg {
+	position: relative;
+
+	&:not(.vc_row):not(.titlebar) {
+		overflow: hidden;
+	}
+}
+.liquid-parallax-container,
+.liquid-parallax-figure {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.liquid-parallax-container,
+.liquid-parallax-figure {
+	background-size: inherit;
+	background-position: inherit;
+	background-repeat: no-repeat;
+}
+.liquid-parallax-container {
+	overflow: hidden;
+}
+
+[data-responsive-bg] {
+
+	&[data-parallax] {
+
+		&:not(.loaded) {
+
+			.liquid-parallax-figure {
+				background-image: none !important;
+			}
+		}
+	}
+}
+.lqd-parallax-sentinel {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	z-index: -1;
+}

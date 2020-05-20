@@ -1,0 +1,29 @@
+.ld_widget_recent_entries {
+
+	li {
+		display: flex;
+		flex-flow: row wrap;
+		margin-bottom: 30px;
+		font-size: 14px;
+		line-height: 22px;
+
+		figure {
+			margin-right: 10px;
+			width: 80px;
+
+			img {
+				width: 100%;
+			}
+		}
+		span {
+			display: block;
+			font-size: 13px;
+			margin-top: 4px;
+		}
+		.ld_entries_contents {
+			overflow: hidden;
+			flex: 1;
+			margin-top: -6px;
+		}
+	}
+}

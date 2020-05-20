@@ -1,0 +1,7 @@
+.header-module {
+
+  & ~ .header-module {
+		margin-right: 25px;
+		margin-left: 0;
+  }
+}

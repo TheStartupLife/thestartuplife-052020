@@ -1,0 +1,248 @@
+.liquid-progressbar {
+	position: relative;
+	margin-top: 2.2em;
+	margin-bottom: 3.25em;
+
+	&.values-not-encountering {
+		
+		.liquid-progressbar-percentage {
+			opacity: 1;
+		}
+	}
+}
+.liquid-progressbar-inner {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 15px;
+	background-color: #eef0f3;
+}
+.liquid-progressbar-bar {
+	display: inline-block;
+	width: 0%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: inherit;
+	color: #181b31;
+	background-color: var(--color-primary);
+}
+.liquid-progressbar-percentage {
+	position: absolute;
+	top: -2.2em;
+	right: 0;
+	opacity: 0;
+	transition: opacity 0.1s;
+}
+.liquid-progressbar-title {
+	margin: 0;
+	position: absolute;
+	top: -2.2em;
+	left: 0;
+	font-size: 1em;
+	color: #808291;
+}
+
+/* Progressbar Sizes */
+.liquid-progressbar-thin {
+
+	.liquid-progressbar-inner {
+		height: 1px;
+	}
+}
+.liquid-progressbar-thick {
+
+	.liquid-progressbar-inner {
+		height: 2px;
+	}
+}
+.liquid-progressbar-thicker {
+
+	.liquid-progressbar-inner {
+		height: 5px;
+	}
+}
+.liquid-progressbar-sm {
+
+	.liquid-progressbar-inner {
+		height: 10px;
+	}
+}
+.liquid-progressbar-lg {
+
+	.liquid-progressbar-inner {
+		height: 20px;
+	}
+}
+.liquid-progressbar-xl {
+
+	.liquid-progressbar-inner {
+		height: 30px;
+	}
+}
+
+/* Progressbar Roundness */
+.liquid-progressbar-round {
+
+	.liquid-progressbar-inner {
+		border-radius: 3px;
+	}
+}
+.liquid-progressbar-circle {
+
+	.liquid-progressbar-inner {
+		border-radius: 50em;
+	}
+}
+
+/* Progressbar Values Positions */
+.liquid-progressbar-values-bottom {
+	margin-top: 0;
+	margin-bottom: 3.5em;
+
+	.liquid-progressbar-percentage {
+		top: auto;
+		bottom: -2.2em;
+	}
+	.liquid-progressbar-title {
+		top: auto;
+		bottom: -2.2em;
+	}	
+}
+.liquid-progressbar-values-inside {
+	
+	.liquid-progressbar-bar {
+		color: #fff;
+	}
+	.liquid-progressbar-title,
+	.liquid-progressbar-percentage {
+		position: absolute;
+		top: 50%;
+		right: 15px;
+		transform: translateY(-50%);
+	}
+	.liquid-progressbar-title {
+		left: 15px;
+		right: auto;
+		white-space: nowrap;
+		color: #fff;
+	}
+}
+
+/* Details Size */
+.ld-prgbr-details-sm {
+	font-size: 14px;
+}
+
+/* Percentage Shape */
+.liquid-progressbar-percentage {
+
+	&.style-tooltip {
+		display: inline-flex;
+		padding: 6px 10px;
+		margin-top: -10px;
+		align-items: center;
+		justify-content: center;
+		background-color: #666;
+		line-height: 1.5em;
+		color: #fff;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 0;
+			left: 0;
+			position: absolute;
+			bottom: -4px;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px 5px 0;
+			border-style: solid;
+			border-color: #666 transparent transparent;
+		}
+		&.round {
+			border-radius: 4px;
+		}
+		&.circle {
+			margin-top: -17px;
+			padding: 0;
+			width: 38px;
+			height: 38px;
+			font-size: 12px;
+			border-radius: 50em;
+
+			&:after {
+				bottom: -3px;
+			}
+		}
+	}
+}
+
+.liquid-progressbar-count-hide {
+
+	.liquid-progressbar-value {
+		display: none;
+	}
+}
+
+/* Shadow */
+.ld-prgbr-bar-shadow {
+
+	.liquid-progressbar-bar {
+		box-shadow: 0 8px 50px rgba(#000, 0.1);
+	}
+}
+
+/* Orientation */
+.ld-prgbr-circle {
+	margin-top: 0;
+
+	.liquid-progressbar-inner,
+	.liquid-progressbar-percentage,
+	.liquid-progressbar-bar {
+		background: none;
+	}
+	.liquid-progressbar-percentage,
+	.liquid-progressbar-inner,
+	.liquid-progressbar-bar {
+		display: block;
+		width: 100%;
+		height: auto;
+		position: relative;
+		top: auto;
+		left: auto;
+		opacity: 1;
+	}
+	.liquid-progressbar-bar {
+		display: flex;
+		width: auto;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;
+		height: auto;
+	}
+	.liquid-progressbar-bar {
+		text-align: center;
+	}
+	.liquid-progressbar-percentage {
+		font-size: 48px;
+		font-weight: 700;
+		color: #000;
+	}
+	.liquid-progressbar-details {
+		margin-top: 20px;
+	}
+	.liquid-progressbar-title {
+		position: relative;
+		top: auto;
+		left: auto;
+		font-size: 17px;
+		text-align: center;
+		color: #4E4E4E;
+	}
+}

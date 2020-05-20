@@ -1,0 +1,36 @@
+.main-header {
+
+  .mainbar-wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+
+    .mainbar-container {
+      width: 100%;
+      max-width: none;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+  .mainbar-row {
+    flex-direction: column;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+
+    > [class^=col] {
+      flex: 1 auto;
+      flex-direction: column;
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      min-height: 0;
+
+      // in case nav used as a module
+      > .main-nav {
+        display: none;
+      }
+    }
+  }
+}

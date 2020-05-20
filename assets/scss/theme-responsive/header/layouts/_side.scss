@@ -1,0 +1,10 @@
+@media screen and ( min-width: $grid-breakpoint-lg ) and ( max-width: 1440px ) {
+	
+	.header-side {
+		width: 250px;
+
+		.mainbar-wrap {
+			padding: 12vh 25px;
+		}
+	}
+}

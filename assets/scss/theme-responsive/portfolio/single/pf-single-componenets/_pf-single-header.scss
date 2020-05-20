@@ -1,0 +1,13 @@
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.pf-single-header {
+
+		&.bg-solid {
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+		&.pull-up {
+			margin-top: -60px;
+		}
+	}
+}

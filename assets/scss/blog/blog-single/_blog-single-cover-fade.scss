@@ -1,0 +1,64 @@
+.blog-single-cover-fade {
+
+	.blog-single-cover {
+
+		&.scheme-light {
+			
+			.blog-single-media:after {
+				background: linear-gradient(to top, #12131a 0%, rgba(#12131a, 0.6) 100%);
+			}
+		}
+		&.scheme-dark {
+			
+			.blog-single-media:after {
+				background: linear-gradient(to top, #fff 0%, rgba(#fff, 0.6) 100%);
+			}
+		}
+
+		.blog-single-details-extra {
+			margin-bottom: 75px;
+		}
+		&[data-inview=true] {
+
+			.blog-single-media {
+
+				&:after {
+					transform: translate(0);
+				}
+			}
+			.blog-single-details {
+
+				&,
+				> .container,
+				> .container > .row,
+				> .container > .row > [class^=col-] {
+					height: 100%;
+				}
+				> .container > .row > [class^=col-] {
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+				.blog-single-header {
+					margin-top: auto;
+					margin-bottom: auto;
+				}
+			}
+		}
+	}
+
+	.related-posts {
+
+		> .container {
+			width: auto;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		.related-posts-title {
+
+			&.text-left {
+				text-align: center !important;
+			}
+		}
+	}
+}

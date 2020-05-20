@@ -1,0 +1,16 @@
+.liquid-blog-grid {
+	display: flex;
+	flex-flow: row wrap;
+	
+	&:before,
+	&:after {
+		content: none;
+	}
+
+	> div {
+		flex: 1 auto;
+	}
+	> .carousel-container {
+		flex: 1 auto;
+	}
+}

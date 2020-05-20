@@ -1,0 +1,25 @@
+.ld-bsp-carousel {
+
+	.ld-bsp-img {
+		
+		a {
+			display: inline-block;
+			height: 75px;
+			overflow: hidden;
+		}
+		img {
+			width: 75px;
+		}
+	}
+	.flickity-button {
+		width: 32px;
+		height: 32px;
+		border-radius: 3px;
+		background-color: #F2F2F2;
+
+		&:hover {
+			background-color: #000;
+			color: #fff;
+		}
+	}
+}

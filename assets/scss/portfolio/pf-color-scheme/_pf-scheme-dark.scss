@@ -1,0 +1,28 @@
+.ld-pf-item {
+
+	&.ld-pf-dark {
+		color: inherit;
+	
+		h1, h2, h3, h4, h5, h6 {
+			color: #000;
+		}
+		a {
+			color: rgba(#000, 0.5);
+	
+			&:hover {
+				color: #000;
+			}
+		}
+		.ld-pf-btn {
+			color: #fff;
+	
+			&:hover {
+				color: #fff;
+			}
+		}
+	}
+	
+	&.ld-pf-dark-alt {
+		color: #000;
+	}
+}

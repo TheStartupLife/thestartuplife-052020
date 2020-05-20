@@ -1,0 +1,98 @@
+.one-ib-circ-cnt {
+	color: rgba(#fff, 0.55);
+
+	h3 {
+		color: #fff;
+	}
+}
+
+.content-box-tour,
+.content-box-classes {
+	background-color: #292b39;
+}
+.content-box-tour {
+
+	.content-box-contents,
+	.content-box-footer {
+		border-color: #6e6f7b;
+	}
+	.content-box-footer {
+		
+		h6 {
+			color: #fff;
+		}
+	}
+}
+.content-box-booking .content-box-header {
+	background-color: #121319;
+}
+
+.ld-bnr-deal {
+
+	.ld-bnr-content {
+		background-color: #1c1e27;
+	}
+}
+
+.ld-msg {
+	background-color: #292b37;
+
+	.ld-msg-close,
+	h5 {
+		color: #fff;
+	}
+}
+
+.pricing-table-modern,
+.pricing-table-default,
+.pricing-table-colorful {
+
+	h5 {
+		color: #fff;
+	}
+	ul {
+		color: rgba(#fff, 0.9);
+	}
+}
+.pricing-table-default {
+	border-color: #6c6e75;
+
+	.pricing-table-header {
+		background-color: #292b37;
+	}
+}
+
+.pricing-table-colorful {
+	background-color: #292b37;
+
+	ul {
+
+		li {
+			border-color: #6c6e75;
+		}
+	}
+}
+
+.liquid-progressbar-title {
+	color: rgba(#fff, 0.75);
+}
+.liquid-progressbar-bar {
+	color: #fff;
+}
+.liquid-progressbar-percentage {
+
+	&.style-tooltip {
+		background-color: #484a56;
+
+		&:after {
+			border-top-color: #484a56;
+		}
+	}
+}
+
+.ld-ajax-loadmore {
+
+	&.all-items-loaded {
+		color: #fff;
+	}
+}

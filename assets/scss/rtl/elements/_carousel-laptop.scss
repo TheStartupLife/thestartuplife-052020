@@ -1,0 +1,14 @@
+.ld-carousel-laptop {
+
+	.flickity-prev-next-button {
+
+		&.previous {
+			left: auto;
+			right: 6%;
+		}
+		&.next {
+			right: auto;
+			left: 6%;
+		}
+	}
+}

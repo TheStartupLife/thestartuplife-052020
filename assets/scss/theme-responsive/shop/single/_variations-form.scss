@@ -1,0 +1,35 @@
+@media screen and ( min-width: $grid-breakpoint-md - 1 ) {
+	
+	.woocommerce {
+	
+		div.product {
+	
+			form.cart {
+
+				&.variations_form {
+
+					+ .yith-wcwl-add-to-wishlist {
+						margin-top: -60px;
+						margin-left: 15px;
+						
+						&,
+						+ .social-icon {
+							float: right;
+						}
+						+ .social-icon {
+							margin-top: -42px;
+						}
+					}
+					+ .social-icon {
+						float: right;
+						margin-top: -42px;
+					}
+
+					~ .product_meta {
+						clear: both;
+					}
+				}
+			}
+		}
+	}
+}

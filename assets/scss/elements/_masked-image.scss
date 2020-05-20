@@ -1,0 +1,48 @@
+.ld-masked-image {
+
+	svg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+
+		defs,
+		clipPath,
+		path {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	figure {
+		background-position: -90% 10%;
+		background-size: 95%;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		visibility: hidden;
+	}
+}
+
+
+@media (min-width: 768px) {
+
+	.ld-masked-image {
+		position: absolute;
+		right: -90vw;
+		left: 42vw;
+	}
+}
+@media (min-width: 992px) {
+
+	.ld-masked-image {
+		top: -58vh;
+		right: -65vw;
+		left: 5vw;
+	}
+}

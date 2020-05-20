@@ -1,0 +1,35 @@
+.woocommerce {
+
+	div.product {
+
+		form.cart {
+
+			.group_table {
+				width: 100%;
+				margin-bottom: 2em;
+				
+				td {
+					padding: 10px 15px !important;
+				}
+				label {
+					margin: 0;
+				}
+				label a,
+				.woocommerce-grouped-product-list-item__label,
+				.woocommerce-Price-amount {
+					color: #000;
+				}
+				label a {
+					font-weight: 600;
+
+					&:hover {
+						color: var(--color-primary);
+					}
+				}
+				.ld-product-quantity {
+					margin-bottom: 0 !important;
+				}
+			}
+		}
+	}
+}

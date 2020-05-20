@@ -1,0 +1,415 @@
+.pricing-table {
+	margin-bottom: 2em;
+	position: relative;	
+	text-align: center;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+
+		li {
+			display: block;
+		}
+	}
+	.btn {
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.pricing {
+		margin: 0;
+	}
+
+	&.featured {
+		z-index: 2;
+	}
+}
+
+.pricing-table-footer {
+
+	&:empty {
+		display: none;
+	}
+}
+
+.pricing-table-default {
+	$border-color: #e4e4eb;
+	border: 1px solid $border-color;
+
+	.pricing-table-header {
+		padding: 16px 16px;
+		background-color: #f0f2f4;
+		border-bottom: 1px solid #fff;
+		border-color: inherit;
+
+	}
+	h5 {
+		padding: 0;
+		margin: 0;
+		font-size: 24px;
+		line-height: 2em;
+		font-weight: 700;
+		letter-spacing: -0.01em;
+		text-transform: uppercase;
+		color: #181a23;
+
+		small {
+			display: block;
+			font-size: 50%;
+			font-weight: 600;
+			letter-spacing: 0.1em;
+			color: var(--color-primary);
+			margin-bottom: 10px;
+		}
+	}
+	.pricing-table-body {
+		padding: 24px 60px;
+		border-color: inherit;
+	}
+	ul {
+		color: #828593;
+		border-color: inherit;
+
+		li {
+			padding: 1.333em 0;
+			font-size: 15px;
+			line-height: 1.6em;
+			border-bottom: 1px solid #fff;
+			border-color: inherit;
+		}
+		strong {
+			display: block;
+			font-size: 1.071428571428571em;
+			color: #181a23;
+		}
+	}
+	.pricing-table-footer {
+		// padding-bottom: 50px;
+	}
+	.btn {
+		margin-bottom: 50px;
+	}
+	.pricing {
+		margin-bottom: 0.666em;
+		font-size: 30px;
+		font-weight: 700;
+		color: var(--color-primary);
+
+		sup {
+			font-size: 60%;
+			font-weight: 400;
+		}
+	}
+}
+
+.pricing-table-colorful {
+	margin-left: -20px;
+	margin-right: -20px;
+	border-radius: 3px;
+	background-color: #fff;
+	box-shadow: 14px 14px 70px rgba(#000, 0.07);
+
+	.pricing-table-header {
+		padding: 18px 50px;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			border-radius: 3px 3px 0 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0.1;
+			z-index: 0;
+			background-color: var(--color-primary);
+		}
+	}
+	h5 {
+		display: flex;
+		width: 100%;
+		margin: 7px 0;
+		position: relative;
+		z-index: 2;
+		font-size: 16px;
+		font-weight: 600;
+		color: #181b31;
+		justify-content: space-between;
+		align-items: center;
+
+		small {
+			order: 1;
+			font-size: 1.875em;
+			color: var(--color-primary);
+		}
+	}
+	.pricing-table-body {
+		padding: 30px 0;
+	}
+	ul {
+		color: #808291;
+
+		li {
+			border-bottom: 1px solid #e7eaef;
+			padding: 1em;
+
+			&:last-child {
+				border: none;
+			}
+		}
+		strong {
+			color: #181b31;
+		}
+	}
+	.pricing-table-footer {
+		margin-bottom: 42px;
+		@include clearfix;
+	}
+	.featured-tag {
+		color: var(--color-primary);
+
+		i,
+		span {
+			display: block;
+		}
+		i {
+			font-size: 30px;
+			margin-bottom: 0.25em;
+		}
+	}
+
+	&.color-green {
+
+		.pricing-table-header:before {
+			background-color: #46d664;
+		}
+		.featured-tag,
+		h5 small {
+			color: #46d664;
+		}
+	}
+	&.color-red {
+
+		.pricing-table-header:before {
+			background-color: #fd623c;
+		}
+		.featured-tag,
+		h5 small {
+			color: #fd623c;
+		}
+	}
+	&.color-blue {
+		
+		.pricing-table-header:before {
+			background-color: #02a0e5;
+		}
+		.featured-tag,
+		h5 small {
+			color: #02a0e5;
+		}
+	}
+	&.first {
+		margin-left: 0;
+	}
+	&.last {
+		margin-right: 0;
+	}
+	&.featured {
+		margin-top: -50px;
+	}
+}
+
+.pricing-table-modern {
+	padding: 50px 45px 55px;
+	color: #5E6575;
+
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: auto;
+	}
+	.pricing-table-header,
+	.pricing-table-body,
+	.pricing-table-footer {
+		position: relative;
+		z-index: 2;
+	}
+	h5 {
+		margin-top: 0;
+		margin-bottom: 1.35em;
+		color: #32325C;
+		font-size: 24px;
+		font-weight: 700;
+	}
+	.pricing {
+		font-size: 72px;
+		color: var(--color-primary);
+		line-height: 1;
+
+		small {
+			display: block;
+			margin-top: 1em;
+			font-size: em(16, 72);
+			color: #5B6C94;
+		}
+	}
+	.pricing-table-body {
+		padding: 50px 15px 0;
+		font-size: 16px;
+	}
+	ul {
+		font-size: 16px;
+		line-height: 1.5em;
+
+		li:not(:last-child) {
+			margin-bottom: 1.45em;
+		}
+	}
+	.pricing-table-footer {
+		margin-top: 60px;
+	}
+
+	&.featured {
+		color: #fff;
+		
+		&:before {
+			background: linear-gradient(to bottom, #0856F7 0%, #1DFFDD 100%);
+		}
+		h5,
+		.pricing,
+		.pricing small {
+			color: inherit;
+		}
+
+		&[class*=bg-] {
+
+			&:before {
+				background: inherit;
+			}
+		}
+	}
+}
+
+.pricing-table-minimal {
+	padding: 45px 50px 50px;
+	border-radius: 10px;
+	background-color: #fff;
+	color: #2D3136;
+
+	.pricing-table-header {
+		text-align: center;
+
+		h5 {
+			display: inline-block;
+			padding: em(9, 15) em(18, 15);
+			margin: 0;
+			background-color: #F1F3F7;
+			border-radius: 50em;
+			font-size: 15px;
+			line-height: 1.5em;
+			font-weight: 400;
+			color: #2D3136;
+		}
+	}
+	.pricing {
+		margin: 0;
+		font-size: 60px;
+		line-height: 1em;
+
+		> span {
+			font-size: em(21, 60);
+		}
+		small {
+			font-size: em(15, 60);
+		}
+	}
+	.pricing-table-body {
+		margin-top: 35px;
+		font-size: 16px;
+
+		li {
+			margin-bottom: em(10, 16);
+		}
+	}
+	.pricing-table-footer {
+		margin-top: 30px;
+	}
+}
+
+.pricing-table-agency {
+	padding-top: 6rem;
+	padding-bottom: 4.5rem;
+	background-color: #fff;
+	box-shadow: 0 40px 125px rgba(#000, 0.07);
+	
+	.pricing-table-featured-label {
+		padding: 5px 30px;
+		border-radius: 0 0 50em 50em;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		background: linear-gradient(to right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%);
+		transform: translateX(-50%);
+		font-size: 16px;
+		line-height: 1.5em;
+		color: #fff;
+	}
+	.pricing-table-header {
+		padding: 0 1.5rem;
+		margin-bottom: 1.5rem;
+
+		h5 {
+			margin: 0;
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			font-weight: 400;
+		}
+	}
+	.pricing {
+		font-size: 56px;
+		line-height: 1.5em;
+		font-weight: 700;
+		color: #000;
+		sup,
+		small {
+			font-size: em(20, 56);
+			font-weight: 400;
+		}
+		sup {
+			top: -1.25em;
+			margin-right: 0.2em;
+		}
+		small {
+			opacity: 0.6;
+			
+			&:before {
+				content: '/';
+			}
+		}
+	}
+	.pricing-table-body {
+		padding: 0 5rem;
+		margin-bottom: 1.5rem;
+
+		li {
+			padding: 1.5em 1em;
+			border-top: 1px solid #ebeff1;
+			font-size: 14px;
+			line-height: 1.5em;
+			text-transform: uppercase;
+			letter-spacing: 0.05em;
+			color: #666;
+		}
+	}
+	.pricing-table-footer {
+		padding: 0 1.5rem;
+	}
+}

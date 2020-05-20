@@ -1,0 +1,12 @@
+.lqd-rst-menu {
+	padding-bottom: 1.25em;
+	margin-bottom: 1.5em;
+	
+	&:not(:last-of-type) {
+		border-bottom: 1px dashed #dbdbdb;
+	}
+	ul {
+		font-size: 13px;
+		color: #a7a7a7;
+	}
+}

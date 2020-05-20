@@ -1,0 +1,60 @@
+ol.breadcrumb {
+	background: none;
+
+	> li {
+		color: inherit;
+
+		&:not(:last-child) {
+
+			&:after {
+				content: '\f105';
+				margin-left: 0.75em;
+				margin-right: 0.5em;
+				font-family: 'FontAwesome';
+				font-size: 0.85em;
+			}
+		}
+		&:hover {
+			opacity: 1;
+		}
+
+		// overwriting bootstrap
+		+ li {
+
+			&:before {
+				content: none; 
+			}
+		}
+	}
+
+	> .active {
+		color: inherit;
+	}
+
+	span {
+		opacity: 0.6;
+		transition: opacity 0.3s;
+	}
+
+	a {
+
+		&:hover {
+
+			span {
+				opacity: 1;
+			}
+		}
+	}
+
+	&.text-darker {
+		color: #545663;
+
+		a {
+			color: inherit;
+
+			&:hover {
+				color: #000;
+			}
+		}
+	}
+}

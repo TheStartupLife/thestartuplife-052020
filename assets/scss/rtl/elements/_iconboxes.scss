@@ -1,0 +1,18 @@
+.iconbox {
+
+	&.text-right {
+		align-items: flex-start;
+	}
+	&.text-left {
+		align-items: flex-end;
+	}
+}
+
+.iconbox-inline,
+.iconbox-side {
+	flex-direction: row-reverse;
+
+	&.text-right {
+		flex-direction: row;
+	}
+}

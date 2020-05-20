@@ -1,0 +1,33 @@
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+	
+	.lqd-sticky-footer-sentinel {
+
+		&.height-applied {
+
+			+ .footer-stuck {
+				margin: 0;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				opacity: 0;
+				visibility: hidden;
+				
+				&.is-inview {
+					opacity: 1;
+					visibility: visible;
+				}
+				.site-boxed-layout & {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: $grid-breakpoint-lg - 1 ) {
+
+	.lqd-sticky-footer-sentinel {
+		display: none;
+	}	
+}

@@ -1,0 +1,11 @@
+@media screen and ( max-width: $grid-breakpoint-lg - 1 ) {
+
+	.pricing-table-colorful {
+		margin-left: 0;
+		margin-right: 0;
+
+		&.featured {
+			margin-top: 0;
+		}
+	}
+}

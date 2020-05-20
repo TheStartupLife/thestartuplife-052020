@@ -1,0 +1,21 @@
+.grid-stamp {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	&.is-right {
+		left: auto;
+		right: 0;
+	}
+}
+
+@media screen and ( max-width: $grid-breakpoint-sm ) {
+
+	.grid-stamp {
+
+		&:not([class*=col-xs-]),
+		&.col-xs-12 {
+			display: none;
+		}
+	}
+}

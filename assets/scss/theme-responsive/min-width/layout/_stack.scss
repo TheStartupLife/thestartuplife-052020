@@ -1,0 +1,77 @@
+// Color Schemes
+.lqd-stack-active-row-dark {
+	
+	.main-header:not(.header-fullscreen):not(.header-side) {
+		
+		.mainbar-wrap:not(.is-stuck) {
+			
+			.social-icon a {
+				color: rgba(#fff, 0.7) !important;
+				
+				&:hover {
+					color: #fff !important;
+				}
+			}
+			.header-module .ld-module-trigger,
+			.main-nav > li > a {
+				color: rgba(#fff, 0.7);
+				
+				&:hover {
+					color: #fff;
+				}
+			}
+			.navbar-brand {
+				
+				.logo-light {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
+
+.lqd-stack-active-row-light {
+	
+	.main-header:not(.header-fullscreen):not(.header-side) {
+		
+		.mainbar-wrap:not(.is-stuck) {
+			
+			.social-icon a {
+				color: rgba(#000, 0.7) !important;
+				
+				&:hover {
+					color: #000 !important;
+				}
+			}
+			.header-module .ld-module-trigger,
+			.main-nav > li > a {
+				color: rgba(#000, 0.7);
+				
+				&:hover {
+					color: #000;
+				}
+			}
+			.navbar-brand {
+				
+				.logo-dark {
+					opacity: 1;
+					visibility: visible;
+				}
+			}
+		}
+	}
+}
+.lqd-stack-moving-down {
+	
+	.mainbar-wrap:not(.is-stuck) {
+		
+		.social-icon a,
+		.header-module .ld-module-trigger,
+		.main-nav > li > a,
+		.navbar-brand .logo-light,
+		.navbar-brand .logo-dark {
+			transition-delay: 0.35s;
+		}
+	}
+}

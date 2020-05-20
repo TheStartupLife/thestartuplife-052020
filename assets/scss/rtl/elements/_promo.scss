@@ -1,0 +1,16 @@
+.lqd-promo-content {
+	padding-left: 0;
+	padding-right: 15px;
+}
+.lqd-promo-cat {
+	margin-right: 0;
+	margin-left: 15px;
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+
+	.lqd-promo-reverse .lqd-promo-content {
+		padding-right: 0;
+		padding-left: 15px;
+	}
+}

@@ -1,0 +1,30 @@
+.btn {
+
+	+.btn {
+		margin-left: 0;
+		margin-right: 0.75em;
+	}
+}
+
+.btn-txt {
+
+	+ .btn-icon {
+		margin-left: 0;
+		margin-right: 8px;
+	}
+}
+
+.btn-icon-solid.btn-icon-left,
+.btn-icon-bordered.btn-icon-left {
+
+	&.btn-icon-left {
+		
+		.btn-txt {
+
+			+ .btn-icon {
+				margin-right: 0;
+				margin-left: 20px;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.pf-hover-blurimage {
+
+	&:hover {
+		
+		.ld-pf-image {
+			
+			figure {
+				transform: scale(1.05); // Firefox having trouble
+			}
+		}
+	}
+}

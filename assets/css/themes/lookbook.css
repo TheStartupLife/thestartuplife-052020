@@ -1,0 +1,63 @@
+:root {
+  --color-primary:#f13c46;
+  --color-gradient-start:#f42958;
+  --color-gradient-stop:#e4442a;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.7em;
+  color: #808291;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+  font-family: 'Glacial Indifference', sans-serif;
+  font-weight: 700;
+  line-height: 1.2em;
+  color: #181b31;
+}
+
+.h1, h1 {
+  font-size: 48px;
+}
+
+.h2, h2 {
+  font-size: 40px;
+}
+
+.h3, h3 {
+  font-size: 32px;
+}
+
+.h4, h4 {
+  font-size: 25px;
+}
+
+.h5, h5 {
+  font-size: 21px;
+}
+
+.h6, h6 {
+  font-size: 18px;
+}
+
+.main-nav > li > a {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #65676d;
+}
+
+.main-nav > li.is-active > a,
+.main-nav > li.current-menu-item > a,
+.main-nav > li:hover > a,
+.main-nav > li > a:hover {
+  color: #000;
+}

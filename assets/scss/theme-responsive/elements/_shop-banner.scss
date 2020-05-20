@@ -1,0 +1,80 @@
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.ld-shop-banner-style1 {
+		padding-bottom: 90.091%;
+	
+		.ld-shop-banner-carousel-main,
+		.ld-shop-banner-carousel-main .carousel-items,
+		.ld-shop-banner-container,
+		.ld-shop-banner-inner,
+		.ld-shop-banner-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+		}
+		.ld-shop-banner-carousel-main {
+			
+			.flickity-viewport {
+				height: 100% !important;
+			}
+			.carousel-item-inner,
+			.carousel-item {
+				height: 100%;
+			}
+		}
+	}
+}
+@media screen and ( max-width: $grid-breakpoint-md - 1 ) {
+
+	.ld-shop-banner-style1 {
+		
+		.liquid-overlay-link {
+			bottom: 50%;
+			height: auto;
+			transform: none;
+		}
+		.ld-shop-banner-image {
+			transition: box-shadow 0.3s;
+		}
+		.ld-shop-banner-carousel-nav {
+			width: 100%;
+			height: auto;
+			margin-top: 1em;
+			position: relative;
+			bottom: auto;
+			right: auto;
+			transform: none;
+
+			.carousel-item {
+				width: 25%;
+				opacity: 1;
+				visibility: visible;
+				transform: none;
+			}
+		}
+
+		&:hover {
+			
+			.ld-shop-banner-image {
+				box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+			}
+			.ld-shop-banner-inner {
+				box-shadow: none;
+			}
+		}
+	}
+}
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.ld-shop-banner-style1 {
+		
+		.ld-shop-banner-carousel-nav {
+
+			.carousel-item {
+				width: 33.3333333333% !important;
+			}
+		}
+	}
+}

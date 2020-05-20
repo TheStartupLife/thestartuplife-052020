@@ -1,0 +1,14 @@
+.ld-cart-product-details {
+
+	figure + & {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+}
+a.remove {
+
+	&.ld-cart-product-remove {
+		left: auto;
+		right: 25px;
+	}
+}

@@ -1,0 +1,18 @@
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+	
+	.blog-single-image-left {
+
+		&:not(.has-sidebar) {
+
+			.blog-single-cover {
+				float: left;
+				width: 470px;
+				margin-left: -26%;
+				margin-right: 17%;
+			}
+			.blog-single-details {
+				margin-right: -26%;
+			}
+		}
+	}
+}

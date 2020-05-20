@@ -1,0 +1,9 @@
+.ld-pf-inner {
+	
+	[data-hover3d] & {
+		transform-style: inherit;
+		backface-visibility: inherit;
+		perspective: inherit;
+		transform: translate3d(0, 0, 0);
+	}
+}

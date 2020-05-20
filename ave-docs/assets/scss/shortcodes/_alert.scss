@@ -1,0 +1,20 @@
+.alert {
+	border: none;
+	border-radius: 3px;
+
+	img {
+		margin-bottom: 0.5em;
+	}
+}
+.alert-warning {
+	background-color: #FFB201;
+	color: darken(#FFB201, 50%);
+}
+.alert-info {
+	background-color: #0149FF;
+	color: #fff;
+}
+.alert-danger {
+	background-color: #FF0000;
+	color: #fff;
+}

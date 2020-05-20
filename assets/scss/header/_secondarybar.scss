@@ -1,0 +1,33 @@
+.secondarybar-wrap {
+	position: relative;
+	z-index: 11;
+
+	~ .secondarybar-wrap {
+		z-index: 9;
+	}
+}
+.secondarybar-row {
+	align-items: stretch;
+	flex: 1 auto;
+
+	&:before,
+	&:after {
+		content: none;
+	}
+	> [class^=col] {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: stretch;
+
+		&:empty {
+			display: none;
+		}
+	}
+}
+.secondarybar {
+
+	.header-module {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}

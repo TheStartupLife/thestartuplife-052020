@@ -1,0 +1,106 @@
+:root {
+	--color-primary:#f5634b;
+	--color-gradient-start:#f5634b;
+	--color-gradient-stop:#f5634b;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.9em;
+	color: #808291;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+	font-family: 'Teko', sans-serif;
+	line-height: 1.2em;
+	color: #181b31;
+}
+
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+	font-family: 'Poppins', sans-serif;
+}
+
+.h1, h1 {
+	font-size: 65px;
+}
+
+.h2, h2 {
+	font-size: 55px;
+}
+
+.h3, h3 {
+	font-size: 48px;
+}
+
+.h4, h4 {
+	font-size: 28px;
+}
+
+.h5, h5 {
+	font-size: 25px;
+}
+
+.h6, h6 {
+	font-size: 19px;
+}
+
+.main-header {
+	padding: 50px 100px 0;
+}
+
+.main-nav > li {
+		
+	> a {
+		font-family: 'Teko', sans-serif;
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		color: #fff;
+
+		.link-ext {
+			background-color: var(--color-primary);
+		}
+	}
+	&.is-active > a,
+	&.current-menu-item > a,
+	&:hover > a,
+	> a:hover {
+		color: var(--color-primary);
+	}
+}
+
+.btn {
+	font-family: 'Teko', sans-serif;
+}
+
+.main-footer {
+	color: #a1a3ab;
+
+	a:not(.btn) {
+		color: #777981;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+	.social-icon {
+
+		a {
+			color: #fff;
+			background-color: rgba(#fff, 0.15);
+
+			&:hover {
+				background-color: var(--color-primary);
+			}
+		}
+	}
+}

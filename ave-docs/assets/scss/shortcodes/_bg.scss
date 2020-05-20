@@ -1,0 +1,24 @@
+.bg-gradient-primary-lr {
+	background: linear-gradient(to right, var(--color-gradient-primary-start) 0%, var(--color-gradient-primary-stop) 100%) !important;
+}
+.bg-gradient-primary-rl {
+	background: linear-gradient(to left, var(--color-gradient-primary-start) 0%, var(--color-gradient-primary-stop) 100%) !important;
+}
+.bg-gradient-primary-tb {
+	background: linear-gradient(to bottom, var(--color-gradient-primary-start) 0%, var(--color-gradient-primary-stop) 100%) !important;
+}
+.bg-gradient-primary-bt {
+	background: linear-gradient(to top, var(--color-gradient-primary-start) 0%, var(--color-gradient-primary-stop) 100%) !important;
+}
+.bg-gradient-primary-tl {
+	background: linear-gradient(to top left, var(--color-gradient-primary-start) 0%, var(--color-gradient-primary-stop) 100%) !important;
+}
+.bg-gradient-primary-tr {
+	background: linear-gradient(to top right, var(--color-gradient-primary-start) 0%, var(--color-gradient-primary-stop) 100%) !important;
+}
+.bg-gradient-primary-br {
+	background: linear-gradient(to bottom right, var(--color-gradient-primary-start) 0%, var(--color-gradient-primary-stop) 100%) !important;
+}
+.bg-gradient-primary-bl {
+	background: linear-gradient(to bottom left, var(--color-gradient-primary-start) 0%, var(--color-gradient-primary-stop) 100%) !important;
+}

@@ -1,0 +1,61 @@
+.ld-module-search {
+
+	.ld-module-dropdown {
+		right: -15px;
+
+		&.left {
+			right: auto;
+			left: -15px;
+		}
+	}
+}
+.ld-search-form-container {
+	background-color: #fff;
+	width: 360px;
+	padding: 30px 30px;
+	border: 1px solid rgba(#000, 0.1);
+}
+.ld-search-form {
+	position: relative;
+	line-height: 1; // to fix alignment issue with nav items
+
+	input {
+		width: 100%;
+		padding: 10px 20px 10px 30px;
+		border: none;
+		border-bottom: 1px solid rgba(#000, 0.1);
+		font-size: 16px;
+		letter-spacing: 0.025em;
+		
+		@include placeholder {
+			color: #a7a9b8;
+		}
+		&:focus {
+			outline: none;
+			border-color: rgba(#000, 0.2);
+		}
+	}
+	.input-icon {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		color: #b8beca;
+	}
+}
+
+.ld-module-search-visible-form {
+
+	.ld-search-form-container {
+		padding: 0;
+		background: none;
+		border: none;
+	}
+	.ld-search-form {
+
+		input {
+			background: none;
+		}
+	}
+}

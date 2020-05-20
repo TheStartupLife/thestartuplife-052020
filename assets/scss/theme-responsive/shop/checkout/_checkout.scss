@@ -1,0 +1,33 @@
+@media screen and ( max-width: $grid-breakpoint-xs - 1 ) {
+
+	.woocommerce {
+
+		form.woocommerce-checkout {
+
+			table.woocommerce-checkout-review-order-table {
+				
+				tr {
+					display: flex;
+					flex-direction: column;
+				}
+				tbody {
+
+					td {
+						border: none;
+					}
+				}
+				tfoot {
+
+					.cart-subtotal,
+					.order-total {
+
+						th,
+						td {
+							border: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

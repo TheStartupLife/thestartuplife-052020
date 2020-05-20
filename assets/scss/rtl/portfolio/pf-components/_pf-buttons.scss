@@ -1,0 +1,13 @@
+.ld-pf-btn {
+
+	+ .ld-pf-btn {
+		margin-left: 0 !important;
+		margin-right: 0.5rem;
+	}
+	i.icon-arrow-right-material {
+
+		&:before {
+			content: "\e92d";
+		}
+	}
+}

@@ -1,0 +1,85 @@
+.ld-pf-item {
+	position: relative;
+	margin-bottom: 30px;
+	border-radius: 0;
+
+	div,
+	figure,
+	img {
+		border-radius: inherit;
+	}
+
+	.liquid-overlay-link {
+		z-index: 2;
+	}
+
+	time {
+		font-size: 12px;
+	}
+
+	[data-split-text] {
+		
+		&:not(.split-text-applied) {
+			visibility: hidden;
+		}
+	}
+	
+	.flickity-equal-cells .carousel-item & {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 15px;
+		right: 15px;
+		margin-bottom: 0;
+		
+		&.pf-details-inside {
+
+			.ld-pf-image,
+			.ld-pf-inner {
+				height: 100%;
+			}
+		}
+		&.pf-hover-shadow {
+			height: calc(100% - 50px);
+			max-height: 550px;
+		}
+	}
+
+	&.pf-details-inside {
+		overflow: hidden;
+	}
+
+	&:hover {
+		
+		.ld-pf-bg {
+			opacity: 1;
+		}
+		.ld-pf-details-inner {
+			opacity: 1;
+			visibility: visible;
+		}
+		.ld-pf-category-lined {
+
+			&:after {
+				transform: scaleX(1);
+			}
+		}
+		.pf-extra-arrow {
+			height: 32px;
+			margin-bottom: 1em;
+
+			line,
+			polyline {
+				stroke-dashoffset: 0;
+				transition: stroke-dasharray 0.6s cubic-bezier(0.23, 1, 0.320, 1), stroke-dashoffset 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+				transition-delay: 0.2s;
+			}
+		}
+	}	
+}
+.pf-carousel-equal-height {
+
+	.carousel-item {
+		max-height: 550px;
+	}
+}

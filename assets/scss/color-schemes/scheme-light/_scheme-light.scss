@@ -1,0 +1,39 @@
+// extending selectors to overwrite liquid-css.css
+body {
+
+	&.page-scheme-light {
+		color: #a2a2a2;
+	}
+}
+body {
+	
+	h1, .h1,
+	h2, .h2,
+	h3, .h3,
+	h4, .h4,
+	h5, .h5,
+	h6, .h6 {
+		color: #fff;
+	}
+	a {
+		color: #fff;
+	
+		&:hover {
+			color: rgba(#fff, 0.85);
+		}
+	}
+}
+#content {
+	background-color: #12131a;
+}
+.add-dropcap {
+
+	&:first-letter {
+		color: #fff;
+	}
+}
+
+@import './blog/blog-scheme-light';
+@import './portfolio/portfolio-scheme-light';
+@import './partials/not-found-scheme-light';
+@import './elements/elements-scheme-light';

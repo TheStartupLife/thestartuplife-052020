@@ -1,0 +1,77 @@
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 768px,
+  md: 992px,
+  lg: 1200px
+) !default;
+
+$grid-breakpoint-xs: 480px;
+$grid-breakpoint-sm: 768px;
+$grid-breakpoint-md: 992px;
+$grid-breakpoint-lg: 1200px;
+$grid-breakpoint-mobile-nav: 1200px;
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 4.5),
+  7: ($spacer * 5),
+  8: ($spacer * 5.5),
+  9: ($spacer * 6)
+), $spacers);
+
+
+// Colors
+$color-font: #808291;
+$color-primary: #3ed2a7;
+$color-secondary: #ffb09f;
+$color-link: #a7a9b8;
+$color-link-hover: #181b31;
+
+// Social Colors
+$social-colors: (
+  behance: #1769ff,
+  behance-square: #1769ff,
+  codepen: #0ebeff,
+  deviantart: #05cc47,
+  digg: #005be2,
+  dribbble: #ea4c89,
+  facebook: #3b5998,
+  facebook-square: #3b5998,
+  flickr: #0063dc,
+  github: #4078c0,
+  google: #4285f4,
+  google-plus: #dd4b39,
+  instagram: #405de6,
+  jsfiddle: #0084FF,
+  linkedin: #0077b5,
+  medium: #00ab6c,
+  paypal: #003087,
+  pinterest: #bd081c,
+  pinterest-p: #bd081c,
+  reddit: #ff4500,
+  reddit-square: #ff4500,
+  skype: #00aff0,
+  slack: #6ecadc,
+  snapchat: #fffc00,
+  soundcloud: #ff8800,
+  spotify: #1db954,
+  stack-overflow: #f48024,
+  telegram: #0088cc,
+  trello: #0079bf,
+  tumblr: #35465c,
+  twitch: #6441a5,
+  twitter: #1da1f2,
+  twitter-square: #1da1f2,
+  vimeo: #1ab7ea,
+  wordpress: #21759b,
+  youtube: #ff0000,
+  youtube-play: #ff0000
+);

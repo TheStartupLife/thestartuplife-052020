@@ -1,0 +1,17 @@
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.ld-module-cart {
+
+		.ld-cart-contents,
+		.ld-module-dropdown {
+			width: 100%;
+		}
+	}
+	.ld-cart-contents .empty,
+	.ld-cart-foot,
+	.ld-cart-head,
+	.ld-cart-product {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}

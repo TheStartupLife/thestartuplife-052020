@@ -1,0 +1,21 @@
+.widget_tag_cloud {
+
+	a {
+		display: inline-block;
+		border: 1px solid #dedede;
+		padding: 0.25em 1em;
+		margin-bottom: 5px;
+		margin-right: 2px;
+		font-size: 12px !important;
+		line-height: 1.5em;
+		font-weight: 500;
+		color: #000;
+
+		&:hover {
+			border-color: var(--color-primary);
+			background-color: var(--color-primary);
+			color: #fff;
+			box-shadow: 0 10px 25px rgba(#000, 0.1);
+		}
+	}
+}

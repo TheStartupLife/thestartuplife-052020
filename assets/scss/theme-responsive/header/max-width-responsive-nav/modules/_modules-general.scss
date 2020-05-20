@@ -1,0 +1,56 @@
+.main-header {
+
+  .header-module {
+    display: none;
+  }
+}
+
+.navbar-collapse {
+
+  .header-module {
+    display: flex;
+    margin-left: 0 !important;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:first-of-type {
+      margin-top: 20px;
+    }
+  }
+}
+.navbar-header {
+
+  .header-module {
+    display: inline-flex;
+    position: static;
+    order: 2;
+
+    + .header-module {
+      margin-left: 18px;
+    }
+  }
+
+  .navbar-brand {
+
+    + .header-module {
+      margin-left: auto;
+    }
+  }
+}
+.lqd-mobile-modules-container {
+  display: flex;
+}
+
+// Header mobile styles
+[data-mobile-nav-align=left] {
+
+  .navbar-collapse {
+
+    .header-module {
+      align-items: flex-start;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

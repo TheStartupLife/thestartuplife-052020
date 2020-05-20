@@ -1,0 +1,2127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Ave HTML - Documentations</title>
+
+	<link rel="stylesheet" href="https://use.typekit.net/{YOUR_API_KEY}.css">
+
+	<link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/vendors/fontawesome/css/fontawesome.min.css">
+	<link rel="stylesheet" href="./assets/vendors/fontawesome/css/solid.min.css">
+	<link rel="stylesheet" href="./assets/vendors/prism/prism.css">
+	<link rel="stylesheet" href="./assets/css/docs.min.css">
+
+</head>
+<body class="line-numbers">
+
+	<div id="wrap">
+		
+		<header id="main-header">
+
+			<nav class="navbar navbar-expand-lg navbar-light py-4 px-5">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/img/logo/logo-light.svg" alt="Ave">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			
+				<div class="collapse navbar-collapse" id="main-nav">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="#" target="_blank" class="btn btn-sm btn-bordered border-thick text-white px-3">
+								<span>
+									<span class="btn-txt">Discover Ave</span>
+								</span>
+							</a>
+							<a href="#" target="_blank" class="btn btn-sm btn-solid px-2">
+								<span>
+									<span class="btn-txt">Join to download</span>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+		</header><!-- /#main-header -->
+
+		<aside id="main-sidebar">
+			<nav class="lqd-sticky-nav px-3 py-3 rounded-lg">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link" href="#basics">
+							Basics
+							<i class="fa fa-angle-right"></i>
+						</a>
+						<ul>
+							<li class="nav-item"> <a class="nav-link" href="#tips">Tips</a> </li>
+							<li class="nav-item"><a class="nav-link" href="#files-structure">Files Structure</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#terms">
+							Terminology
+							<i class="fa fa-angle-right"></i>
+						</a>
+						<ul>
+							<li class="nav-item"> <a class="nav-link" href="#terms-references">References</a> </li>
+							<li class="nav-item"><a class="nav-link" href="#terms-data-attribute">Data Attributes</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#elements-features" class="nav-link">
+							Elements &amp; Features
+							<i class="fa fa-angle-right"></i>
+						</a>
+						<ul>
+							<li class="nav-item"><a class="nav-link" href="#css-variables">CSS Variables ( Custom Properties )</a></li>
+							<li class="nav-item"><a class="nav-link" href="#accordions">Accordions</a></li>
+							<li class="nav-item"><a class="nav-link" href="#buttons">Buttons</a></li>
+							<li class="nav-item"><a class="nav-link" href="#carousels">Carousels</a></li>
+							<li class="nav-item"><a class="nav-link" href="#flipboxes">Flip Boxes</a></li>
+							<li class="nav-item"><a class="nav-link" href="#google-maps">Google Maps</a></li>
+							<li class="nav-item"><a class="nav-link" href="#iconboxes">Iconboxes</a></li>
+							<li class="nav-item"><a class="nav-link" href="#media-gallery">Media Gallery</a></li>
+							<li class="nav-item"><a class="nav-link" href="#parallax">Parallax</a></li>
+							<li class="nav-item"><a class="nav-link" href="#particles">Particles</a></li>
+							<li class="nav-item"><a class="nav-link" href="#tabs">Tabs</a></li>
+							<li class="nav-item"><a class="nav-link" href="#video-bg">Video Background</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact-form">Setting up Contact Form</a></li>
+							<li class="nav-item"><a class="nav-link" href="#newsletter">Setting up Newsletter Form</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a href="#shortcodes" class="nav-link">
+							Helper Classes
+							<i class="fa fa-angle-right"></i>
+						</a>
+						<ul>
+							<li class="nav-item"><a class="nav-link" href="#helper-classes-typo">Typography</a></li>
+							<li class="nav-item"><a class="nav-link" href="#helper-classes-text-colors">Text Colors</a></li>
+							<li class="nav-item"><a class="nav-link" href="#helper-classes-bg">Background</a></li>
+							<li class="nav-item"><a class="nav-link" href="#helper-classes-spacing">Spacing</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav><!-- /.lqd-sticky-nav -->
+		</aside>
+
+		<div id="content">
+
+			<section class="hero-banner-section py-5 mb-5" data-scroll>
+
+				<div class="hero-banner-section-bg"></div><!-- /.hero-banner-section-bg -->
+
+				<div class="container-fluid px-5">
+					<div class="row">
+
+						<div class="col-md-6 mx-auto text-center">
+
+							<h1 class="text-white my-0">Ave HTML Template Documentations</h1>
+
+						</div><!-- /.col-md-6 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container-fluid -->
+			</section>
+
+			<section class="pt-5" id="basics">
+
+				<div class="container">
+
+					<div class="row">
+	
+						<div class="col-md-10 mx-auto">
+	
+							<h2 class="h1">Basics</h2>
+							<p>This guide assumes basic knowledge of <strong>HTML</strong>, <strong>CSS</strong> and <strong>Javascript</strong>.</p>
+							<p> All of the template files will be delivered in a zip file. Simply extract the zip file, import it to your favorite text editor and it's ready for your customizations. <br>
+							We recommend <a class="font-weight-bold" target="_blank" href="https://code.visualstudio.com">Visual Studio Code</a> or <a class="font-weight-bold" target="_blank" href="https://atom.io">Atom</a></p>
+							<p>If you had any problems, please do not hesitate to contact us from <a href="#">here</a></p>
+	
+							<br>
+	
+							<h4 id="tips">Tips</h4>
+	
+							<div class="alert alert-warning">
+								Some features might not work correctly on your localhost due to some security restrictions. But everything should work fine when you uploaded to your website or a localhost.
+							</div><!-- /.alert alert-warning -->
+							<div class="alert alert-info">
+								Do not start from scratch. Use an existing page or a section and start from there.
+							</div><!-- /.alert alert-info -->
+	
+							<hr class="mt-5">
+	
+							<h4 id="files-structure" class="mt-4">Files structure</h4>
+	
+							<p>Here's how the strucure of Ave HTML Template assets strucure is:</p>
+	
+							<pre class="language-html">
+assets
+	-- css
+		-- themes
+	-- demo
+	-- fonts
+	-- img
+	-- js
+	-- media
+	-- php
+	-- scss
+		-- themes
+	-- vendors</pre>
+	
+							<p>
+								<strong class="text-white">css:</strong> All css files you'll need for the template. <br>
+								<strong class="text-white">css/themes:</strong> Contains compiled css files for different demos. <br>
+								<strong class="text-white">demo:</strong> Images we used only for demos. they will be replaced with simple placeholder when you get the zip file. <br>
+								<strong class="text-white">fonts:</strong> Containing all custom fonts we used in the template. <br>
+								<strong class="text-white">img:</strong> All template images such as logos are inside this folder. <br>
+								<strong class="text-white">js:</strong> Containing all javascript files used in the template. Including <strong class="text-light">theme-vendors.js</strong> which is the concatinated file of all vendor plugins used in the template. <br>
+								<strong class="text-white">media:</strong> Videos and audios are here. <br>
+								<strong class="text-white">php:</strong> Containing config files for features such as contact forms etc. <br>
+								<strong class="text-white">scss:</strong> Containing scss files. <br>
+								<strong class="text-white">scss/themes:</strong> Containing scss files for different demos. <br>
+								<strong class="text-white">vendors:</strong> Vendor plugins we've used in the template, but provided separately. <br>
+							</p>
+							
+						</div><!-- /.col-lg-7 -->
+	
+					</div><!-- /.row -->
+
+				</div><!-- /.container -->
+
+			</section>
+
+			<section id="terminology">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-10 mx-auto">
+
+							<h2 class="mt-4 h1">Terminology</h2>
+
+							<p>Let's get familiar with some of terminologies used throuout of this documentation.</p>
+
+							<h3 class="mt-4" id="terms-references">References</h3>
+
+							<p><strong class="text-white">Elements - Tags</strong>: Elements or <code>&lt;tag&gt;</code>s are basically what making an HTML page. e.g.</p>
+
+							<ul>
+								<li>
+									<code>&lt;div&gt;</code> tags are used to define a page division. May also be referred as <code>div</code>
+									<pre>
+										<code class="language-html">&lt;div class="container"&gt;
+...
+&lt;/div&gt;</code>
+									</pre>
+								</li>
+								<li>
+									<code>&lt;a&gt;</code> In HTML links are defined with this tag.
+									<pre>
+										<code class="language-html">&lt;a href="https://example.com"&gt;
+...
+&lt;/a&gt;</code>
+									</pre>
+								</li>
+							</ul>
+							
+							<p><strong class="text-white">.class</strong>: Referring to any element with the specified class.</p>
+
+							<ul>
+								<li>
+									<code>.accordion</code> Is referring to any element with <strong class="text-white">accordion</strong> class name.
+									<pre>
+											<code class="language-html">&lt;div class="accordion"&gt;
+	...
+&lt;/div&gt;</code>
+										</pre>
+								</li>
+							</ul>
+
+							<p><strong class="text-white">element.class</strong>: Referring to an element by tag with the specified class.</p>
+
+							<ul>
+								<li>
+									<code>h4.accordion-title</code> Is referring to <strong class="text-white">h4</strong> element with <strong class="text-white">accordion-title</strong> class name.
+									<pre>
+											<code class="language-html">&lt;h4 class="accordion-title"&gt;
+...
+&lt;/h4&gt;</code>
+										</pre>
+								</li>
+							</ul>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="terms-data-attribute">Data Attributes</h3>
+
+							<p>Data attributes are mostly used to initiate a pluin. Or storing options of that plugin. Let's say we want to make an element to be parallax. We can initiate parallax on that element by adding <code>data-parallax="true"</code>.</p>
+
+							<ul>
+								<li>
+									In this example we'll parallax a <code>&lt;figure&gt;</code> element in Y axis from <strong class="text-white">100px</strong> to <stong class="text-white">-100px</stong> from it's original place.
+									<pre>
+										<code class="language-html">&lt;figure data-parallax="true" data-parallax-from='{"translateY": 100}' data-parallax-to='{"translateY": -100}' data-parallax-options='{"overflowHidden": false}'&gt;
+	&lt;img src="./assets/images/my-image.jpg"  alt="Ave"/&gt;
+&lt;/figure&gt;</code>
+										</pre>
+								</li>
+							</ul>
+
+							<h5 class="mt-4">Plugin Options</h5>
+							<p>You'll see through the template we've used data attributes the way that might be not familiar. For example look at <code>data-parallax-from</code>, <code>data-parallax-to</code> or <code>data-parallax-options</code>.</p>
+							<p>These data-attributes are used just for passing data to the plugin we're initiating, Or think of it as plugin options. Please also pay attention to the format.</p>
+							<p>Here values passed to data-attributes must be in valid JSON format. Basically each key need to be quoted. For example <code>"translateY"</code> is quoted here. but for the value, because it's a number, we don't need quotes. Please also pay attention data attributes are using single-quote (<code>'</code>). It means the JSON data which is between curly braces (<code>{}</code>) must be wrapped with single-quotes.</p>
+
+						</div><!-- /.col-md-8 -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section><!-- /#terminology -->
+
+			<section id="elements-features">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-10 mx-auto">
+
+							<h2 class="mt-4 h1">Elements and features</h2>
+
+							<p>We'll go you through pretty much all elements, shortcodes and features available in Ave and we'll give you a boilerplate for each shortcodes so you can easily copy/paste codes and they're ready to use.</p>
+							<p>Beside this, we'll add requirements for what's neccessary for each shortcde to make it work if you're going to start from scratch. So you can find some information here if you got into some issues.</p>
+							<p>Plus, we'll add modifiers for each shortcodes. To change the look of each shortoce. Please keep in mind that all modifiers on an element may not work well or as expected together. So please refer to the demos and we provided.</p>
+
+							<h3 class="mt-4" id="css-variables">CSS Variables ( Custom Properties )</h3>
+
+							<p>In <strong>Ave</strong> we used <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables">css variables</a>, mostly to apply colors. This will make changing colors, such as website's primary color, so much easier than before.</p>
+							<p>As you can see in most of theme css files, from <span class="text-white">assets/css/themes</span> all css variables are define in the <span class="text-white">:root</span> pseudo-class. For Example, here are variables we used for Original demo:</p>
+							<pre>
+								<code class="language-css">:root {
+	--color-primary: #4762ff;
+	--color-secondary: #ff6363;
+	--color-tertiary: #ac1de1;
+	--color-gradient-start: #4762ff;
+	--color-gradient-stop: #ff798e;
+	--color-gradient-start-secondary: #0bccee;
+	--color-gradient-stop-secondary: #ac1de1;
+	--color-gradient-start-tertiary: #ffba83;
+	--color-gradient-stop-tertiary: #ffa5cd;
+}</code>
+							</pre>
+
+							<p>
+								<span class="text-white">--color-primary</span> is used pretty much in all places. It'll define the accent color of the theme. As you see for buttons, icon colors etc.
+							</p>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="accordions">Accordions</h3>
+
+							<p>Accordions are useful when you want to toggle between hiding and showing large amount of content.</p>
+
+							<pre>
+								<code class="language-html">&lt;div class="accordion" id="accordion-1" role="tablist"&gt;
+
+	&lt;div class="accordion-item panel active"&gt;
+
+		&lt;div class="accordion-heading" role="tab" id="heading_accordion-collapse-1"&gt;
+			&lt;h4 class="accordion-title"&gt;
+				&lt;a data-toggle="collapse" data-parent="#accordion-1" href="#accordion-collapse-1" aria-expanded="true" aria-controls="accordion-collapse-1"&gt;
+					Accordion Item 1
+					&lt;span class="accordion-expander"&gt;
+						&lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;
+						&lt;i class="fa fa-angle-up"&gt;&lt;/i&gt;
+					&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/h4&gt;
+		&lt;/div&gt;&lt;!-- /.accordion-heading --&gt;
+		&lt;div id="accordion-collapse-1" class="accordion-collapse collapse in" role="tabpanel" aria-labelledby="heading_accordion-collapse-1"&gt;
+			&lt;div class="accordion-content"&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+			&lt;/div&gt;&lt;!-- /.accordion-content --&gt;
+		&lt;/div&gt;&lt;!-- /.accordion-collapse --&gt;
+		
+	&lt;/div&gt;&lt;!-- /.accordion-item --&gt;
+
+	&lt;div class="accordion-item panel"&gt;
+
+		&lt;div class="accordion-heading" role="tab" id="heading_accordion-collapse-2"&gt;
+			&lt;h4 class="accordion-title"&gt;
+				&lt;a data-toggle="collapse" data-parent="#accordion-1" href="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2"&gt;
+					Accordion Item 2
+					&lt;span class="accordion-expander"&gt;
+						&lt;i class="fa fa-angle-down"&gt;&lt;/i&gt;
+						&lt;i class="fa fa-angle-up"&gt;&lt;/i&gt;
+					&lt;/span&gt;
+				&lt;/a&gt;
+			&lt;/h4&gt;
+		&lt;/div&gt;&lt;!-- /.accordion-heading --&gt;
+		&lt;div id="accordion-collapse-2" class="accordion-collapse collapse" role="tabpanel" aria-labelledby="heading_accordion-collapse-2"&gt;
+			&lt;div class="accordion-content"&gt;
+				&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;/p&gt;
+			&lt;/div&gt;&lt;!-- /.accordion-content --&gt;
+		&lt;/div&gt;&lt;!-- /.accordion-collapse --&gt;
+		
+	&lt;/div&gt;&lt;!-- /.accordion-item --&gt;
+
+&lt;/div&gt;&lt;!-- /.accordion --&gt;</code>
+							</pre>
+
+							<h5>Accordion Requirements</h5>
+							<p>
+								<ul>
+									<li>Each accordion element must have a unique id.</li>
+									<li><code>.accordion-heading</code> elements must have a unique id.</li>
+									<li><code>data-parent</code> attributes are neccessary on <code>a</code> elements inside <code>.accordion-title</code>.</li>
+									<li>To make an item expanded when page loads, add <code>.active</code> classname to the <code>.accordion-item</code> element. Change <code>aria-expanded="false"</code> to <code>aria-expanded="true"</code> on the <code>a</code> tag inside <code>.accordion-title</code>.</li>
+								</ul> 
+							</p>
+
+							<h5>Accordion Modifiers</h5>
+							<p>All classnames will be added to <code>.accordion</code> element.</p>
+							<p>
+								<ul>
+									<li>
+										Accordion Sizes
+										<ul>
+											<li><code>.accordion-xs</code></li>
+											<li><code>.accordion-sm</code></li>
+											<li><code>.accordion-md</code></li>
+											<li><code>.accordion-lg</code></li>
+										</ul>
+									</li>
+									<li>
+										Active Styles
+										<ul>
+											<li><code>.accordion-active-has-fill</code></li>
+											<li><code>.accordion-active-has-shadow</code></li>
+										</ul>
+									</li>
+									<li>
+										Border Styles
+										<ul>
+											<li><code>.accordion-body-underlined</code></li>
+											<li><code>.accordion-body-bordered</code></li>
+											<li><code>.accordion-title-underlined</code></li>
+											<li><code>.accordion-title-bordered</code></li>
+										</ul>
+									</li>
+									<li>
+										Roundness
+										<ul>
+											<li><code>.accordion-title-round</code></li>
+											<li><code>.accordion-title-circle</code></li>
+											<li><code>.accordion-body-round</code></li>
+										</ul>
+									</li>
+									<li>
+										Expander Position
+										<ul>
+											<li><code>.accordion-expander-left</code></li>
+										</ul>
+									</li>
+									<li>
+										Expander Sizes
+										<ul>
+											<li><code>.accordion-expander-lg</code></li>
+											<li><code>.accordion-expander-xl</code></li>
+										</ul>
+									</li>
+								</ul>
+							</p>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="buttons">Buttons</h3>
+
+							<p>Buttons are used in various places of the template. From simple buttons with internal/external links to lightbox buttons and buttons inside forms.</p>
+
+							<pre>
+								<code class="language-html">&lt;a href="#" class="btn btn-solid"&gt;
+	&lt;span&gt;
+		&lt;span class="btn-txt"&gt;Get access&lt;/span&gt;
+		&lt;span class="btn-icon"&gt;
+			&lt;i class="fa fa-play"&gt;&lt;/i&gt;
+		&lt;/span&gt;
+	&lt;/span&gt;
+&lt;/a&gt;</code>
+							</pre>
+
+							<h5>Button Modifiers</h5>
+							<p>All classnames will be added to <code>.btn</code> element.</p>
+							<p>
+								<ul>
+									<li>
+										Button Styles
+										<ul>
+											<li><code>.btn-solid</code></li>
+											<li><code>.btn-bordered</code></li>
+											<li><code>.btn-naked</code></li>
+											<li><code>.btn-underlined</code></li>
+											<li><code>.btn-xlg</code></li>
+										</ul>
+									</li>
+									<li>
+										Button Sizes
+										<ul>
+											<li><code>.btn-xsm</code></li>
+											<li><code>.btn-sm</code></li>
+											<li><code>.btn-md</code></li>
+											<li><code>.btn-lg</code></li>
+											<li><code>.btn-xlg</code></li>
+										</ul>
+									</li>
+									<li>
+										Button Border Sizes
+										<ul>
+											<li><code>.border-none</code></li>
+											<li><code>.border-thin</code></li>
+											<li><code>.border-thick</code></li>
+											<li><code>.border-thicker</code></li>
+										</ul>
+									</li>
+									<li>
+										Button Roundness
+										<ul>
+											<li><code>.semi-round</code></li>
+											<li><code>.round</code></li>
+											<li><code>.circle</code></li>
+										</ul>
+									</li>
+									<li>
+										Button Icon Styles
+										<ul>
+											<li><code>.btn-icon-solid</code></li>
+											<li><code>.btn-icon-bordered</code></li>
+										</ul>
+									</li>
+									<li>
+										Button Icon Sizes ( Only for solid and bordered icons )
+										<ul>
+											<li><code>.btn-icon-xsm</code></li>
+											<li><code>.btn-icon-sm</code></li>
+											<li><code>.btn-icon-md</code></li>
+											<li><code>.btn-icon-lg</code></li>
+											<li><code>.btn-icon-xlg</code></li>
+										</ul>
+									</li>
+									<li>
+										Button Icon Border Sizes ( Only for solid and bordered icons )
+										<ul>
+											<li><code>.btn-icon-border-thick</code></li>
+											<li><code>.btn-icon-border-thicker</code></li>
+										</ul>
+									</li>
+									<li>
+										Button Icon Roundness ( Only for solid and bordered icons )
+										<ul>
+											<li><code>.btn-icon-semi-round</code></li>
+											<li><code>.btn-icon-round</code></li>
+											<li><code>.btn-icon-circle</code></li>
+										</ul>
+									</li>
+									<li>
+										Button Icon Position
+										<ul>
+											<li><code>.btn-icon-right</code></li>
+											<li><code>.btn-icon-left</code></li>
+											<li><code>.btn-icon-block.btn-icon-bottom</code></li>
+											<li><code>.btn-icon-block.btn-icon-top</code></li>
+										</ul>
+									</li>
+								</ul>
+							</p>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="carousels">Carousels</h3>
+
+							<p>The carousel for cycling through elements, like a carousel (slideshow).</p>
+
+							<pre>
+								<code class="language-html">&lt;div class="carousel-container"&gt;
+
+	&lt;div class="carousel-items row" data-lqd-flickity&gt;
+
+		&lt;div class="carousel-item col-xs-12"&gt;
+			&lt;figure&gt;
+				&lt;img src="./assets/demo/my-test-image.jpg" alt="Ave"&gt;
+			&lt;/figure&gt;
+		&lt;/div&gt;&lt;!-- /.carousel-item --&gt;
+
+	&lt;/div&gt;&lt;!-- /.carousel-items --&gt;
+
+&lt;/div&gt;&lt;!-- /.carousel-container --&gt;</code>
+							</pre>
+
+							<h5>Carousel Requirements</h5>
+							<p>
+								<ul>
+									<li>Carousel will be initiated by adding <code>data-lqd-flickity</code> attribute to <code>.carousel-items</code> element.</li>
+									<li><code>.carousel-items</code> must be wrapped with <code>.carousel-container</code></li>
+									<li>Anything you want to add as a carousel item, must be wrapped in <code>.carousel-item</code> element.</li>
+									<li>You can specify the width of each carousel item by adding column classnames from <a href="https://getbootstrap.com/docs/3.3/">Bootstrap</a> e.g. <code>.col-md-3</code>, <code>.col-md-6</code> to <code>.carousel-item</code>.</li>
+								</ul> 
+							</p>
+
+							<h5>Carousel Plugin Options</h5>
+							<p>Carousel options will be passed to the <code>data-lqd-flickity</code> attribute. Please check <a href="#terms-data-attribute">Data Attributes</a> section to see how to use plugin options.</p>
+							<ul>
+								<li>
+									<strong class="text-white">contain</strong>: <code>true</code>, <code>false</code>
+								</li>
+								<li>
+									<strong class="text-white">prevNextButtons</strong>: <code>true</code>, <code>false</code>
+								</li>
+								<li>
+									<strong class="text-white">pageDots</strong>: <code>true</code>, <code>false</code>
+								</li>
+								<li>
+									<strong class="text-white">adaptiveHeight</strong>: <code>true</code>, <code>false</code>
+								</li>
+								<li>
+									<strong class="text-white">groupCells</strong>: <code>true</code>, <code>false</code>
+								</li>
+								<li>
+									<strong class="text-white">wrapAround</strong>: <code>true</code>, <code>false</code>
+								</li>
+								<li>
+									<strong class="text-white">autoplay</strong>: <code>true</code>, <code>false</code> or it can be a <code>number</code>. In milliseconds.
+								</li>
+								<li>
+									<strong class="text-white">fullwidthSide</strong>: <code>true</code>, <code>false</code>
+								</li>
+								<li>
+									<strong class="text-white">randomVerOffset</strong>: <code>true</code>, <code>false</code>
+								</li>
+							</ul>
+
+							<br>
+
+							<h5>Carousel Modifiers</h5>
+							<p>These classnames will be added to <code>.carousel-container</code> element</p>
+
+							<ul>
+								<li>
+									Navigation Shapes
+									<ul>
+										<li><code>.carousel-nav-rectangle</code></li>
+										<li><code>.carousel-nav-circle</code></li>
+										<li><code>.carousel-nav-square</code></li>
+									</ul>
+								</li>
+								<li>
+									Navigation Fill
+									<ul>
+										<li><code>.carousel-nav-solid</code></li>
+										<li><code>.carousel-nav-bordered</code></li>
+									</ul>
+								</li>
+								<li>
+									Navigation Sizes
+									<ul>
+										<li><code>.carousel-nav-sm</code></li>
+										<li><code>.carousel-nav-md</code></li>
+										<li><code>.carousel-nav-lg</code></li>
+										<li><code>.carousel-nav-xl</code></li>
+									</ul>
+								</li>
+								<li>
+									Navigation Positions
+									<ul>
+										<li><code>.carousel-nav-floated</code></li>
+										<li><code>.carousel-nav-center</code></li>
+										<li><code>.carousel-nav-left</code></li>
+										<li><code>.carousel-nav-right</code></li>
+										<li><code>.carousel-nav-top</code></li>
+										<li><code>.carousel-nav-bottom</code></li>
+										<li><code>.carousel-nav-middle</code></li>
+									</ul>
+								</li>
+								<li>
+									Navigation Directions
+									<ul>
+										<li><code>.carousel-nav-vertical</code></li>
+									</ul>
+								</li>
+								<li>
+									Dots Sizes
+									<ul>
+										<li><code>.carousel-dots-sm</code></li>
+										<li><code>.carousel-dots-md</code></li>
+										<li><code>.carousel-dots-lg</code></li>
+									</ul>
+								</li>
+								<li>
+									Dots Styles
+									<ul>
+										<li><code>.carousel-dots-style1</code></li>
+										<li><code>.carousel-dots-style2</code></li>
+										<li><code>.carousel-dots-style3</code></li>
+										<li><code>.carousel-dots-style4</code></li>
+									</ul>
+								</li>
+								<li>
+									Dots Alignments
+									<ul>
+										<li><code>.carousel-dots-left</code></li>
+										<li><code>.carousel-dots-center</code></li>
+										<li><code>.carousel-dots-right</code></li>
+									</ul>
+								</li>
+							</ul>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="flipboxes">Flip Boxes</h3>
+
+							<pre>
+								<code class="language-html">&lt;div class="ld-flipbox"&gt;
+	&lt;div class="ld-flipbox-wrap"&gt;
+
+		&lt;div class="ld-flipbox-face ld-flipbox-front"&gt;
+
+			&lt;span class="ld-flipbox-overlay ld-overlay"&gt;&lt;/span&gt;
+			
+			&lt;div class="ld-flipbox-inner"&gt;
+				
+				&lt;h3 class="font-size-24 mt-0"&gt;Flipbox Title&lt;/h3&gt;
+				&lt;p class="mb-0"&gt;All transactions that occur on Envato.&lt;/p&gt;
+				
+			&lt;/div&gt;&lt;!-- /.ld-flipbox-inner --&gt;
+			
+		&lt;/div&gt;&lt;!-- /.ld-flipbox-front --&gt;
+		
+		&lt;div class="ld-flipbox-face ld-flipbox-back"&gt;
+			
+			&lt;span class="ld-flipbox-overlay ld-overlay"&gt;&lt;/span&gt;
+
+			&lt;div class="ld-flipbox-inner"&gt;
+
+				&lt;a href="#" class="btn btn-solid font-size-12 lh-2 text-uppercase ltr-sp-175 btn-white"&gt;
+					&lt;span&gt;
+						&lt;span class="btn-txt"&gt;Discover One&lt;/span&gt;
+					&lt;/span&gt;
+				&lt;/a&gt;
+
+			&lt;/div&gt;&lt;!-- /.ld-flipbox-inner --&gt;
+
+		&lt;/div&gt;&lt;!-- /.ld-flipbox-back --&gt;
+
+	&lt;/div&gt;&lt;!-- /.ld-flipbox-wrap --&gt;
+&lt;/div&gt;&lt;!-- /.ld-flipbox --&gt;</code>
+							</pre>
+
+							<h5 class="mt-5">Flipbox Requirements</h5>
+							<ul>
+								<li>Back content's height will be based on the content on front side face. So contents in back face can't be taller than front contents.</li>
+							</ul>
+
+							<h5 class="mt-4">Flipbox Modifiers</h5>
+							<ul>
+								<li>
+									Rotating Directions
+									<ul>
+										<li>Right to left: <code>.ld-flipbox-rl</code></li>
+										<li>Bottom to top: <code>.ld-flipbox-bt</code></li>
+										<li>Top to bottom: <code>.ld-flipbox-tb</code></li>
+									</ul>
+								</li>
+								<li>
+									Shadows
+									<ul>
+										<li><code>.ld-flipbox-shadow-onhover</code></li>
+									</ul>
+								</li>
+								<li>
+									Adding background to flipbox faces
+									<ul>
+										<li>Add any background color or image to <code>.ld-flipbox-facce</code> element.</li>
+										<li>If you want a gradient or faded solid overlay over the background, you can simply add that to <code>.ld-flipbox-overlay</code> element.</li>
+									</ul>
+								</li>
+							</ul>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="google-maps">Google Maps</h3>
+
+							<pre>
+								<code class="language-html">&lt;div class="ld-gmap-container"&gt;
+	&lt;div class="ld-gmap"
+		data-plugin-map="true"
+		data-plugin-options='{ "address": "7420 Shore Rd, Brooklyn, NY 11209, USA" }'&gt;
+	&lt;/div&gt;&lt;!-- /.ld-gmap --&gt;
+&lt;/div&gt;&lt;!-- /.ld-gmap-container --&gt;</code>
+							</pre>
+
+							<h5 class="mt-5">Google Maps Requirements</h5>
+							<ul>
+								<li>
+									You'll need to get your api key first. Please follow <a target="_blank" href="https://developers.google.com/maps/documentation/javascript/get-api-key">this article</a>.
+								</li>
+							</ul>
+
+							<h5 class="mt-4">Google Maps Options</h5>
+							<ul>
+								<li>
+									All options will be assigned to <code>data-plugin-options</code> on the element with <code>data-plugin-map="true"</code>.
+									<ul>
+										<li>
+											<strong class="text-white">address</strong>:
+											It's obviously the address. It can be the full address string or lat long. e.g. <code>51.507772, -0.127543</code>
+										</li>
+										<li>
+											<strong class="text-white">style</strong>:
+											<ul>
+												<li><code>wy</code></li>
+												<li><code>blueEssence</code></li>
+												<li><code>lightMonochrome</code></li>
+												<li><code>assassinsCreedIV</code></li>
+												<li><code>unsaturatedBrowns</code></li>
+												<li><code>classic</code></li>
+											</ul>
+										</li>
+										<li>
+											<strong class="text-white">marker_option</strong>:
+											<ul>
+												<li><code>image</code></li>
+												<li><code>html</code></li>
+											</ul>
+										</li>
+										<li>
+											<strong class="text-white">marker</strong>:
+											"assets/img/map-marker/marker-1.svg"
+										</li>
+									</ul>
+								</li>
+							</ul>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="iconboxes">Iconboxes</h3>
+
+							<p>Iconboxes are used to show information with imaeg, static or animated icons.</p>
+
+							<pre>
+								<code class="language-html">&lt;div class="iconbox iconbox-heading-sm"&gt;
+	&lt;div class="iconbox-icon-wrap"&gt;
+		&lt;span class="iconbox-icon-container"&gt;
+			&lt;i class="icon-ecommerce_diamond">&lt;/i&gt;
+		&lt;/span&gt;
+	&lt;/div>&lt;!-- /.iconbox-icon-wrap --&gt;
+	&lt;h3 class="font-weight-semibold">Hover me&lt;/h3&gt;
+	&lt;div class="contents"&gt;
+		&lt;p>Zero broker commission&lt;/p&gt;
+	&lt;/div>&lt;!-- /.contents --&gt;
+&lt;/div>&lt;!-- /.iconbox --&gt;</code>
+							</pre>
+
+							<h5>Iconbox Requirements</h5>
+							<p>
+								<ul>
+									<li>
+										If you want to use animted icons, please use <a href="https://github.com/linea-io/Linea-Iconset">Linea</a> iconset. Or use icons with the same structure as Liean's icons.
+									</li>
+								</ul> 
+							</p>
+
+							<h5>Iconbox Modifiers</h5>
+							<ul>
+								<li>
+									Icon Positions
+									<ul>
+										<li><code>.iconbox-side</code></li>
+										<li>
+											<code>.iconbox-inline</code>
+											<ul>
+												<li>
+													In inline iconbox we'll move the heading (<code>h3</code>) element outside of <code>.content</code> element.
+													<pre>
+														<code class="language-html">&lt;div class="iconbox iconbox-inline"&gt;
+	&lt;div class="iconbox-icon-wrap"&gt;
+		&lt;span class="iconbox-icon-container"&gt;
+			&lt;i class="fa fa-code"&gt;&lt;/i&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;&lt;!-- /.iconbox-icon-wrap --&gt;
+	&lt;h3&gt;TRANSPORTATION&lt;/h3&gt;
+	&lt;div class="contents"&gt;
+		&lt;p&gt;Spectacular train rides, breathtaking cable car ascents, overnight cruise ships, scenic day ferries, private first-class motorcoaches.&lt;/p&gt;
+	&lt;/div&gt;&lt;!-- /.contents --&gt;
+&lt;/div&gt;<!-- /.iconbox --></code>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Icon Shapes
+									<ul>
+										<li><code>.iconbox-circle</code></li>
+										<li><code>.iconbox-lozenge</code></li>
+										<li><code>.iconbox-hexagon</code></li>
+										<li><code>.iconbox-square</code></li>
+										<li>
+											<code>.iconbox-wavebg</code>
+											<ul>
+												<li>
+													This style needs an extra element right inside <code>.iconbox-icon-container</code> element.
+													<pre>
+														<code class="language-html">&lt;span class="iconbox-icon-container"&gt;
+		&lt;span class="icon-wave-bg"&gt;
+			&lt;svg xmlns="http://www.w3.org/2000/svg" width="125.062" height="88.62" viewBox="0 0 125.062 88.62"&gt;
+				&lt;path d="M488.806,2544.02s35.988-16.17,53.518-7.45S565,2541.44,574,2549s18.09,19.21,14.009,41.12c-3.62,19.44-25.466,15.87-37.2,27.79-10.557,10.72-68.616,1.88-74.4-12.88-6.841-17.45-13.114-17.84-12.406-34.03C464.452,2560.66,475.315,2554.71,488.806,2544.02Z" transform="translate(-463.938 -2534)"&gt;&lt;/path&gt;
+			&lt;/svg&gt;
+		&lt;/span&gt;
+		&lt;i class="icon-basic_settings"&gt;&lt;/i&gt;
+	&lt;/span&gt;</code>
+													</pre>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Iconbox Icon Sizes
+									<ul>
+										<li><code>.iconbox-xxs</code></li>
+										<li><code>.iconbox-xs</code></li>
+										<li><code>.iconbox-sm</code></li>
+										<li><code>.iconbox-md</code></li>
+										<li><code>.iconbox-lg</code></li>
+										<li><code>.iconbox-xl</code></li>
+									</ul>
+								</li>
+								<li>
+									Iconbox Heading Sizes
+									<ul>
+										<li><code>.iconbox-heading-xs</code></li>
+										<li><code>.iconbox-heading-sm</code></li>
+										<li><code>.iconbox-heading-md</code></li>
+										<li><code>.iconbox-heading-lg</code></li>
+									</ul>
+								</li>
+								<li>
+									Iconbox Fill
+									<ul>
+										<li><code>.iconbox-shadow</code></li>
+										<li><code>.iconbox-shadow-hover</code></li>
+										<li><code>.iconbox-filled</code></li>
+										<li><code>.iconbox-filled-hover</code></li>
+									</ul>
+								</li>
+								<li>
+									Iconbox Roundness
+									<ul>
+										<li><code>.iconbox-semiround</code></li>
+										<li><code>.iconbox-round</code></li>
+										<li><code>.iconbox-filled</code></li>
+									</ul>
+								</li>
+								<li>
+									Iconbox Gradients
+									<ul>
+										<li><code>.iconbox-heading-gradient</code></li>
+										<li><code>.iconbox-icon-gradient ( Used for icon fonts )</code></li>
+									</ul>
+								</li>
+								<li>
+									Iconbox Icon Effects
+									<ul>
+										<li><code>.iconbox-icon-ripple</code></li>
+									</ul>
+								</li>
+							</ul>
+
+							<h5 class="mt-5">Adding Animated Icons</h5>
+
+							<pre>
+								<code class="language-html">&lt;div class="iconbox text-left iconbox-xl iconbox-heading-sm" data-animate-icon="true" data-plugin-options='{"color":"#780bee:#1de1d1"}'&gt;
+	&lt;div class="iconbox-icon-wrap"&gt;
+		&lt;span class="iconbox-icon-container"&gt;
+			&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="64px" height="64px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"&gt;
+				&lt;path stroke-width="2" stroke-miterlimit="10" d="M32,47L63,47L63,5L1,5L1,47L18,47L18,59Z"&gt;&lt;/path&gt;
+				&lt;path stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M23,26L30,33L 43,20"&gt;&lt;/path&gt;
+			&lt;/svg&gt;
+		&lt;/span&gt;
+	&lt;/div&gt;&lt;!-- /.iconbox-icon-wrap --&gt;
+	&lt;div class="contents"&gt;
+		&lt;h3&gt;Bitcoin improvement proposals&lt;/h3&gt;
+		&lt;p&gt;Having a BIP here does not make it a formally accepted standard until its status become.&lt;/p&gt;
+	&lt;/div&gt;&lt;!-- /.contents --&gt;
+&lt;/div&gt;&lt;!-- /.iconbox --&gt;</code>
+							</pre>
+
+							<h5 class="mt-4">Animated Icon Requirements</h5>
+							<ul>
+								<li>To have an icon that can be animated, as we mentioned above you can take an icon from <a href="https://github.com/linea-io/Linea-Iconset">Linea</a> iconset. Copy the SVG code of an icon and paste it in <code>.iconbox-icon-container</code> element.</li>
+								<li>Add <code>data-animate-icon="true"</code> to <code>.iconbox</code> element.</li>
+							</ul>
+
+							<h5 class="mt-4">Animated Icon Options</h5>
+							<p>All options will be added to <code>data-plugin-options</code> on <code>.iconbox</code> element.</p>
+							<ul>
+								<li>
+									<strong class="text-white">color</strong>: it can be a single color. e.g. <code>#f42958</code>. Or multiple colors for gradient. seperated by <code>:</code>. e.g. <code>#780bee:#1de1d1</code>
+								</li>
+								<li>
+									<strong class="text-white">hoverColor</strong>: as the same as <strong class="text-white">color</strong> option
+								</li>
+								<li>
+									<strong class="text-white">delay</strong>: time for starting delay. In milliseconds.
+								</li>
+								<li>
+									<strong class="text-white">resetOnHover</strong>: <code>true</code>, <code>false</code>
+								</li>
+							</ul>
+							
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="media-gallery">Media Gallery</h3>
+
+							<pre>
+								<code class="language-html">&lt;div class="ld-media-row row d-flex" data-liquid-masonry="true"&gt;
+
+	&lt;div class="lqd-column col-md-3 col-sm-6 masonry-item"&gt;
+		&lt;div class="ld-media-item"&gt;
+			&lt;figure data-responsive-bg="true"&gt;
+				&lt;img class="invisible" src="./assets/demo/media-elements/md-1.jpg" alt="Media Gallery"&gt;
+			&lt;/figure&gt;
+			&lt;div class="ld-media-item-overlay d-flex flex-column align-items-center text-center justify-content-center"&gt;
+				&lt;div class="ld-media-bg"&gt;&lt;/div&gt;
+				&lt;div class="ld-media-content"&gt;
+					&lt;span class="ld-media-icon"&gt;
+						&lt;span class="ld-media-icon-inner"&gt;
+							&lt;i class="icon-ion-ios-add"&gt;&lt;/i&gt;
+						&lt;/span&gt;
+					&lt;/span&gt;
+				&lt;/div&gt;&lt;!-- /.ld-media-content --&gt;
+			&lt;/div&gt;&lt;!-- /.ld-media-item-overlay --&gt;
+			&lt;a href="./assets/demo/media-elements/md-1.jpg" class="liquid-overlay-link fresco" data-fresco-group="media-group-1"&gt;&lt;/a&gt;
+		&lt;/div&gt;&lt;!-- /.ld-media-item --&gt;
+	&lt;/div&gt;&lt;!-- /.col-md-3 --&gt;
+	
+	&lt;div class="lqd-column col-md-6 masonry-item"&gt;
+		&lt;div class="ld-media-item contents-visible"&gt;
+			&lt;figure data-responsive-bg="true"&gt;
+				&lt;img class="invisible" src="./assets/demo/media-elements/md-9.jpg" alt="Media Gallery"&gt;
+			&lt;/figure&gt;
+			&lt;div class="ld-media-item-overlay d-flex flex-column align-items-center text-center justify-content-center"&gt;
+				&lt;div class="ld-media-bg"&gt;&lt;/div&gt;
+				&lt;div class="ld-media-content"&gt;
+					&lt;span class="ld-media-icon icon-play bordered"&gt;
+						&lt;span class="ld-media-icon-inner"&gt;
+							&lt;i class="fa fa-play"&gt;&lt;/i&gt;
+						&lt;/span&gt;
+					&lt;/span&gt;
+				&lt;/div&gt;&lt;!-- /.ld-media-content --&gt;
+			&lt;/div&gt;&lt;!-- /.ld-media-item-overlay --&gt;
+			&lt;a href="https://www.youtube.com/watch?v=WVPRkcczXCY&t" class="liquid-overlay-link fresco" data-fresco-group="media-group-2"&gt;&lt;/a&gt;
+		&lt;/div&gt;&lt;!-- /.ld-media-item --&gt;
+	&lt;/div&gt;&lt;!-- /.col-md-3 --&gt;
+	
+&lt;/div&gt;&lt;!-- /.ld-media-row --&gt;</code>
+							</pre>
+
+							<h5 class="mt-5">Media Gallery Requirements</h5>
+							<p>
+								<ul>
+									<li>
+										<code>data-liquid-masonry="true</code> on <code>.ld-media-row</code> is required if you want the masonry layout.
+									</li>
+									<li>
+										<code>data-fresco-group</code> is required on <code>.liquid-overlay-link</code> if you want to show the lightbox as a gellry lightbox.
+									</li>
+									<li>
+										Column widths can be anything you wish.
+									</li>
+								</ul> 
+							</p>
+
+							<h5 class="mt-5">Media Gallery Overlay Contents</h5>
+							<p>You can put almost any content inside <code>.ld-media-content</code>.</p>
+
+							<ul>
+								<li>
+									Simple icons
+									<br>
+									Add any icon there with <code>&lt;i&gt;&lt;/i&gt;</code> element
+									<pre>
+										<code class="language-html">&lt;span class="ld-media-icon"&gt;
+	&lt;span class="ld-media-icon-inner"&gt;
+		&lt;i class="icon-ld-search"&gt;&lt;/i&gt;
+	&lt;/span&gt;
+&lt;/span&gt;</code>
+									</pre>
+								</li>
+								<li>
+									Video Play Icons
+									<br>
+									We prepared 2 different styles for play icon. With 3 different sizes.
+									<pre>
+										<code class="language-html">&lt;span class="ld-media-icon icon-play bordered"&gt;
+	&lt;span class="ld-media-icon-inner"&gt;
+		&lt;i class="fa fa-play"&gt;&lt;/i&gt;
+	&lt;/span&gt;
+&lt;/span&gt;</code>
+									</pre>
+									Classnames you can add on <code>.ld-media-icon.icon-play</code> elements are: <br>
+									Fills
+									<ul>
+										<li>
+											<code>.bordered</code>
+										</li>
+										<li>
+											<code>.solid</code>
+										</li>
+									</ul>
+									Sizes
+									<ul>
+										<li>
+											<code>.size-sm</code>
+										</li>
+										<li>
+											<code>.size-md</code>
+										</li>
+										<li>
+											<code>.size-lg</code>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Simple Content
+									<pre>
+										<code class="language-html">&lt;div class="ld-media-txt"&gt;
+	&lt;h3&gt;My content&lt;/h3&gt;
+&lt;/div&gt;</code>
+									</pre>
+								</li>
+							</ul>
+
+							<h5 class="mt-5">Media Gallery Modifiers</h5>
+							<p>Following classnames can be added to <code>ld-media-item</code> element.</p>
+							
+							<ul>
+								<li>
+									Contents Visibility
+									<ul>
+										<li>
+											<code>.contents-visible</code>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Shadows
+									<ul>
+										<li>
+											<code>.shadow-onhover</code>
+										</li>
+									</ul>
+								</li>
+								<li>
+									Overlay Background color
+									<ul>
+										<li>You can simply apply any color to <code>.ld-media-bg</code> element.</li>
+									</ul>
+								</li>
+							</ul>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="parallax">Parallax</h3>
+
+							<p>You can easily make anything parallax! It can be an image, a column, a shortcode or anything else.</p>
+							
+							<ul>
+								<li>
+									<p>To start add <code>data-parallax="true"</code> to the element you want.</p>
+								</li>
+								<li>
+									<p>To define starting state of the element, add <code>data-paralla-from=''</code>. values going inside this attribute can be <a href="https://www.w3schools.com/cssref/css3_pr_transform.asp">css transform properties</a></p>
+									<pre>
+										<code class="language-html">&lt;div class="liquid-img-container-inner"
+	data-parallax="true"
+	data-parallax-from='{"translateY": 80}'
+&gt;</code>
+</pre>
+								</li>
+								<li>
+									<p>To define the destination of the element, or the state of the ending of the parallax add <code>data-paralla-to=''</code> to the element.</p>
+									<pre>
+										<code class="language-html">&lt;div class="liquid-img-container-inner"
+	data-parallax="true"
+	data-parallax-from='{"translateY": 80}'
+	data-parallax-to='{"translateY": -80}'
+&gt;</code>
+</pre>
+								</li>
+								<li>
+									<p>There are some parallax options, such as easing, duration etc. that should go to <code>data-parallax-options=''</code> attribute.</p>
+									<pre>
+										<code class="language-html">&lt;div class="liquid-img-container-inner"
+	data-parallax="true"
+	data-parallax-from='{"translateY": 80}'
+	data-parallax-to='{"translateY": -80}'
+	data-parallax-options='{"overflowHidden": false,"easing": "linear"}'
+&gt;</code>
+</pre>
+								</li>
+							</ul>
+
+							<h5 class="mt-4">Parallax Options</h5>
+
+							<p>Parallax options will be passed to the <code>data-parallax-options</code> attribute. Please check <a href="#terms-data-attribute">Data Attributes</a> section to see how to use plugin options.</p>
+
+							<ul>
+								<li>
+									<strong class="text-white">duration</strong>: Number ( default: 1800 ) it can be also in percentage. e.g. "100%"
+								</li>
+								<li>
+									<strong class="text-white">offset</strong>: Number ( default: 0 )
+								</li>
+								<li>
+									<strong class="text-white">triggerHook</strong>: String or number from 0 to 1.
+									<br>
+									Strings can be used:
+									<ul>
+										<li>onEnter</li>
+										<li>onCenter</li>
+										<li>onLeave</li>
+									</ul>
+								</li>
+								<li>
+									<strong class="text-white">easing</strong>: String ( default: "linear" )
+									<table>
+										<thead>
+											<tr>
+												<td>in</td>
+												<td>out</td>
+												<td>in-out</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><code>'easeInQuad'</code></td>
+												<td><code>'easeOutQuad'</code></td>
+												<td><code>'easeInOutQuad'</code></td>
+											</tr>
+											<tr>
+												<td><code>'easeInCubic'</code></td>
+												<td><code>'easeOutCubic'</code></td>
+												<td><code>'easeInOutCubic'</code></td>
+											</tr>
+											<tr>
+												<td><code>'easeInQuart'</code></td>
+												<td><code>'easeOutQuart'</code></td>
+												<td><code>'easeInOutQuart'</code></td>
+											</tr>
+											<tr>
+												<td><code>'easeInQuint'</code></td>
+												<td><code>'easeOutQuint'</code></td>
+												<td><code>'easeInOutQuint'</code></td>
+											</tr>
+											<tr>
+												<td><code>'easeInSine'</code></td>
+												<td><code>'easeOutSine'</code></td>
+												<td><code>'easeInOutSine'</code></td>
+											</tr>
+											<tr>
+												<td><code>'easeInExpo'</code></td>
+												<td><code>'easeOutExpo'</code></td>
+												<td><code>'easeInOutExpo'</code></td>
+											</tr>
+											<tr>
+												<td><code>'easeInCirc'</code></td>
+												<td><code>'easeOutCirc'</code></td>
+												<td><code>'easeInOutCirc'</code></td>
+											</tr>
+											<tr>
+												<td><code>'easeInBack'</code></td>
+												<td><code>'easeOutBack'</code></td>
+												<td><code>'easeInOutBack'</code></td>
+											</tr>
+											<tr>
+											</tr>
+										</tbody>
+									</table>
+								</li>
+								<li>
+									<strong class="text-white">overflowHidden</strong>: Boolean ( default: true )
+								</li>
+							</ul>
+							
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="particles">Particles</h3>
+
+							<pre>
+								<code class="language-html">&lt;div class="ld-particles-container"&gt;
+			
+	&lt;div
+	class="ld-particles-inner"
+	id="particles-1"
+	data-particles="true"
+	data-particles-options='{ "particles":{"shape": {"type":["circle"]} } }'&gt;
+	&lt;/div&gt;&lt;!-- /.re-particles-inner --&gt;
+
+&lt;/div&gt;&lt;!-- /.ld-particles-container --&gt;</code>
+							</pre>
+
+							<h5 class="mt-5">Particles Requirements</h5>
+							<p>
+								<ul>
+									<li>
+										<code>.ld-particles-inner</code> must have a unique id.
+									</li>
+									<li>
+										There should be at least <code>"particles"</code> option inside <code>data-particles-options</code>. But don't worry! setting up options for particles is so easy. We'll go through shortly.
+									</li>
+								</ul> 
+							</p>
+
+							<h5 class="mt-5">Particles Options</h5>
+							<p>
+								<li>
+									Go to <a href="https://vincentgarreau.com/particles.js/">Particles JS</a> homepage. Edit whatever you need from the panel in the top right.
+								</li>
+								<li>
+									After you're happy with the settings, click on <strong class="text-white">→ Download current config (json)</strong>
+								</li>
+								<li>
+									Open the JSON file in your text editor, copy the data and paste right in <code>data-particles-options</code>. That's all!
+								</li>
+								<li>
+									If you want to use the particles as a section background, wrap <code>.ld-particles-container</code> with <code>.lqd-particles-bg-wrap</code> element. And you'll need to move it right to where you want to be as it's background. It can be a column, a row or a whole section. 
+									<pre>
+										<code class="language-html">&lt;div class="lqd-particles-bg-wrap"&gt;
+	&lt;div class="ld-particles-container"&gt;
+			
+		&lt;div
+		class="ld-particles-inner"
+		id="particles-1"
+		data-particles="true"
+		data-particles-options='{ "particles":{"shape": {"type":["circle"]} } }'&gt;
+		&lt;/div&gt;&lt;!-- /.re-particles-inner --&gt;
+
+	&lt;/div&gt;&lt;!-- /.ld-particles-container --&gt;
+&lt;/div>&lt;!-- /.lqd-particles-bg-wrap --&gt;</code>
+									</pre>
+								</li>
+							</p>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="tabs">Tabs</h3>
+
+							<p>Tabs are perfect for single page web applications, or for web pages capable of displaying different subjects.</p>
+
+							<pre>
+								<code class="language-html">&lt;div class="tabs"&gt;
+	&lt;ul class="nav tabs-nav" role="tablist"&gt;
+		&lt;li role="presentation" class="active"&gt;
+			&lt;a href="#ld-tab-pane-1" aria-expanded="false" aria-controls="ld-tab-pane-1" role="tab" data-toggle="tab"&gt;Tab 1&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li role="presentation"&gt;
+			&lt;a href="#ld-tab-pane-2" aria-expanded="false" aria-controls="ld-tab-pane-2" role="tab" data-toggle="tab"&gt;Tab 2&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;div class="tabs-content"&gt;
+		&lt;div id="ld-tab-pane-1" role="tabpanel" class="tabs-pane fade active in"&gt;
+			&lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum magnam dignissimos similique.&lt;/p&gt;
+		&lt;/div&gt;&lt;!-- /.tab-pane --&gt;
+		&lt;div id="ld-tab-pane-2" role="tabpanel" class="tabs-pane fade"&gt;
+			&lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum magnam dignissimos similique.&lt;/p&gt;
+		&lt;/div&gt;&lt;!-- /.tab-pane --&gt;
+	&lt;/div&gt;&lt;!-- /.tabs-content --&gt;
+&lt;/div&gt;&lt;!-- /.tabs --&gt;</code>
+							</pre>
+
+							<h5 class="mt-0">Tabs Requirements</h5>
+							<p>
+								<ul>
+									<li>All tab nav items will be placed inside <code>.tabs-nav</code> element.</li>
+									<li>All tab content will be placed inside <code>.tabs-content</code> element.</li>
+									<li>Any tab content will be wrapped with <code>.tabs-pane</code> element.</li>
+								</ul> 
+							</p>
+
+							<h5 class="mt-5">Tabs Modifiers</h5>
+							<p>All modifier classnames will be applied to <code>.tabs</code> element.</p>
+							<ul>
+								<li>
+									Nav Positions
+									<ul>
+										<li><code>.tabs-nav-centered</code></li>
+										<li><code>.tabs-nav-justified</code></li>
+										<li><code>.tabs-nav-spaced</code></li>
+									</ul>
+								</li>
+								<li>
+									Nav Borders
+									<ul>
+										<li><code>.tabs-nav-bordered</code></li>
+										<li><code>.tabs-nav-underlined</code></li>
+										<li><code>.tabs-nav-items-bordered</code></li>
+									</ul>
+								</li>
+								<li>
+									Nav Stats
+									<ul>
+										<li><code>.tabs-nav-filled</code></li>
+										<li><code>.tabs-nav-active-filled</code></li>
+										<li><code>.tabs-nav-active-underlined</code></li>
+										<li><code>.tabs-nav-shadowed</code></li>
+									</ul>
+								</li>
+								<li>
+									Nav Sizes
+									<ul>
+										<li><code>.tabs-nav-sm</code></li>
+										<li><code>.tabs-nav-lg</code></li>
+									</ul>
+								</li>
+								<li>
+									Side Navs
+									<ul>
+										<li><code>.tabs-nav-side</code></li>
+										<li><code>.tabs-nav-side.tabs-nav-side-alt</code></li>
+										<li><code>.tabs-nav-side.tabs-nav-side-alt.tabs-nav-side-block</code></li>
+									</ul>
+								</li>
+								<li>
+									Content Stats
+									<ul>
+										<li><code>.tabs-contents-shadowed</code></li>
+										<li><code>.tabs-content-filled</code></li>
+									</ul>
+								</li>
+							</ul>
+
+							<hr class="mt-5">
+
+							<h3 class="mt-4" id="video-bg">Video Background</h3>
+
+							<p>Ave provides support for video background. Both youtube and local hosted videos.</p>
+
+							<h5 class="mt-4">Youtube Video Background</h5>
+							<pre>
+								<code class="language-html">&lt;div class="lqd-vbg-wrap"&gt;
+	&lt;div class="lqd-vbg-inner"&gt;
+		&lt;span class="lqd-vbg-loader"&gt;&lt;/span&gt;
+		&lt;div class="inline-YTPlayer"&gt;
+			&lt;div class="lqd-vbg-video" data-video-bg="true" data-youtube-options='{"videoURL": "https://www.youtube.com/watch?v=-z6XVI-nCZs"}'&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.inline-YTPlayer --&gt;
+	&lt;/div&gt;&lt;!-- /.lqd-vbg-inner --&gt;
+&lt;/div&gt;&lt;!-- /.lqd-vbg-wrap --&gt;</code>
+							</pre>
+
+							<h5 class="mt-4">Local Hosted Video Background</h5>
+							<pre>
+								<code class="language-html">&lt;div class="lqd-vbg-wrap"&gt;
+	&lt;div class="lqd-vbg-inner"&gt;
+		&lt;span class="lqd-vbg-loader"&gt;&lt;/span&gt;
+		&lt;video class="lqd-vbg-video" data-video-bg="true" autoplay loop&gt;
+			&lt;source src="assets/media/Raindrops_Videvo.m4v" type="video/mp4"&gt;
+			&lt;source src="assets/media/Raindrops_Videvo.webm" type="video/webm"&gt;
+		&lt;/video&gt;&lt;!-- /.lqd-vbg-video --&gt;
+	&lt;/div&gt;&lt;!-- /.lqd-vbg-inner --&gt;
+&lt;/div&gt;&lt;!-- /.lqd-vbg-wrap --&gt;</code>
+							</pre>
+
+						</div><!-- /.col-md-10 mx-auto -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+			<section id="contact-form">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-10 mx-auto">
+
+							<h2 class="mt-4 h1">Setting up contact form</h2>
+
+							<p>
+								To setup the contact form, you'll need to provide you're email ( The email that receives emails from contact form ) from <strong class="text-light">./assets/php/mailer.php</strong>.
+							</p>
+							<p>
+								<pre>
+									<code class="language-php">&lt;?php
+if($_POST)
+{
+	$to_email = "your_email@example.com" // replace with own email here
+	
+	...
+
+&gt;</code>
+								</pre>
+							</p>
+	
+							<div class="alert alert-warning">
+								<p>Make sure you have the contact form javascript file in your page.</p>
+								<pre>
+<code class="language-html">&lt;script src="./assets/js/liquidAjaxContactForm.min.js"&gt;&lt;/script&gt;</code>
+								</pre>
+							</div><!-- /.alert alert-warning -->
+	
+							<div class="alert alert-warning">
+								<p>
+									Make sure you have fields with <strong class="text-light">name, email and message</strong> name attribute.
+								</p>
+								<img class="rounded" src="./assets/img/sc/cf-2.png" alt="Contact Form">
+							</div><!-- /.alert alert-warning -->
+	
+						</div><!-- /.col-md-10 mx-auto -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+			<section id="newsletter">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-10 mx-auto">
+	
+							<h2 class="mt-4 h1">Setting up newsletter form</h2>
+	
+							<p>
+								Ave HTML using <a href="https://mailchimp.com/">Mailchimp</a> for newsletter form. So to get started you'll need a Mailchimp account.
+							</p>
+							<p>
+								After getting your account ready, create a list.
+							</p>
+							<p>
+								<figure>
+									<img class="rounded" src="./assets/img/sc/newsletter-1.jpg" alt="Newsletter">
+								</figure>
+							</p>
+							<p>
+								Go to <strong class="text-light">signup forms</strong>
+							</p>
+							<p>
+								<figure>
+									<img class="rounded" src="./assets/img/sc/newsletter-2.jpg" alt="Newsletter">
+								</figure>
+							</p>
+							<p>
+								Select <strong class="text-light">Embedded forms</strong>
+							</p>
+							<p>
+								<figure>
+									<img class="rounded" src="./assets/img/sc/newsletter-3.jpg" alt="Newsletter">
+								</figure>
+							</p>
+							<p>
+								Go to <strong class="text-light">Copy/paste onto your site</strong> section and copy the value of <strong class="text-light">action</strong> attribute
+							</p>
+							<p>
+								<figure>
+									<img class="rounded" src="./assets/img/sc/newsletter-4.jpg" alt="Newsletter">
+								</figure>
+							</p>
+							<p>
+								Now go back to the newsletter form from Ave template and paste the value inside <strong class="text-light">action</strong> attribute. e.g.
+							</p>
+							<p>
+								<figure>
+									<img class="rounded" src="./assets/img/sc/newsletter-5.jpg" alt="Newsletter">
+								</figure>
+							</p>
+
+							<div class="alert alert-warning">
+									<p>Make sure you have the newsletter javascript file in your page.</p>
+									<pre>
+	<code class="language-html">&lt;script src="./assets/js/liquidAjaxMailchimp.min.js"&gt;&lt;/script&gt;</code>
+									</pre>
+								</div><!-- /.alert alert-warning -->
+	
+							<div class="alert alert-warning">
+								Make sure you have <strong class="text-light">id="mce-EMAIL"</strong> and <strong class="text-light">name="EMAIL"</strong> attributes on the email field
+							</div><!-- /.alert alert-warning -->
+
+						</div><!-- /.col-md-10 mx-auto -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>
+
+			<section id="helper-classes">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-md-10 mx-auto">
+
+							<h2 class="mt-4 h1">Helper Classes</h2>
+
+							<p>We added some helper classes to the template that might come handy to you.</p>
+
+							<h3 class="mt-4" id="helper-classes-typo">Typography</h3>
+							<p>Let's see some helper classes useful to use across the template for improving typography.</p>
+
+							<h5 class="mt-4">Headings</h5>
+							<p>We designed the template to be SEO-Friendly. Headings are one of the mos elements for this matter. Let's say there's a section you want to add an <code>h2</code> element. But it's typography is not the one you want, and for instance you need that heading to inherit the typography from <code>h3</code> element.</p>
+							<p>So you can simply add <code>.h3</code> classname to that heading to apply all the typography properties of <code>h3</code>.</p>
+							<p>
+								<pre>
+									<code class="language-html">&lt;h2 class="h3"&gt;My SEO-Friendly Heading&lt;/h2&gt;</code>
+								</pre>
+							</p>
+							<p>Please make sure that if you're defining the typography, you'll set them as it is in our demos.</p>
+							<p>
+								<pre>
+									<code class="language-css">h1, .h1 {
+	font-size: 52px;
+	line-height: 1.5em;
+	font-weight: 700;
+}
+h2, .h2 {
+	font-size: 40px;
+	line-height: 1.25em;
+	font-weight: 600;
+}
+h3, .h3 {
+	font-size: 32px;
+	line-height: 1.2em;
+	font-weight: 500;
+}
+h4, .h4 {
+	font-size: 25px;
+	line-height: 1.75em;
+	font-weight: 400;
+}
+h5, .h5 {
+	font-size: 21px;
+	line-height: 1.2em;
+	font-weight: 400;
+}
+h6, .h6 {
+	font-size: 18px;
+	line-height: 1.2em;
+	font-weight: 400;
+}</code>
+								</pre>
+							</p>
+
+							<hr class="mt-5">
+
+							<h5 class="mt-4">Text Transforms</h5>
+							<ul>
+								<li>
+									<code>.text-lowercase</code>
+								</li>
+								<li>
+									<code>.text-uppercase</code>
+								</li>
+								<li>
+									<code>.text-capitalize</code>
+								</li>
+								<li>
+									<code>.text-transform-none</code>
+								</li>
+							</ul>
+
+							<h5 class="mt-4">Font Weights</h5>
+							<ul>
+								<li>
+									<code>.font-weight-thin</code>
+								</li>
+								<li>
+									<code>.font-weight-light</code>
+								</li>
+								<li>
+									<code>.font-weight-normal</code>
+								</li>
+								<li>
+									<code>.font-weight-medium</code>
+								</li>
+								<li>
+									<code>.font-weight-semibold</code>
+								</li>
+								<li>
+									<code>.font-weight-bold</code>
+								</li>
+							</ul>
+							
+							<h5 class="mt-4">Font Styles</h5>
+							<ul>
+								<li>
+									<code>.font-style-normal</code>
+								</li>
+								<li>
+									<code>.font-style-italic</code>
+								</li>
+							</ul>
+
+							<h5 class="mt-4">Line Heights</h5>
+							<pre>
+								<code class="language-css">.lh-05 { line-height: 0.5em; }
+.lh-55 { line-height: 0.55em; }
+.lh-75 { line-height: 0.75em; }
+.lh-85 { line-height: 0.85em; }
+.lh-1 { line-height: 1em; }
+.lh-11 { line-height: 1.1em; }
+.lh-115 { line-height: 1.15em; }
+.lh-125 { line-height: 1.25em; }
+.lh-13 { line-height: 1.3em; }
+.lh-15 { line-height: 1.5em; }
+.lh-16 { line-height: 1.6em; }
+.lh-165 { line-height: 1.65em; }
+.lh-175 { line-height: 1.75em; }
+.lh-185 { line-height: 1.85em; }
+.lh-2 { line-height: 2em; }
+.lh-215 { line-height: 2.15em; }
+.lh-225 { line-height: 2.25em; }
+.lh-25 { line-height: 2.5em; }</code>
+							</pre>
+
+							<h5 class="mt-4">Letter Spacing</h5>
+							<pre>
+								<code class="language-css">.ltr-sp-0 { letter-spacing: 0; }
+.ltr-sp--015 { letter-spacing: -0.015em; }
+.ltr-sp--025 { letter-spacing: -0.025em; }
+.ltr-sp--05 { letter-spacing: -0.05em; }
+.ltr-sp--075 { letter-spacing: -0.075em; }
+.ltr-sp--1 { letter-spacing: -0.1em; }
+.ltr-sp--135 { letter-spacing: -0.135em; }
+.ltr-sp--15 { letter-spacing: -0.15em; }
+.ltr-sp--175 { letter-spacing: -0.175em; }
+.ltr-sp--2 { letter-spacing: -0.2em; }
+
+.ltr-sp-015 { letter-spacing: 0.015em; }
+.ltr-sp-025 { letter-spacing: 0.025em; }
+.ltr-sp-05 { letter-spacing: 0.05em; }
+.ltr-sp-075 { letter-spacing: 0.075em; }
+.ltr-sp-1 { letter-spacing: 0.1em; }
+.ltr-sp-135 { letter-spacing: 0.135em; }
+.ltr-sp-15 { letter-spacing: 0.15em; }
+.ltr-sp-175 { letter-spacing: 0.175em; }
+.ltr-sp-2 { letter-spacing: 0.2em; }
+.ltr-sp-3 { letter-spacing: 0.3em; }</code>
+							</pre>
+
+							<h5 class="mt-4">Font Sizes ( px )</h5>
+							<pre>
+								<code class="language-css">.font-size-10  { font-size: 10px; }
+.font-size-11  { font-size: 11px; }
+.font-size-12 { font-size: 12px; }
+.font-size-13 { font-size: 13px; }
+.font-size-14 { font-size: 14px; }
+.font-size-15 { font-size: 15px; }
+.font-size-16 { font-size: 16px; }
+.font-size-17 { font-size: 17px; }
+.font-size-18 { font-size: 18px; }
+.font-size-19 { font-size: 19px; }
+.font-size-20 { font-size: 20px; }
+.font-size-21 { font-size: 21px; }
+.font-size-22 { font-size: 22px; }
+.font-size-24 { font-size: 24px; }
+.font-size-26 { font-size: 26px; }
+.font-size-28 { font-size: 28px; }
+.font-size-30 { font-size: 30px; }
+.font-size-32 { font-size: 32px; }
+.font-size-34 { font-size: 34px; }
+.font-size-35 { font-size: 35px; }
+.font-size-36 { font-size: 36px; }
+.font-size-38 { font-size: 38px; }
+.font-size-40 { font-size: 40px; }
+.font-size-42 { font-size: 42px; }
+.font-size-44 { font-size: 44px; }
+.font-size-46 { font-size: 46px; }
+.font-size-48 { font-size: 48px; }
+.font-size-50 { font-size: 50px; }</code>
+							</pre>
+
+							<h5 class="mt-4">Font Sizes ( em )</h5>
+							<pre>
+								<code class="language-css">.font-size-1-15x { font-size: 1.15em; }
+.font-size-1-25x { font-size: 1.25em; }
+.font-size-1-5x { font-size: 1.5em; }
+.font-size-1-6x { font-size: 1.6em; }
+.font-size-1-75x { font-size: 1.75em; }
+.font-size-2x { font-size: 2em; }
+.font-size-2-15x { font-size: 2.15em; }
+.font-size-2-25x { font-size: 2.25em; }
+.font-size-2-5x { font-size: 2.5em; }
+.font-size-2-6x { font-size: 2.6em; }
+.font-size-2-75x { font-size: 2.75em; }
+.font-size-3x { font-size: 3em; }
+.font-size-3-15x { font-size: 3.15em; }
+.font-size-3-3x { font-size: 3.3em; }</code>
+							</pre>
+
+							<h3 class="mt-4" id="helper-classes-text-colors">Text Colors</h5>
+							<p>Some useful shortcodes for defining colors.</p>
+							
+							<h5 class="mt-">Solid Colors</h5>
+							<pre>
+								<code class="language-css">.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-tertiary { color: var(--color-tertiary); }
+.text-white { color: #fff; }
+.text-black { color: #000; }
+.text-dark { color: #181b31; }
+.text-havelock-blue { color: #4c93dc; }
+.text-turquoise { color: #3cd3d1; }
+.text-neon-carrot { color: #ff8e32; }
+.text-arapawa { color: #120a57; }
+.text-san-marino { color: #4A62AC; }</code>
+							</pre>
+
+							<h5 class="mt-4">Hover Text Colors</h5>
+							<pre>
+								<code class="language-css">.text-hover-primary:hover { color: var(--color-primary); }
+.text-hover-secondary:hover { color: var(--color-secondary); }
+.text-hover-white:hover { color: #fff; }
+.text-hover-black:hover { color: #000; }
+.text-hover-dark:hover { color: #181b31; }</code>
+							</pre>
+
+							<h5 class="mt-4">Faded Texts</h5>
+							<pre>
+								<code class="language-css">.text-fade-white-01 { color: rgba(255, 255, 255, 0.1); }
+.text-fade-white-02 { color: rgba(255, 255, 255, 0.2); }
+.text-fade-white-03 { color: rgba(255, 255, 255, 0.3); }
+.text-fade-white-04 { color: rgba(255, 255, 255, 0.4); }
+.text-fade-white-05 { color: rgba(255, 255, 255, 0.5); }
+.text-fade-white-06 { color: rgba(255, 255, 255, 0.6); }
+.text-fade-white-07 { color: rgba(255, 255, 255, 0.7); }
+.text-fade-white-08 { color: rgba(255, 255, 255, 0.8); }
+.text-fade-white-09 { color: rgba(255, 255, 255, 0.9); }
+
+.text-fade-dark-01 { color: rgba(0, 0, 0, 0.1); }
+.text-fade-dark-02 { color: rgba(0, 0, 0, 0.2); }
+.text-fade-dark-03 { color: rgba(0, 0, 0, 0.3); }
+.text-fade-dark-04 { color: rgba(0, 0, 0, 0.4); }
+.text-fade-dark-05 { color: rgba(0, 0, 0, 0.5); }
+.text-fade-dark-06 { color: rgba(0, 0, 0, 0.6); }
+.text-fade-dark-07 { color: rgba(0, 0, 0, 0.7); }
+.text-fade-dark-08 { color: rgba(0, 0, 0, 0.8); }
+.text-fade-dark-09 { color: rgba(0, 0, 0, 0.9); }</code>
+								</pre>
+
+								<hr class="mt-5">
+
+								<h3 class="mt-4" id="helper-classes-bg">Background</h3>
+								<p>Here are background shortcodes we added to template by default.</p>
+
+								<h5 class="mt-4">Solid Backgrounds</h5>
+								<pre>
+									<code class="language-css">.bg-primary { background: var(--color-primary); }
+.bg-secondary { background: var(--color-secondary); }
+.bg-transparent { background: transparent; }
+.bg-white { background: #fff; }
+.bg-black { background: #000; }
+.bg-gray { background: #f4f5f8; }
+.bg-gray-2 { background: #fafafa; }
+.bg-gray-3 { background: #f1f1f1; }
+.bg-light { background: #f7f8fb; }
+.bg-dark { background: #212121; }
+.bg-mirage { background: #181b31; }
+.bg-vulcan { background: #141622; }
+.bg-charade { background: #2D323D; }
+.bg-tundora { background: #40383C; }
+.bg-shark { background: #27282a; }
+.bg-gigas { background: #4439a9; }
+.bg-athens-gray { background: #F8F9FA; }
+.bg-ebony-clay { background: #252c42; }
+.bg-link-water { background: #DCE9F6; }
+.bg-swans-down { background: #dbf1f1; }
+.bg-old-lace { background: #fcece1; }
+.bg-woodsmoke { background: #0e0f14; }
+.bg-cape-cod { background: #343535; }
+.bg-zircon { background: #f8faff; }</code>
+								</pre>
+
+								<h5 class="mt-4">Fade Backgrounds</h5>
+								<pre>
+									<code class="language-css">.bg-fade-white-005 { background-color: rgba(255, 255, 255, 0.05); }
+.bg-fade-white-01 { background-color: rgba(255, 255, 255, 0.1); }
+.bg-fade-white-015 { background-color: rgba(255, 255, 255, 0.15); }
+.bg-fade-white-02 { background-color: rgba(255, 255, 255, 0.2); }
+.bg-fade-white-025 { background-color: rgba(255, 255, 255, 0.25); }
+.bg-fade-white-03 { background-color: rgba(255, 255, 255, 0.3); }
+.bg-fade-white-035 { background-color: rgba(255, 255, 255, 0.35); }
+.bg-fade-white-04 { background-color: rgba(255, 255, 255, 0.4); }
+.bg-fade-white-045 { background-color: rgba(255, 255, 255, 0.45); }
+.bg-fade-white-05 { background-color: rgba(255, 255, 255, 0.5); }
+.bg-fade-white-055 { background-color: rgba(255, 255, 255, 0.55); }
+.bg-fade-white-06 { background-color: rgba(255, 255, 255, 0.6); }
+.bg-fade-white-065 { background-color: rgba(255, 255, 255, 0.65); }
+.bg-fade-white-07 { background-color: rgba(255, 255, 255, 0.7); }
+.bg-fade-white-075 { background-color: rgba(255, 255, 255, 0.75); }
+.bg-fade-white-08 { background-color: rgba(255, 255, 255, 0.8); }
+.bg-fade-white-085 { background-color: rgba(255, 255, 255, 0.85); }
+
+.bg-fade-dark-005 { background-color: rgba(0, 0, 0, 0.05); }
+.bg-fade-dark-01 { background-color: rgba(0, 0, 0, 0.1); }
+.bg-fade-dark-015 { background-color: rgba(0, 0, 0, 0.15); }
+.bg-fade-dark-02 { background-color: rgba(0, 0, 0, 0.2); }
+.bg-fade-dark-025 { background-color: rgba(0, 0, 0, 0.25); }
+.bg-fade-dark-03 { background-color: rgba(0, 0, 0, 0.3); }
+.bg-fade-dark-035 { background-color: rgba(0, 0, 0, 0.35); }
+.bg-fade-dark-04 { background-color: rgba(0, 0, 0, 0.4); }
+.bg-fade-dark-045 { background-color: rgba(0, 0, 0, 0.45); }
+.bg-fade-dark-05 { background-color: rgba(0, 0, 0, 0.5); }
+.bg-fade-dark-055 { background-color: rgba(0, 0, 0, 0.55); }
+.bg-fade-dark-06 { background-color: rgba(0, 0, 0, 0.6); }
+.bg-fade-dark-065 { background-color: rgba(0, 0, 0, 0.65); }
+.bg-fade-dark-07 { background-color: rgba(0, 0, 0, 0.7); }
+.bg-fade-dark-075 { background-color: rgba(0, 0, 0, 0.75); }
+.bg-fade-dark-08 { background-color: rgba(0, 0, 0, 0.8); }
+.bg-fade-dark-085 { background-color: rgba(0, 0, 0, 0.85); }</code>
+								</pre>
+
+								<h5 class="mt-4">Gradient Backgrounds</h5>
+								<pre>
+									<code class="language-css">.bg-gradient-primary-lr {
+	background: linear-gradient(to right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-rl {
+	background: linear-gradient(to left, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-tb {
+	background: linear-gradient(to bottom, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-bt {
+	background: linear-gradient(to top, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-tl {
+	background: linear-gradient(to top left, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-tr {
+	background: linear-gradient(to top right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-br {
+	background: linear-gradient(to bottom right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-primary-bl {
+	background: linear-gradient(to bottom left, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%) !important;
+}
+.bg-gradient-secondary-lr {
+	background: linear-gradient(to right, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-rl {
+	background: linear-gradient(to left, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-tb {
+	background: linear-gradient(to bottom, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-bt {
+	background: linear-gradient(to top, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-tl {
+	background: linear-gradient(to top left, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-tr {
+	background: linear-gradient(to top right, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-br {
+	background: linear-gradient(to bottom right, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-secondary-bl {
+	background: linear-gradient(to bottom left, var(--color-gradient-start-secondary) 0%, var(--color-gradient-stop-secondary) 100%) !important;
+}
+.bg-gradient-tertiary-lr {
+	background: linear-gradient(to right, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-rl {
+	background: linear-gradient(to left, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-tb {
+	background: linear-gradient(to bottom, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-bt {
+	background: linear-gradient(to top, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-tl {
+	background: linear-gradient(to top left, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-tr {
+	background: linear-gradient(to top right, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-br {
+	background: linear-gradient(to bottom right, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-tertiary-bl {
+	background: linear-gradient(to bottom left, var(--color-gradient-start-tertiary) 0%, var(--color-gradient-stop-tertiary) 100%) !important;
+}
+.bg-gradient-black-transparent-tb {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%) !important;
+}
+.bg-gradient-black-transparent-bt {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%) !important;
+}
+.bg-gradient-cream {
+	background: linear-gradient(180deg, #fff8f5 0%, #ffffff 50%);
+}</code>
+								</pre>
+
+								<hr class="mt-5">
+
+								<h3 class="mt-4" id="helper-classes-spacing">Spacing</h3>
+								<p>We added some spacing helpers that can come pretty handy.</p>
+
+								<h5 class="mt-4">Margins ( rem )</h5>
+								<pre>
+										<code class="language-css">.m-0 { margin: 0; }
+.m-1 { margin: 0.25rem; }
+.m-2 { margin: 0.5rem; }
+.m-3 { margin: 1rem; }
+.m-4 { margin: 1.5rem; }
+.m-5 { margin: 3rem; }
+.m-6 { margin: 4.5rem; }
+.m-7 { margin: 5rem; }
+.m-8 { margin: 5.5rem; }
+.m-9 { margin: 6rem; }
+
+.mt-0, .my-0 { margin-top: 0; }
+.mt-1, .my-1 { margin-top: 0.25rem; }
+.mt-2, .my-2 { margin-top: 0.5rem; }
+.mt-3, .my-3 { margin-top: 1rem; }
+.mt-4, .my-4 { margin-top: 1.5rem; }
+.mt-5, .my-5 { margin-top: 3rem; }
+.mt-6, .my-6 { margin-top: 4.5rem; }
+.mt-7, .my-7 { margin-top: 5rem; }
+.mt-8, .my-8 { margin-top: 5.5rem; }
+.mt-9, .my-9 { margin-top: 6rem; }
+
+.mb-0, .my-0 { margin-bottom: 0; }
+.mb-1, .my-1 { margin-bottom: 0.25rem; }
+.mb-2, .my-2 { margin-bottom: 0.5rem; }
+.mb-3, .my-3 { margin-bottom: 1rem; }
+.mb-4, .my-4 { margin-bottom: 1.5rem; }
+.mb-5, .my-5 { margin-bottom: 3rem; }
+.mb-6, .my-6 { margin-bottom: 4.5rem; }
+.mb-7, .my-7 { margin-bottom: 5rem; }
+.mb-8, .my-8 { margin-bottom: 5.5rem; }
+.mb-9, .my-9 { margin-bottom: 6rem; }
+
+.mr-0, .mx-0 { margin-right: 0; }
+.mr-1, .mx-1 { margin-right: 0.25rem; }
+.mr-2, .mx-2 { margin-right: 0.5rem; }
+.mr-3, .mx-3 { margin-right: 1rem; }
+.mr-4, .mx-4 { margin-right: 1.5rem; }
+.mr-5, .mx-5 { margin-right: 3rem; }
+.mr-6, .mx-6 { margin-right: 4.5rem; }
+.mr-7, .mx-7 { margin-right: 5rem; }
+.mr-8, .mx-8 { margin-right: 5.5rem; }
+.mr-9, .mx-9 { margin-right: 6rem; }
+
+.ml-0, .mx-0 { margin-left: 0; }
+.ml-1, .mx-1 { margin-left: 0.25rem; }
+.ml-2, .mx-2 { margin-left: 0.5rem; }
+.ml-3, .mx-3 { margin-left: 1rem; }
+.ml-4, .mx-4 { margin-left: 1.5rem; }
+.ml-5, .mx-5 { margin-left: 3rem; }
+.ml-6, .mx-6 { margin-left: 4.5rem; }
+.ml-7, .mx-7 { margin-left: 5rem; }
+.ml-8, .mx-8 { margin-left: 5.5rem; }
+.ml-9, .mx-9 { margin-left: 6rem; }</code>
+								</pre>
+								<p>Please keep in mind these are responsive friendly. it means you can change the spacing with these classnames on different screens. Using it is as the way as using columns. e.g. <code>.mb-md-4</code>, <code>.mt-xs-4</code> <code>.ml-lg-6</code></p>
+
+								<h5 class="mt-4">Margins ( px )</h5>
+								<p>Margins in pixels is a range from 10 to 200. and only available for top and bottom. Some examples:</p>
+								<pre>
+										<code class="language-css">.mb-10 { margin-bottom: 10px; }
+.mb-150 { margin-bottom: 150px; }
+
+.mt-80 { margin-top: 80px; }
+.mt-160 { margin-top: 160px; }</code>
+								</pre>
+
+								<h5 class="mt-4">Padding ( rem )</h5>
+								<pre>
+										<code class="language-css">.p-0 { padding: 0; }
+.p-1 { padding: 0.25rem; }
+.p-2 { padding: 0.5rem; }
+.p-3 { padding: 1rem; }
+.p-4 { padding: 1.5rem; }
+.p-5 { padding: 3rem; }
+.p-6 { padding: 4.5rem; }
+.p-7 { padding: 5rem; }
+.p-8 { padding: 5.5rem; }
+.p-9 { padding: 6rem; }
+
+.pt-0, .py-0 { padding-top: 0; }
+.pt-1, .py-1 { padding-top: 0.25rem; }
+.pt-2, .py-2 { padding-top: 0.5rem; }
+.pt-3, .py-3 { padding-top: 1rem; }
+.pt-4, .py-4 { padding-top: 1.5rem; }
+.pt-5, .py-5 { padding-top: 3rem; }
+.pt-6, .py-6 { padding-top: 4.5rem; }
+.pt-7, .py-7 { padding-top: 5rem; }
+.pt-8, .py-8 { padding-top: 5.5rem; }
+.pt-9, .py-9 { padding-top: 6rem; }
+
+.pb-0, .py-0 { padding-bottom: 0; }
+.pb-1, .py-1 { padding-bottom: 0.25rem; }
+.pb-2, .py-2 { padding-bottom: 0.5rem; }
+.pb-3, .py-3 { padding-bottom: 1rem; }
+.pb-4, .py-4 { padding-bottom: 1.5rem; }
+.pb-5, .py-5 { padding-bottom: 3rem; }
+.pb-6, .py-6 { padding-bottom: 4.5rem; }
+.pb-7, .py-7 { padding-bottom: 5rem; }
+.pb-8, .py-8 { padding-bottom: 5.5rem; }
+.pb-9, .py-9 { padding-bottom: 6rem; }
+
+.pr-0, .px-0 { padding-right: 0; }
+.pr-1, .px-1 { padding-right: 0.25rem; }
+.pr-2, .px-2 { padding-right: 0.5rem; }
+.pr-3, .px-3 { padding-right: 1rem; }
+.pr-4, .px-4 { padding-right: 1.5rem; }
+.pr-5, .px-5 { padding-right: 3rem; }
+.pr-6, .px-6 { padding-right: 4.5rem; }
+.pr-7, .px-7 { padding-right: 5rem; }
+.pr-8, .px-8 { padding-right: 5.5rem; }
+.pr-9, .px-9 { padding-right: 6rem; }
+
+.pl-0, .px-0 { padding-left: 0; }
+.pl-1, .px-1 { padding-left: 0.25rem; }
+.pl-2, .px-2 { padding-left: 0.5rem; }
+.pl-3, .px-3 { padding-left: 1rem; }
+.pl-4, .px-4 { padding-left: 1.5rem; }
+.pl-5, .px-5 { padding-left: 3rem; }
+.pl-6, .px-6 { padding-left: 4.5rem; }
+.pl-7, .px-7 { padding-left: 5rem; }
+.pl-8, .px-8 { padding-left: 5.5rem; }
+.pl-9, .px-9 { padding-left: 6rem; }</code>
+								</pre>
+								<p>Please keep in mind these are responsive friendly. it means you can change the spacing with these classnames on different screens. Using it is as the way as using columns. e.g. <code>.pb-md-4</code>, <code>.pt-xs-4</code> <code>.pl-lg-6</code></p>
+
+								<h5 class="mt-4">paddings ( px )</h5>
+								<p>paddings in pixels is a range from 10 to 200. and only available for top and bottom. Some examples:</p>
+								<pre>
+										<code class="language-css">.pb-10 { padding-bottom: 10px; }
+.pb-150 { padding-bottom: 150px; }
+
+.pt-80 { padding-top: 80px; }
+.pt-160 { padding-top: 160px; }</code>
+								</pre>
+
+						</div><!-- /.col-md-10 mx-auto -->
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section><!-- /#shortcodes -->
+
+		</div><!-- /#content -->
+
+	</div><!-- /#wrap -->
+	
+	<script src="./assets/vendors/jquery.min.js"></script>
+	<script src="./assets/vendors/prism/prism.js"></script>
+	<script src="./assets/vendors/scroll-out/dist/scroll-out.min.js"></script>
+	<script src="./assets/vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./assets/js/docs.min.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,56 @@
+$toggleable_nav_items: ();
+
+@for $i from 10 through 1 {
+	$toggleable_nav_items: append($toggleable_nav_items, #{$i});
+}
+
+.navbar-visible-ontoggle {
+	// add the padding due to (F)ff overflow-scroll issue
+	padding-right: 5px;
+	padding-left: 5px;
+
+	.main-nav {
+
+		> li {
+			opacity: 0;
+			visibility: hidden;
+			transform: translateX(5px);
+			transition: all 0.3s ease;
+			
+			@for $i from 1 through 10 {
+				
+				&:nth-child(#{$i}) {
+					transition-delay: ($i / 20)+s;
+				}
+			}
+		}
+	}
+	
+	&[aria-expanded=true] {
+		
+		.main-nav {
+			
+			> li {
+				opacity: 1;
+				visibility: visible;
+				transform: none; // changed from translateX(0) to none due to positioning issue for megamenu
+				
+				@for $i from 1 through length($toggleable_nav_items) {
+					
+					&:nth-child(#{nth($toggleable_nav_items, $i)}) {
+						transition-delay: ($i / 20)+s;
+					}
+				}
+			}
+		}
+	}
+	&[aria-expanded=false].collapsing {
+		
+		.main-nav {
+			
+			> li {
+				transform: translateX(-5px);
+			}
+		}
+	}
+}

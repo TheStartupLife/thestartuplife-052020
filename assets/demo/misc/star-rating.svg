@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="162" height="30" viewBox="0 0 162 30">
+  <g id="_1" data-name="1">
+    <rect id="bg" fill="#ff7a4b" width="30" height="30" rx="3" ry="3"/>
+    <path id="star" fill="#fff" d="M15,5l3.3,5.971L25,12.258l-4.666,4.977L21.18,24,15,21.1,8.82,24l0.847-6.766L5,12.258l6.7-1.286L15,5"/>
+  </g>
+  <g id="_2" data-name="2">
+    <rect id="bg-2" data-name="bg" fill="#ff7a4b" x="33" width="30" height="30" rx="3" ry="3"/>
+    <path id="star-2" data-name="star" fill="#fff" d="M48,5l3.3,5.971L58,12.258l-4.666,4.977L54.18,24,48,21.1,41.82,24l0.847-6.766L38,12.258l6.7-1.286L48,5"/>
+  </g>
+  <g id="_3" data-name="3">
+    <rect id="bg-3" data-name="bg" fill="#ff7a4b" x="66" width="30" height="30" rx="3" ry="3"/>
+    <path id="star-3" data-name="star" fill="#fff" d="M81,5l3.3,5.971L91,12.258l-4.666,4.977L87.18,24,81,21.1,74.82,24l0.847-6.766L71,12.258l6.7-1.286L81,5"/>
+  </g>
+  <g id="_4" data-name="4">
+    <rect id="bg-4" data-name="bg" fill="#ff7a4b" x="99" width="30" height="30" rx="3" ry="3"/>
+    <path id="star-4" data-name="star" fill="#fff" d="M114,5l3.3,5.971,6.7,1.286-4.666,4.977L120.18,24,114,21.1,107.82,24l0.847-6.766L104,12.258l6.7-1.286L114,5"/>
+  </g>
+  <g id="_5" data-name="5">
+    <rect id="bg-5" data-name="bg" fill="#ff7a4b" x="132" width="30" height="30" rx="3" ry="3"/>
+    <path id="star-5" data-name="star" fill="#fff" d="M147,5l3.3,5.971,6.7,1.286-4.666,4.977L153.18,24,147,21.1,140.82,24l0.847-6.766L137,12.258l6.7-1.286L147,5"/>
+  </g>
+</svg>

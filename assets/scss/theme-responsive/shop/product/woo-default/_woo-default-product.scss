@@ -1,0 +1,15 @@
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.woocommerce {
+	
+		ul.products {
+			margin-left: -5px !important;
+			margin-right: -5px !important;
+			
+			li.product {
+				padding-left: 5px;
+				padding-right: 5px;
+			}
+		}
+	}	
+}

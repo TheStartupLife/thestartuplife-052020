@@ -1,0 +1,54 @@
+.lqd-vbg-video {
+	
+	&:not([data-property]),
+	.mejs__overlay,
+	.mejs__poster {
+		@include object-fit(cover);
+		width: 100% !important;
+		height: 100% !important;
+	}
+	.YTPOverlay,
+	.mb_YTPBar,
+	.inlinePlayButton,
+	.mejs__overlay-play,
+	.mejs-controls,
+	.mejs__controls {
+		display: none !important;
+	}
+}
+.lqd-vbg-loader {
+	background-image: url(../img/spinners/spinner-1.gif);
+	background-color: #fff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 55px;
+}
+.lqd-vbg-loader,
+.lqd-vbg-inner,
+.lqd-vbg-wrap {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.lqd-vbg-inner {
+
+	&:after {
+		// content: '';
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+}
+.lqd-vbg-wrap {
+
+	.inline-YTPlayer {
+		height: 100%;
+	}
+}

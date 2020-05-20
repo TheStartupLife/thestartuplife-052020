@@ -1,0 +1,154 @@
+.woocommerce {
+
+	#review_form {
+
+		#respond {
+			padding: 35px 40px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(#000, 0.1);
+
+			.comment-form {
+				margin-top: 20px;
+	
+				> .row {
+					display: flex;
+					margin-left: 0;
+					margin-right: 0;
+					flex-flow: row wrap;
+					align-items: flex-start;
+	
+					&:before,
+					&:after {
+						content: none;
+					}
+				}
+				p {
+					width: 100%;
+					margin-bottom: 40px;
+					perspective: none;
+	
+					&:before {
+						background-color: #cccccc;
+					}
+				}
+				input {
+					height: 60px;
+
+					&[type=submit] {
+						height: 45px;
+						padding-top: 0;
+						padding-bottom: 0;
+						background-color: #3A3A3A;
+						color: #fff;
+
+						&:hover {
+							background-color: #000;
+						}
+					}
+					&[type=checkbox],
+					&[type=radio] {
+						width: auto;
+						height: auto;
+					}
+				}
+				.comment-notes {
+					text-align: inherit;
+					margin-bottom: 20px;
+				}
+				.comment-form-rating {
+					order: 0;
+				}
+				.comment-form-comment {
+					order: 1;
+
+					.input-placeholder {
+						height: auto;
+					}
+				}
+				.comment-form-author,
+				.comment-form-email {
+					order: 2;
+				}
+				.comment-form-cookies-consent {
+					order: 3;
+
+					&:before,
+					&:after {
+						content: none;
+					}
+					input,
+					label {
+						margin-top: 0;
+						margin-bottom: 0;
+					}
+				}
+				.form-submit {
+					order: 4;
+				}
+				.comment-form-rating {
+					display: inline-block;
+					padding: 16px 75px 16px 25px;
+					margin-bottom: 35px;
+					border: 1px solid #efefef;
+				}
+				.stars {
+					margin: 0 !important;
+					font-size: 15px;
+					color: var(--color-primary);
+	
+					&:before,
+					&:after {
+						content: none;
+					}
+					a {
+						color: inherit;
+					}
+					.star-5 {
+	
+						&:after {
+							content: '0 of 5';
+							position: absolute;
+							top: 0;
+							left: 100%;
+							margin-left: 1em;
+							font-size: 14px;
+							font-weight: 600;
+							text-indent: 0;
+							line-height: 1em;
+							white-space: nowrap;
+							color: #000000;
+							pointer-events: none;
+						}
+					}
+					span {
+						display: flex;
+						align-items: center;
+					}
+					@for $i from 1 to 6 {
+	
+						.star-#{$i} {
+							
+							&.active {
+	
+								@if $i == 5 {
+									
+									&:after {
+										content: '#{$i} of 5';
+									}
+								} @else {
+	
+									~ .star-5 {
+			
+										&:after {
+											content: '#{$i} of 5';
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

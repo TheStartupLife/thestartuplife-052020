@@ -1,0 +1,78 @@
+@font-face {
+	font-family: 'Glacial Indifference';
+	src: url('../fonts/GlacialIndifference-Regular.woff2') format('woff2'),
+			url('../fonts/GlacialIndifference-Regular.woff') format('woff');
+	font-weight: normal;
+	font-display: swap;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Glacial Indifference';
+	src: url('../fonts/GlacialIndifference-Bold.woff2') format('woff2'),
+			url('../fonts/GlacialIndifference-Bold.woff') format('woff');
+	font-weight: bold;
+	font-display: swap;
+	font-style: normal;
+}
+
+html,
+body {
+	max-width: 100vw;
+}
+html {
+	font-size: 100%;
+	overflow-x: hidden;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.7;
+	font-weight: 400;
+	color: var(--color-font);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*
+	Base Styles
+*/
+#wrap,
+#content {
+	position: relative;
+}
+#content {
+	z-index: 2;
+	transition: transform 0.3s; // for mobile nav style modern;
+	background-color: #fff;
+	@include clearfix;
+}
+iframe {
+	max-width: 100%;
+	border: none;
+}
+audio {
+	width: 100%;
+}
+
+// Spacing
+body {
+
+	&.archive {
+
+		#content {
+			padding-top: 70px;
+			padding-bottom: 70px;
+		}
+	}
+	&.blog {
+
+		#content {
+			padding-top:70px;
+			padding-bottom: 70px;
+		}
+		.main-sidebar {
+			margin-top: 0 !important;
+		}
+	}
+}

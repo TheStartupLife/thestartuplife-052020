@@ -1,0 +1,182 @@
+.post-author {
+
+	h3 {
+		color: #fff;
+	}
+}
+.related-post-title {
+
+	a {
+		color: inherit;
+	}
+}
+.tags-links {
+
+	a {
+		color: #fff;
+		border-color: #fff;
+	}
+}
+.post-author {
+	border-color: rgba(#898a93, 0.3);
+
+	h6 {
+		color: rgba(#898a93, 0.75);
+	}
+}
+.post-nav {
+	
+	.nav-title {
+		color: #fff;
+	}
+}
+.comment-form {
+
+	p {
+
+		&:before {
+			background-color: rgba(#898a93, 0.3);
+		}
+		&:after {
+			background-color: #fff;
+		}
+	}
+	input,
+	textarea {
+		color: #fff;
+	}
+	input[type=submit] {
+		padding-top: 14px;
+		padding-bottom: 14px;
+		border: 1px solid #fff;
+		background-color: transparent;
+		color: #fff;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: #fff;
+			color: #12131a;
+		}
+	}
+}
+.comment-author {
+	color: #fff;
+}
+.comment {
+
+	.reply {
+
+		a {
+			border-color: rgba(#fff, 0.55);
+			color: rgba(#fff, 0.55);
+
+			&:hover {
+				border-color: #fff;
+				background-color: transparent;
+				color: #fff;
+			}
+		}
+	}
+}
+
+.liquid-blog-scheme-dark {
+	color: #fff;
+
+	.btn-line,
+	.liquid-lp-title .split-inner:after {
+		background-color: #fff;
+	}
+}
+.liquid-blog-scheme-dark-alt {
+	
+	.liquid-lp-excerpt {
+		color: rgba(#fff, 055);
+	}
+}
+.liquid-lp-details {
+	color: rgba(#fff, 0.55);
+}
+
+.blog-single-default,
+.blog-single-image-left {
+
+	.comment-respond {
+		background-color: #262834;
+	}
+}
+
+.liquid-lp-details-lined {
+
+	&:before,
+	&:after {
+		background-color: #fff;
+	}
+}
+
+.liquid-lp-time-aside {
+
+	> time {
+		border-color: rgba(#fff, 0.4);
+
+		span {
+			color: #fff;
+		}
+	}
+}
+
+.liquid-blog-item-timeline {
+	border-color: #35394c;
+	background-color: #1a1c25;
+
+	&.liquid-blog-scheme-dark {
+
+		.liquid-lp-details {
+			color: rgba(#fff, 0.55);
+		}
+	}
+}
+
+.liquid-lp-category {
+
+	&.bordered {
+		
+		li:before {
+			background-color: #121319;
+		}
+	}
+}
+
+.liquid-lp-sp-block {
+	border-color: #42444c;
+
+	.liquid-lp-inner {
+		background-color: #121319;
+	}
+}
+
+.liquid-lp-sp-block-alt {
+
+	.liquid-lp-category li a {
+		color: #fff;
+	}
+}
+
+.liquid-blog-item-gray {
+	background-color: #22232b;
+}
+.liquid-blog-grid {
+
+	.masonry-item {
+
+		+ .masonry-item .liquid-blog-item-gray {
+			border-color: #494b5a;
+		}
+	}
+}
+
+.ld-post-author {
+
+	h5 {
+		color: #fff;
+	}
+}

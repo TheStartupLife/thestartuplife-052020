@@ -1,0 +1,37 @@
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.woocommerce {
+
+		div.product {
+
+			.woocommerce-tabs {
+
+				.tabs-nav {
+					width: 27%;
+				}
+				.tabs-content {
+					width: 73%;
+					padding-left: 60px;
+				}
+			}
+		}
+	}
+}
+@media screen and ( max-width: $grid-breakpoint-md - 1 ) {
+
+	.woocommerce {
+
+		div.product {
+
+			.woocommerce-tabs {
+				padding-left: 0;
+				padding-right: 0;
+
+				.tabs-nav {
+					width: 100%;
+					margin-bottom: 1.5em;
+				}
+			}
+		}
+	}
+}

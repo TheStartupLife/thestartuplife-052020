@@ -1,0 +1,7 @@
+.ld-img-hover-opacity {
+	transition: opacity 0.3s;
+
+	&:hover {
+		opacity: 1;
+	}
+}

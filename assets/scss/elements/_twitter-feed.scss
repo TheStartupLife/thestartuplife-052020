@@ -1,0 +1,39 @@
+.liquid-twitter-feed {
+	margin-bottom: 2em;
+}
+.liquid-twitter-feed-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	> li {
+		margin-bottom: em(15);
+		line-height: em(24, 14);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	p {
+		margin-bottom: 0;
+	}
+	blockquote {
+		font-style: normal;
+		margin: 0;
+		font-size: 1em;
+	}
+}
+.liquid-twitter-feed-icon {
+	display: block;
+	margin-bottom: em(20, 28);
+	font-size: 28px;
+	line-height: 1em;
+	color: map-get($social-colors, twitter);
+}
+.liquid-twitter-feed-list .twitter-tweet > a,
+.liquid-tweet-time {
+	display: block;
+	font-size: 11px;
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+}

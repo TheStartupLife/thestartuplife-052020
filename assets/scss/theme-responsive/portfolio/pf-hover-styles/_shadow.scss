@@ -1,0 +1,9 @@
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+
+	.pf-hover-shadow {
+
+		.carousel-item & {
+			margin-bottom: 50px;
+		}
+	}
+}

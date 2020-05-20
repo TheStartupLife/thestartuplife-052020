@@ -1,0 +1,88 @@
+:root {
+	--color-primary: #f13c46;
+	--color-secondary: #15dffd;
+	--color-gradient-start: #f42958;
+	--color-gradient-stop: #e4442a;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	line-height: 1.7em;
+	font-size: 1em;
+	color: #808291;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	color: #181b31;
+}
+
+.h1, h1 {
+	line-height: 1.2em;
+	font-size: 52px;
+}
+
+.h2, h2 {
+	line-height: 1.2em;
+	font-size: 40px;
+}
+
+.h3, h3 {
+	line-height: 1.2em;
+	font-size: 32px;
+}
+
+.h4, h4 {
+	line-height: 1.2em;
+	font-size: 25px;
+}
+
+.h5, h5 {
+	line-height: 1.2em;
+	font-size: 21px;
+}
+
+.h6, h6 {
+	line-height: 1.2em;
+	font-size: 18px;
+}
+
+.main-nav > li > a {
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
+@media (min-width: 1200px) {
+
+	.main-nav > li {
+		
+		> a {
+			font-size: 36px;
+			line-height: 1.5em;
+			font-weight: 700;
+			letter-spacing: 0.025em;
+			color: #ebebeb;
+			text-transform: uppercase;
+		
+			.link-ext {
+				background: #fff;
+			}
+		}
+		&.is-active > a,
+		&.current-menu-item > a,
+		&:hover > a,
+		> a:hover {
+			color: #fff;
+		}
+	}
+	.header-fullscreen .navbar-fullscreen {
+		background: rgba(#000, 0.95);
+	}
+}

@@ -1,0 +1,40 @@
+.main-nav-fullscreen-style-1 {
+  width: 50%;
+  margin: 5vh auto;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+
+  > li {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-bottom: 1em;
+    overflow: hidden;
+
+    > a {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  .nav-item-children {
+    width: calc(100% + 24px);
+    padding: 0.625em 0;
+    position: relative;
+    top: auto;
+    left: auto;
+    font-size: 16px;
+    line-height: 1.5em;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    > li {
+      display: block;
+      width: 100%;
+      padding: 0.75em 1.25em;
+      font-size: 1em;
+      font-weight: 400;
+    }
+  }
+}

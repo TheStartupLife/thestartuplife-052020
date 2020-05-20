@@ -1,0 +1,25 @@
+.woocommerce {
+
+	table.shop_attributes {
+		border: none;
+		font-size: 15px;
+		color: #454545;
+
+		tr,
+		th,
+		td {
+			border: none;
+		}
+		th,
+		td {
+			padding: 7px 20px;
+			font-weight: 400;
+		}
+		th {
+			background-color: #F8F8F8;
+		}
+		td {
+			background-color: #FDFDFD !important;
+		}
+	}
+}

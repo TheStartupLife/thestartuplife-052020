@@ -1,0 +1,26 @@
+.is-stuck {
+	background-color: rgba(0, 0, 0, 0.75);
+	box-shadow: 0 2px 8px rgba(#000, 0.07);
+	backdrop-filter: blur(20px) saturate(180%);
+
+	.ld-module-search-visible-form .ld-search-form input {
+		color: #fff;
+		border-color: rgba(255, 255, 255, 0.2);
+	}
+	.social-icon a,
+	.header-module .ld-module-trigger,
+	.main-nav > li > a {
+		color: rgba(255, 255, 255, 0.8) !important;
+	}
+	.social-icon a:hover,
+	.main-nav > li > a:hover,
+	.ld-module-search-visible-form .input-icon {
+		color: #fff !important;
+	}
+}
+.visible-when-stuck {
+	
+	.mainbar-wrap:not(.is-stuck) & {
+		display: none;
+	}
+}

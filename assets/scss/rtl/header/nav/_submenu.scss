@@ -1,0 +1,12 @@
+.main-nav .children,
+.nav-item-children {
+	left: auto;
+	right: 0;
+	text-align: right;
+
+	.children,
+	.nav-item-children {
+		left: auto;
+		right: 100%;
+	}
+}

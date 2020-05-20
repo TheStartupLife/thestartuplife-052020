@@ -1,0 +1,44 @@
+@keyframes stickySlideDown {
+
+	from {
+		transform: translateY(-100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+.is-stuck {
+	animation: stickySlideDown 0.65s cubic-bezier(0.23, 1, 0.320, 1) both;
+	
+	.navbar-brand {
+		padding-top: 18px;
+		padding-bottom: 18px;
+	}
+	&.mainbar-wrap {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+	}
+	> .megamenu-hover-bg {
+    display: none !important;
+  }
+}
+.lqd-sticky-sentinel {
+	width: 100%;
+	min-height: 1px;
+	top: 100%;
+	left: 0;
+	z-index: -1;
+
+	.vc_row > &,
+	.titlebar > & {
+		top: calc(100% - 2px);
+	}
+}
+.is-stuck {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+}

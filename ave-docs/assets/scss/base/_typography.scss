@@ -1,0 +1,83 @@
+@font-face {
+	font-family: 'Cerebri Sans';
+	src: url('../fonts/cerebri-sans.woff2') format('woff2'),
+		url('../fonts/cerebri-sans.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Cerebri Sans', sans-serif;
+	font-size: 16px;
+	line-height: 2em;
+	color: #828282;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6 .h6 {
+	font-family: 'neuzeit-grotesk', 'sans-serif';
+	color: #fff;
+}
+
+.h1,
+h1 {
+	font-size: 50px;
+	line-height: 1.4em;
+}
+
+.h2,
+h2 {
+	font-size: 44px;
+	line-height: 1.4;
+	letter-spacing: 0;
+}
+
+.h3,
+h3 {
+	font-size: 32px;
+	line-height: 1.5em;
+}
+
+.h4,
+h4 {
+	font-size: 26px;
+	line-height: 1.6em;
+}
+
+.h5,
+h5 {
+	font-size: 20px;
+	line-height: 1.6em;
+}
+
+.h6,
+h6 {
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+@media screen and ( max-width: $grid-breakpoint-md - 1 ) {
+
+	h1, .h1 {
+		font-size: 40px;
+	}
+	h2, .h2 {
+		font-size: 32px;
+	}
+	h3, .h3 {
+		font-size: 24px;
+	}
+	h4, .h4 {
+		font-size: 18px;
+	}
+	h5, .h5 {
+		font-size: 16px;
+	}
+	h6, .h6 {
+		font-size: 15px;
+	}
+}

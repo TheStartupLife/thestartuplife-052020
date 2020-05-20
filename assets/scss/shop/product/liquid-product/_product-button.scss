@@ -1,0 +1,63 @@
+.ld-sp {
+	
+	.ld-sp-add-to-cart,
+	.add_to_cart_button {
+		display: block;
+		padding: 8px 15px;
+		position: absolute;
+		left: 17px;
+		right: 17px;
+		bottom: 15px;
+		background-color: rgba(#000, 0.9);
+		font-size: 13px;
+		text-transform: uppercase;
+		letter-spacing: 0.185em;
+		line-height: 1.5em;
+		font-weight: 700;
+		text-align: center;
+		color: #fff;
+		white-space: normal;
+		transform: translateY(15%);
+		// transform-origin: center center 50px;
+		transition-property: transform, background, opacity, transform-origin;
+		transition-duration: 0.45s;
+		transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+		opacity: 0;
+		
+		&:after {
+			display: inline-block; // for loading animation
+		}
+		&.loading {
+			opacity: 1 !important;
+		}
+		&.loading,
+		&.added {
+			transform: translateY(0);
+			opacity: 1;
+		}
+		&:hover {
+			background-color: var(--color-primary);
+			color: #fff;
+		}
+	}
+	.added_to_cart {
+		display: inline-block;
+		padding: 7px 15px;
+		border-radius: 2px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		background-color: #000;
+		font-size: 12px;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: 0.185em;
+		transform: translate(-50%, -50%);
+		
+		&:hover {
+			background-color: var(--color-primary);
+		}
+	}
+}

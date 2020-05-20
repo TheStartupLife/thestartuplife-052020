@@ -1,0 +1,147 @@
+.fancy-title {
+	margin-bottom: 2.5em;
+	position: relative;
+
+	> :empty:not(br):not(hr):not(i.line) {
+		display: none;
+	}
+	h2,
+	h3,
+	h4 {
+		margin: 0.25em 0;
+	}
+	i {
+		margin-right: 0.27em;
+	}
+	> :first-child {
+		margin-top: 0;
+	}
+	> :last-child {
+		margin-bottom: 0;
+	}
+	.text-uppercase {
+		letter-spacing: 0.1em;
+	}
+	i.line {
+		display: inline-block;
+		width: 1.138em;
+		height: 3px;
+		vertical-align: middle;
+		background-color: var(--color-primary);
+	}
+	.underlined {
+		display: inline-block;
+		padding-bottom: 1.25em;
+		position: relative;
+		clear: both;
+
+		&:after {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-primary);
+		}
+	}
+
+	&.text-center {
+
+		.underlined {
+
+			&:after {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+	&.text-right {
+
+		.underlined {
+
+			&:after {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+}
+
+.fancy-title-underlined {
+	padding-bottom: 2.5em;
+
+	&:after {
+		content: '';
+		display: inline-block;
+		width: 50px;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background-color: var(--color-primary);
+	}
+	&.text-center {
+
+		&:after {
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	&.text-right {
+
+		&:after {
+			left: auto;
+			right: 0;
+		}
+	}
+}
+
+/* Lines */
+.fancy-title {
+
+	.lined-alt {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+	}
+	.line-alt {
+		flex: 1 auto;
+		height: 1px;
+		position: relative;
+		background-color: #E5E5E5;
+		border-radius: 50em;
+		margin-right: 2em;
+
+		&:last-child {
+			margin-right: 0;
+			margin-left: 2em;
+		}
+	}
+	.line-alt-doubled {
+		top: 0.3em;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: -0.6em;
+			left: 0;
+			border-radius: inherit;
+			background-color: inherit;
+		}
+	}
+}
+
+@media screen and ( min-width: $grid-breakpoint-lg ) {
+
+	.fancy-title {
+
+		.pull-to-left {
+			margin-left: - em(150, 65);
+		}
+	}
+}

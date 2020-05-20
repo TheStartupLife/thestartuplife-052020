@@ -1,0 +1,10 @@
+@media screen and ( min-width: $grid-breakpoint-md ) and ( max-width: $grid-breakpoint-mobile-nav - 1 ) {
+
+  .mainbar-row {
+
+    > [class^=col] {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+}

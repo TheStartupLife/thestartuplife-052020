@@ -1,0 +1,22 @@
+@media screen and ( min-width: $grid-breakpoint-md ) {
+
+	.woocommerce {
+
+		&.has-sidebar {
+	
+			.sidebar-container {
+	
+				&.col-md-offset-1 {
+					margin-left: 2.33333333%;
+				}
+			}
+			.contents-container {
+				width: 72.66666667%;
+				
+				&.col-md-offset-1 {
+					margin-left: 2.33333333%;
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,17 @@
+@media screen and ( max-width: $grid-breakpoint-sm - 1 ) {
+
+	.one-roadmap {
+		padding-left: 25px;
+		padding-right: 25px;
+
+		&:before {
+			top: 15px;
+			right: 15px;
+			left: 15px;
+			bottom: 15px;
+		}
+	}
+	.one-roadmap-info {
+		max-width: 85%;
+	}
+}

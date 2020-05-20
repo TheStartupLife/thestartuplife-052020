@@ -1,0 +1,82 @@
+.border-gray {
+	border: 1px solid #ddd;
+}
+.border-athens-gray {
+	border: 1px solid #E8E9F1;
+}
+
+.bb-light {
+	border-bottom: 1px solid #ebedf6;
+}
+
+$count: 0.05;
+
+@while $count < 0.9 {
+	
+	
+	.border-fade-white-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border: 1px solid rgba(#fff, $count);
+	}
+	.border-fade-black-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border: 1px solid rgba(#000, $count);
+	}
+	.bt-fade-white-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border-top: 1px solid rgba(#fff, $count);
+	}
+	.bb-fade-white-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border-bottom: 1px solid rgba(#fff, $count);
+	}
+	.br-fade-white-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border-right: 1px solid rgba(#fff, $count);
+	}
+	.bl-fade-white-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border-left: 1px solid rgba(#fff, $count);
+	}
+	.bt-fade-black-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border-top: 1px solid rgba(#000, $count);
+	}
+	.bb-fade-black-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border-bottom: 1px solid rgba(#000, $count);
+	}
+	.br-fade-black-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border-right: 1px solid rgba(#000, $count);
+	}
+	.bl-fade-black-#{str-replace(unquote("#{$count}"), '.', '')} {
+		border-left: 1px solid rgba(#000, $count);
+	}
+
+	$count: $count + 0.05;
+
+}
+
+.bb-gray {
+	border-bottom: 1px solid #edecec;
+}
+
+.border-color-white {
+	border-color: #fff;
+}
+.border-color-primary {
+	border-color: var(--color-primary);
+}
+.border-color-secondary {
+	border-color: var(--color-secondary);
+}
+
+.border-none {
+	border: none !important;
+}
+
+.bordered-section-white {
+	border: 2vw solid #fff;
+}
+.bordered-section-white-3vw {
+	border: 3vw solid #fff;
+}
+
+@for $i from 1 to 10 {
+	
+	.border-width-#{$i} {
+		border-width: $i + unquote('px');
+	}
+}

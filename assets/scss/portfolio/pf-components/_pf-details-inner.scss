@@ -1,0 +1,45 @@
+.ld-pf-details-inner {
+	display: inherit;
+	width: 100%;
+	height: 100%;
+	align-items: inherit;
+	justify-content: inherit;
+	flex-flow: inherit;
+	position: relative;
+	z-index: 3;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s, visibility 0.3s;
+
+	> :first-child {
+		margin-top: 0;
+	}
+	> :last-child {
+		margin-bottom: 0;
+	}
+
+	.ld-pf-details-inner {
+		width: auto !important;
+		height: auto !important;
+		transform: none !important;
+	}
+
+	.pf-contents-mid & {
+		align-self: center;
+		margin: auto;
+	}
+
+	.pf-details-inner-full & {
+		width: 100%;
+		height: 100%;
+	}
+
+	.pf-details-visible & {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.pf-details-inside [data-hover3d=true] & {
+		transform: translate3d(0, 0, 50px) scale(0.78);
+	}
+}
