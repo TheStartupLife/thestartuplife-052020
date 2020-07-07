@@ -1,4 +1,4 @@
-# Contributor Covenant Code of Conduct
+# TheStartUpLife Code of Conduct
 
 ## Our Pledge
 
