@@ -9,17 +9,17 @@ project to your best.
 ### Tasks
 1. Come up with the idea of what to improve.
 2. Disclose the idea to the main contributor, then create the task to our ClickUp's Task Management Board.
-  - Tags: 
+  - Tags: Any created tag revelant to the task is recommended.
 3. Set up Subtasks if the tasks need to be breaken up into small sections.
 4. Create an Outline/Sketch for the files to attach into the task.
   - Use Google Docs for .txt files or InVision for sketches.
   - Attach to the appropriate task/subtask for displays.
-5. Set it to Awaiting Approval, assign to main contributor, and wait for further feedback.
+5. Set it to Awaiting Approval, assign it to main contributor, and wait for further feedback.
 6. After obtaining approval, you can begin on creating or making changes to the repository on a new, descriptive branch.
 7. After testing and merging has commenced, the tasks can be set to complete, soon to be set to archived.
 
 ### Commits
-- Be sure to have messages concice, with an optional description for further information on what had changed.
+- Be sure to have concise messages, with an optional description for further information on what had changed.
 
 ### Issues
 - After setting the task to ClickUp and further discussion, issues could be made to track GitHub's To-Do's or minor issues such as bugs. 
