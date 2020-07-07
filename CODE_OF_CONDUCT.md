@@ -33,12 +33,12 @@ Examples of unacceptable behavior by participants include:
 
 ## Ethics
 
-Examples of ethical reponsibilities for people of any area include:
+Examples of ethical responsibilities for people of any area include:
 
 * Not performing work that could harm the business, even if it was thought to be beneficial
 * Ensuring that you and everyone else is satisfied with the solution
-* Providing accurate and trutful progress reports the work progresses
-* Providing documentation and standard approaches for their work for team maintainabilty
+* Providing accurate and truthful progress reports the work progresses
+* Providing documentation and standard approaches for their work for team maintainability
 * Delivering quality work that meets specifications.
 
 ## Our Responsibilities
