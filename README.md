@@ -1,10 +1,4 @@
 # thestartuplife-052020
-### Navigation
-- [About This Website](#About-This-Website)
-- [Website Access](#Website-Access)
-- [How to Contribute](#How-to-Contribute)
-- [Code of Conduct](#Code-Of-Conduct)
-- [Licensing](#Licensing)
 
 ### About This Website
 This website is aimed to give people information about what our company is about and how we can assist them. For example, users should be 
@@ -23,4 +17,3 @@ website is whitneylubin.
 Also, please refer to the [Code of Conduct](CODE_OF_CONDUCT.md) page on the repository for rules on how to safely and respectively report issues. The repo
 is meant to be a welcoming and safe experience to all Web Developers alike.
 
-### Licensing
