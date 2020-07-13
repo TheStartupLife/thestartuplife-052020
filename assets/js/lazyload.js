@@ -1,29 +1,29 @@
 document.addEventListener("DOMContentLoaded", function(){
-    var lazyLoadImages = document.querySelectorAll("img.lazy");
-    var lazyLoadThrottleTimeout;
+    var lazyloadImages = document.querySelectorAll("img.lazy");
+    var lazyloadThrottleTimeout;
 
-    lazyLoadThrottleTimeout = setTimeout(scrollLoad, 20);
-
-    document.addEventListener("scroll", lazyload);
-    document.addEventListener("resize", lazyload);
-    document.addEventListener("orientationChange", lazyload);
-});
-function lazyload(){
-    if(lazyLoadThrottleTimeout){
-        clearTimeout(lazyLoadThrottleTimeout);
+    function lazyload(){
+        if(lazyloadThrottleTimeout){
+            clearTimeout(lazyloadThrottleTimeout);
+        }
     }
-}
-function scrollLoad(){
-    var scrollTop = window.pageYOffset;
+
+    lazyloadThrottleTimeout = setTimeout(function(){
+        var scrollTop = window.pageYOffset;
     lazyloadImages.forEach(function(img){
         if(img.offsetTop < (window.innerHeight + scrollTop)){
             img.src = img.dataset.src;
             img.classList.remove('lazy');
         }
     });
-    if(lazyLoadImages.length == 0){
+    if(lazyloadImages.length == 0){
         document.removeEventListener("scroll", lazyload);
         window.removeEventListener("resize", lazyload);
         window.removeEventListener("orientationChange", lazyload);
     }
-}
+    }, 20);
+
+    document.addEventListener("scroll", lazyload);
+    document.addEventListener("resize", lazyload);
+    document.addEventListener("orientationChange", lazyload);
+});
