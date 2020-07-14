@@ -1,35 +1,4 @@
-#medicalbae-background.lazy {
+figure .lazy {
     background-image: none;
-    background-color: lightgrey;
-}
-#medicalbae-background {
-    background-image: url('./assets/demo/portfolio/medicalbae.png');
-}
-#gethousing-background.lazy {
-    background-image: none;
-    background-color: aqua;
-}
-#gethousing-background {
-    background-image: url('./assets/demo/portfolio/portfolio-3.png'); 
-}
-#webappdev-background.lazy {
-    background-image: none;
-    background-color: darkgrey;
-}
-#webappdev-background {
-    background-image: url('./assets/demo/portfolio/portfolio-1.png');
-}
-#prettypenny-background.lazy {
-    background-image: none;
-    background-color: green;
-}
-#prettypenny-background {
-    background-image: url('./assets/demo/portfolio/prettypenny.png');
-}
-#consultation-background.lazy {
-    background-image: none;
-    background-color: gray;
-}
-#consultation-background {
-    background-image: url('./assets/demo/bg/1920x904.png');
+    background-color: grey;
 }
