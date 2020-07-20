@@ -3822,7 +3822,7 @@ figure + .ld-cart-product-details {
 .backgroundcliptext .btn-underlined:not(.btn-icon-solid).btn-gradient .btn-icon i {
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
+ /* text-fill-color: transparent !important;*/
   -webkit-text-fill-color: transparent !important;
 }
 .btn-naked > span > .btn-gradient-bg, .btn-underlined > span > .btn-gradient-bg {
@@ -5131,7 +5131,7 @@ figure + .ld-cart-product-details {
   background: linear-gradient(to right, #1DE1D1 0%, #780BEE 100%);
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
+  /*text-fill-color: transparent !important;*/
   -webkit-text-fill-color: transparent !important;
 }
 
@@ -5141,7 +5141,7 @@ figure + .ld-cart-product-details {
   background: linear-gradient(to right, #1DE1D1 0%, #780BEE 100%);
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
+  /*text-fill-color: transparent !important;*/
   -webkit-text-fill-color: transparent !important;
 }
 
@@ -10457,7 +10457,7 @@ svg + .liquid-lp-category {
   background: linear-gradient(to right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%);
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
+  /*text-fill-color: transparent !important;*/
   -webkit-text-fill-color: transparent !important;
 }
 .fancy-box-classes:hover {
@@ -11044,7 +11044,7 @@ svg + .liquid-lp-category {
   background: linear-gradient(to right, var(--color-gradient-start) 0%, var(--color-gradient-stop) 100%);
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
+  /*text-fill-color: transparent !important;*/
   -webkit-text-fill-color: transparent !important;
 }
 .backgroundcliptext .liquid-counter-element-hover span {
@@ -11166,7 +11166,7 @@ svg + .liquid-lp-category {
 .backgroundcliptext .liquid-counter-has-gradient .liquid-counter-element > span {
   background-clip: text !important;
   -webkit-background-clip: text !important;
-  text-fill-color: transparent !important;
+  /*text-fill-color: transparent !important;*/
   -webkit-text-fill-color: transparent !important;
 }
 
@@ -14986,7 +14986,7 @@ ul.pagination .page-numbers.current {
   -webkit-background-clip: text !important;
   background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  text-fill-color: transparent !important;
+  /*text-fill-color: transparent !important;*/
 }
 .backgroundcliptext .ld-gradient-heading .txt-rotate-keywords,
 .backgroundcliptext .ld-gradient-heading .txt-rotate-keywords .keyword,

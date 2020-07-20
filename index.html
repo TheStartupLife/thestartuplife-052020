@@ -11,17 +11,19 @@
 	
 	<title>The Startup Life</title>
 	
-	<link rel="stylesheet" href="assets/vendors/liquid-icon/liquid-icon.min.css" />
-	<link rel="stylesheet" href="assets/vendors/font-awesome/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="assets/css/theme-vendors.min.css" />
-	<link rel="stylesheet" href="assets/css/theme.min.css" />
-	<link rel="stylesheet" href="assets/css/themes/digital-agency.css" />
-	
+	<link rel="stylesheet" href="./assets/vendors/liquid-icon/liquid-icon.min.css" />
+	<link rel="stylesheet" href="./assets/vendors/font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="./assets/css/theme-vendors.min.css" />
+	<link rel="stylesheet" href="./assets/css/theme.min.css" />
+	<link rel="stylesheet" href="./assets/css/themes/digital-agency.css" />
+	<!--<link rel="stylesheet" href="./assets/css/image.css" />-->
+
 	<!-- Head Libs -->
-	<script async src="assets/vendors/modernizr.min.js"></script>
-	
+	<script async src="./assets/vendors/modernizr.min.js"></script>
+	<!--<script src="./assets/js/lazyload.js"></script>-->
+
 </head>
-<body data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="minimal" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
+<body class = "lazyload-enabled" data-mobile-nav-trigger-alignment="right" data-mobile-nav-align="left" data-mobile-nav-style="minimal" data-mobile-nav-shceme="gray" data-mobile-header-scheme="gray" data-mobile-nav-breakpoint="1199">
 	
 	<div id="wrap">
 		
@@ -151,7 +153,7 @@
 			data-parallax="true"
 			data-parallax-options='{"parallaxBG":true}'
 			data-slideshow-bg="true"
-			data-slideshow-options='{"delay":3000,"effect":"scale","opacity":27, "imageArray":["./assets/demo/bg/bg-31.png","./assets/demo/bg/bg-41.png"]}'
+			data-slideshow-options='{"delay":3000,"effect":"scale","opacity":27, "imageArray":["./assets/demo/bg/bg-31-compressed.png","./assets/demo/bg/bg-41-compressed.png"]}'
 		>
 		
 			<span class="row-bg-loader">
@@ -177,7 +179,7 @@
 
 						</header><!-- /.fancy-title -->
 
-						<a target="_blank" href="#" class="btn btn-solid text-uppercase circle btn-bordered border-thin font-size-16 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-black mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
+						<a target="_blank" href="#" class=" btn btn-solid text-uppercase circle btn-bordered border-thin font-size-16 font-weight-bold ltr-sp-05 px-2 bg-hover-white text-hover-black mb-2" data-localscroll="true" data-localscroll-options='{"scrollBelowSection":true}'>
 							<span>
 								<span class="btn-txt">Learn More</span>
 							</span>
@@ -208,37 +210,37 @@
 
 									<div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
 										<figure class="text-center opacity-02 reset-opacity-onhover">
-											<img src="./assets/demo/clients/ff-logo.png" class="mt-10 w-60" alt="Client">
+											<img loading = "eager" src="./assets/demo/clients/ff-logo.png" class="mt-20 w-100" alt="Client-FF">
 										</figure>
 									</div><!-- /.carousel-item -->
 									<div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
 										<figure class="text-center opacity-02 reset-opacity-onhover">
-											<img src="./assets/demo/clients/xiexie logo special - 2.png" class="mt-10 w-60" alt="Client">
+											<img loading = "eager" src="./assets/demo/clients/xiexie logo special - 2.jpg" class="mt-10 w-60" alt="Client-XieXie">
 										</figure>
 									</div><!-- /.carousel-item -->
 									<div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
 										<figure class="text-center opacity-02 reset-opacity-onhover">
-											<img src="./assets/demo/clients/cfa-logo-color.png" class="mt-10 w-60" alt="Client">
+											<img src="./assets/demo/clients/cfa-logo-color.png" class="mt-35 w-70" alt="Client-CFA">
 										</figure>
 									</div><!-- /.carousel-item -->
 									<div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
 										<figure class="text-center opacity-02 reset-opacity-onhover">
-											<img src="./assets/demo/clients/Seal_of_Miami,_Florida (1).svg" class="w-60" alt="Client">
+											<img loading = "eager" src="./assets/demo/clients/Seal_of_Miami,_Florida (1).svg" class="w-60" alt="Client-SMF">
 										</figure>
 									</div><!-- /.carousel-item -->
 									<div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
 										<figure class="text-center opacity-02 reset-opacity-onhover">
-											<img src="./assets/demo/clients/medicalbae-logo.png" class="w-60" alt="Client">
+											<img loading = "eager" src="./assets/demo/clients/medicalbae-logo.png" class="mt-15 w-100" alt="Client-MB">
 										</figure>
 									</div><!-- /.carousel-item -->
 									<div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
 										<figure class="text-center opacity-02 reset-opacity-onhover">
-											<img src="./assets/demo/clients/cfsf-logo.png" class="mt-10 w-60" alt="Client">
+											<img loading = "eager" src="./assets/demo/clients/cfsf-logo.png" class="mt-25 w-70" alt="Client-CFSF">
 										</figure>
 									</div><!-- /.carousel-item -->
 									<div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
 										<figure class="text-center opacity-02 reset-opacity-onhover">
-											<img src="./assets/demo/clients/PrettyPenny.png" class="w-60" alt="Client">
+											<img loading = "eager" src="./assets/demo/clients/PrettyPenny.png" class="w-70" alt="Client-PP">
 										</figure>
 									</div><!-- /.carousel-item -->
 									<!-- <div class="lqd-column carousel-item  col-md-2 col-sm-3 col-xs-4">
@@ -310,9 +312,9 @@
 										data-parallax-to='{"translateY":-78}'
 										data-parallax-options='{"overflowHidden":false,"easing":"linear"}'
 									>
-										<figure>
-											<img src="./assets/demo/misc/xiexie.png" alt="Good Design" />
-										</figure>
+										<!--<figure>-->
+											<img loading = "auto" src="./assets/demo/misc/xiexie-compressed.jpg" alt="Good Design" />
+										<!--</figure>-->
 									</div><!-- /.liquid-img-container-inner -->
 								</div><!-- /.liquid-img-group-img-container -->
 							</div><!-- /.liquid-img-group-single -->
@@ -325,9 +327,9 @@
 										data-parallax-to='{"translateY":-134}'
 										data-parallax-options='{"overflowHidden":false,"easing":"linear"}'
 									>
-										<figure>
-											<img src="./assets/demo/misc/femmefinanciar.png" alt="Good Design" />
-										</figure>
+										<!--<figure>-->
+											<img loading = "auto" src="./assets/demo/misc/femmefinanciar-compressed.jpg" alt="Good Design" />
+										<!--</figure>-->
 									</div><!-- /.liquid-img-container-inner -->
 								</div><!-- /.liquid-img-group-img-container -->
 							</div><!-- /.liquid-img-group-single -->
@@ -499,8 +501,8 @@
 												<div class="ld-pf-inner">
 													
 													<div class="ld-pf-image">
-														<figure style="background-image: url('./assets/demo/portfolio/portfolio-3.png');">
-															<img src="./assets/demo/portfolio/portfolio-3.png" alt="Portfolio Image">
+														<figure style="background-image: url('./assets/demo/portfolio/portfolio-3-compressed.jpg');">
+															<img src="./assets/demo/portfolio/portfolio-3-compressed.jpg" alt="Portfolio Image">
 														</figure>
 													</div><!-- /.ld-pf-image -->
 						
@@ -531,8 +533,8 @@
 												<div class="ld-pf-inner">
 													
 													<div class="ld-pf-image">
-														<figure style="background-image: url('./assets/demo/portfolio/medicalbae.png');">
-															<img src="./assets/demo/portfolio/medicalbae.png" alt="Portfolio Image">
+														<figure style="background-image: url('./assets/demo/portfolio/medicalbae-compressed.jpg');">
+															<img src="./assets/demo/portfolio/medicalbae-compressed.jpg" alt="Portfolio Image">
 														</figure>
 													</div><!-- /.ld-pf-image -->
 						
@@ -563,8 +565,8 @@
 												<div class="ld-pf-inner">
 													
 													<div class="ld-pf-image">
-														<figure style="background-image: url('./assets/demo/portfolio/portfolio-1.png');">
-															<img src="./assets/demo/portfolio/portfolio-1.png" alt="Portfolio Image">
+														<figure style="background-image: url('./assets/demo/portfolio/portfolio-1-compressed.jpg');">
+															<img src="./assets/demo/portfolio/portfolio-1-compressed.jpg" alt="Portfolio Image">
 														</figure>
 													</div><!-- /.ld-pf-image -->
 						
@@ -595,8 +597,8 @@
 												<div class="ld-pf-inner">
 													
 													<div class="ld-pf-image">
-														<figure style="background-image: url('./assets/demo/portfolio/prettypenny.png');">
-															<img src="./assets/demo/portfolio/prettypenny.png" alt="Portfolio Image">
+														<figure style="background-image: url('./assets/demo/portfolio/prettypenny-compressed.jpg');">
+															<img src="./assets/demo/portfolio/prettypenny-compressed.jpg" alt="Portfolio Image">
 														</figure>
 													</div><!-- /.ld-pf-image -->
 						
@@ -673,7 +675,7 @@
 					<div class="lqd-column col-lg-8 col-md-6">
 
 						<figure class="stretch-to-left" data-parallax="true" data-parallax-from='{"translateY":89}' data-parallax-to='{"translateY":-100}' data-parallax-options='{"overflowHidden":false,"easing":"linear"}'>
-							<img src="./assets/demo/misc/xiexie.png" alt="Parallax Image">
+							<img src="./assets/demo/misc/xiexie-compressed.jpg" alt="Parallax Image">
 						</figure>
 
 					</div><!-- /.col-lg-8 col-md-6 -->
@@ -684,9 +686,9 @@
 						data-ca-options='{"triggerHandler":"inview","animationTarget":"all-childs","duration":"1200","startDelay":"350","delay":"150","easing":"easeOutQuint","direction":"forward","initValues":{"translateY":28,"opacity":0},"animations":{"translateY":0,"opacity":1}}'
 					>
 
-						<header class="fancy-title mb-md-9">
+						<header class="fancy-title mb-md-9 text-center">
 
-							<h2 class="mb-md-7 pull-to-left" data-fittext="true" data-fittext-options='{ "compressor": 0.5, "maxFontSize": 65, "minFontSize": 35 }'>
+							<h2 class="mb-md-7" data-fittext="true" data-fittext-options='{ "compressor": 0.5, "maxFontSize": 65, "minFontSize": 35 }'> <!--There was a "pull-to-left" class that pulled the heading to the left towards the image.-->
 								<span class="font-size-1x">How We Work</span>
 							</h2>
 							<h6 class="font-size-24 font-weight-normal font-style-italic pr-5" data-split-text="true" data-split-options='{"type":"lines"}'> “Our mission is to produce the highest quality work for every client, on every project” </h6>
@@ -855,7 +857,7 @@
 			<!-- </div>/.container -->
 		<!-- </section> -->
 
-		<section id="contact" class="vc_row pt-110 pb-120 mt-40" style="background-image: url(./assets/demo/bg/1920x904.png);" data-parallax="true" data-parallax-options='{ "parallaxBG": true }'>
+		<section id="contact" class="vc_row pt-110 pb-120 mt-40" style="background-image: url('./assets/demo/bg/1920x904.jpg');" width = "100%" data-parallax="true" data-parallax-options='{ "parallaxBG": true }'>
 			<div class="container">
 				<div class="row">
 
@@ -903,7 +905,7 @@
 						<ul class="lqd-custom-menu reset-ul font-size-14 lh-2">
 							<li><a href="#">Homepage</a></li>
 							<li><a href="#">Our Portfolio</a></li>
-							<li><a href="#">About Us</a></li>
+							<li><a href="/pages/team.html">About Us</a></li>
 							<li><a href="#">Get In Touch</a></li>
 						</ul>
 	
@@ -991,6 +993,13 @@
 	
 </div><!-- /#wrap -->
 
+<script>
+	window.lazyLoadOptions = {
+		elements_selector: "[loading=lazy]",
+		use_native: true // hybrid lazy loading should be enabled
+	};
+</script>
+<script async src = "./assets/vendors/lazyload.min.js"></script>
 <script src="./assets/vendors/jquery.min.js"></script>
 <script src="./assets/js/theme-vendors.js"></script>
 <script src="./assets/js/theme.min.js"></script>
