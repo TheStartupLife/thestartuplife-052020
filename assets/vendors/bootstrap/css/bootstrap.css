@@ -383,7 +383,7 @@ img {
 }
 .img-four {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 7;
   grid-row-start: 6;
   grid-row-end: 8;
   opacity: 1;
@@ -420,6 +420,11 @@ img {
 }
 .footer-color {
   background-color: rgb(255, 222, 89) !important;
+}
+.txt-color{
+color: #000 !important;
+
+
 }
 m-b-s {
   margin-bottom: 0rem !important;
