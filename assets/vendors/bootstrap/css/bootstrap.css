@@ -349,6 +349,9 @@ img {
   width: 100%;
   margin-top: 150px;
 }
+.linked-list{
+ list-style: none; 
+}
 .grid {
   grid-template-columns: repeat(10, 1fr);
   align-items: start;
