@@ -73,7 +73,9 @@ body {
 .main-nav > li > a .link-ext {
   background-color: #fff;
 }
-
+.main-nav > li > a .link-ext.black {
+  background-color: black;
+}
 .main-footer a:not(.btn) {
   color: #777880;
 }
