@@ -4320,6 +4320,10 @@ figure + .ld-cart-product-details {
 .social-icon.scheme-white a {
   color: #fff;
 }
+.social-icon.scheme-black a {
+  color: black;
+}
+
 .social-icon.scheme-white.semi-round a, .social-icon.scheme-white.round a, .social-icon.scheme-white.square a, .social-icon.scheme-white.circle a {
   background-color: #fff;
   color: #000;
